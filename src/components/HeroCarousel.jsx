@@ -51,7 +51,7 @@ const HeroCarousel = (props) => {
               <hr className='w-full h-1 text-primary/20'/>
               <p className=''> Multi-page &nbsp; | &nbsp; 8 Weeks &nbsp; | &nbsp; 2022 </p>
               <hr className='w-full h-1 text-primary/20'/>
-              <a href='https://www.christamelon.netlify.app' target='_blank' className='cursor-pointer w-full flex items-center justify-between gap-1'> Visit Project <BsArrowUpRight className='text-xs'/></a>
+              <a href='https://christamelon.netlify.app/' target='_blank' className='cursor-pointer w-full flex items-center justify-between gap-1'> Visit Project <BsArrowUpRight className='text-xs'/></a>
               <hr className='w-full h-1 text-primary/20'/>
               </div>
             </div>
@@ -72,7 +72,7 @@ const HeroCarousel = (props) => {
               <hr className='w-full h-1 text-primary/20'/>
               <p> 1 page &nbsp; | &nbsp; Ongoing  &nbsp; | &nbsp; 2023 </p>
               <hr className='w-full h-1 text-primary/20'/>
-              <a href='https://www.christamelon.netlify.app' target='_blank' className='cursor-pointer w-full flex items-center justify-between gap-1'> Visit Project <BsArrowUpRight className='text-xs'/></a>
+              <a href='https://corty.netlify.app/' target='_blank' className='cursor-pointer w-full flex items-center justify-between gap-1'> Visit Project <BsArrowUpRight className='text-xs'/></a>
               <hr className='w-full h-1 text-primary/20'/>
             </div>
           </div>
@@ -93,7 +93,7 @@ const HeroCarousel = (props) => {
               <hr className='w-full h-1 text-primary/20'/>
               <p> Multi-page &nbsp; | &nbsp; Ongoing  &nbsp; | &nbsp; 2025 </p>
               <hr className='w-full h-1 text-primary/20'/>
-              <a href='https://www.christamelon.netlify.app' target='_blank' className='cursor-pointer w-full flex items-center justify-between gap-1'> Visit Project <BsArrowUpRight className='text-xs'/></a>
+              <a href='https://easy-tickets.netlify.app/' target='_blank' className='cursor-pointer w-full flex items-center justify-between gap-1'> Visit Project <BsArrowUpRight className='text-xs'/></a>
               <hr className='w-full h-1 text-primary/20'/>
             </div>
           </div>
@@ -114,7 +114,7 @@ const HeroCarousel = (props) => {
               <hr className='w-full h-1 text-primary/20'/>
               <p> 6 pages &nbsp; | &nbsp; Completed &nbsp; | &nbsp; 2025 </p>
               <hr className='w-full h-1 text-primary/20'/>
-              <a href='https://www.christamelon.netlify.app' target='_blank' className='cursor-pointer w-full flex items-center justify-between gap-1'> Visit Project <BsArrowUpRight className='text-xs'/></a>
+              <a href='https://emekaonyekaandco.com/' target='_blank' className='cursor-pointer w-full flex items-center justify-between gap-1'> Visit Project <BsArrowUpRight className='text-xs'/></a>
               <hr className='w-full h-1 text-primary/20'/>
             </div>
           </div>
@@ -135,7 +135,7 @@ const HeroCarousel = (props) => {
               <hr className='w-full h-1 text-primary/20'/>
               <p> 3 pages &nbsp; | &nbsp; Completed &nbsp; | &nbsp; 2024 </p>
               <hr className='w-full h-1 text-primary/20'/>
-              <a href='https://www.christamelon.netlify.app' target='_blank' className='cursor-pointer w-full flex items-center justify-between gap-1'> Visit Project <BsArrowUpRight className='text-xs'/></a>
+              <a href='https://delight-weds-fredrick.netlify.app/' target='_blank' className='cursor-pointer w-full flex items-center justify-between gap-1'> Visit Project <BsArrowUpRight className='text-xs'/></a>
               <hr className='w-full h-1 text-primary/20'/>
             </div>
           </div>
@@ -156,7 +156,7 @@ const HeroCarousel = (props) => {
               <hr className='w-full h-1 text-primary/20'/>
               <p> 12 pages &nbsp; | &nbsp; Ongoing &nbsp; | &nbsp; 2024 </p>
               <hr className='w-full h-1 text-primary/20'/>
-              <a href='https://www.christamelon.netlify.app' target='_blank' className='cursor-pointer w-full flex items-center justify-between gap-1'> Visit Project <BsArrowUpRight className='text-xs'/></a>
+              <a href='https://trendmartng.netlify.app/' target='_blank' className='cursor-pointer w-full flex items-center justify-between gap-1'> Visit Project <BsArrowUpRight className='text-xs'/></a>
               <hr className='w-full h-1 text-primary/20'/>
             </div>
           </div>
