@@ -1,0 +1,119 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+
+@import "tailwindcss";
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+  /* overflow-x: hidden; */
+}
+
+/* @font-face {
+  font-family: InterDisplay;
+  font-style: normal;
+  font-weight: 200 300 400 500 600 700 800 900;
+  font-display: swap;
+  src: url("./fonts/InterDisplay-Light.ttf") format("truetype");
+} */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+@theme{
+  --color-gray: #333333;
+  --color-dark-gray: #808080;
+  --color-light-gray: #f9f9f9;
+
+  --color-light: #fcfcfc;
+  --color-primary: #B61EE2;
+  /* --color-primary: #B61FE1; */
+  /* --font-display: InterDisplay; */
+  --font-display: "Raleway", sans-serif;
+  --font-stylish: "Bonheur Royale", cursive;
+  /* font-family: "Raleway", sans-serif; */
+
+
+  --background-start-rgb: 234, 239, 230;
+  --background-end-rgb: 255, 255, 255;
+
+
+
+  --brand-primary: rgb(47, 112, 193);
+  --brand-secondary: rgb(116, 97, 195);
+  --brand-alternative: rgb(19, 120, 134);
+  --background-site: rgb(249, 249, 249);
+  --background-code: rgb(244, 244, 244);
+  --text-body: rgb(54, 49, 61);
+  --text-comment: rgb(99, 94, 105);
+  --text-high-contrast: rgb(49, 49, 49);
+  --text-medium-contrast: rgb(99, 94, 105);
+  --text-low-contrast: rgb(116, 109, 118);
+  --detail-high-contrast: rgb(192, 192, 192);
+  --detail-medium-contrast: rgb(234, 234, 234);
+  --detail-low-contrast: rgb(240, 240, 242);
+  --admonition-note: rgb(46, 109, 188);
+  --admonition-warning: rgb(255, 196, 9);
+  --admonition-danger: rgb(220, 38, 38);
+  --brand-primary-rgb-value: 47, 112, 193;
+  --brand-secondary-rgb-value: 116, 97, 195;
+  --brand-alternative-rgb-value: 19, 120, 134;
+  --background-site-rgb-value: 249, 249, 249;
+  --background-code-rgb-value: 244, 244, 244;
+  --text-body-rgb-value: 54, 49, 61;
+  --text-comment-rgb-value: 99, 94, 105;
+  --text-high-contrast-rgb-value: 49, 49, 49;
+  --text-medium-contrast-rgb-value: 99, 94, 105;
+  --text-low-contrast-rgb-value: 116, 109, 118;
+  --detail-high-contrast-rgb-value: 192, 192, 192;
+  --detail-medium-contrast-rgb-value: 234, 234, 234;
+  --detail-low-contrast-rgb-value: 240, 240, 242;
+  --admonition-note-rgb-value: 46, 109, 188;
+  --admonition-warning-rgb-value: 255, 196, 9;
+  --admonition-danger-rgb-value: 220, 38, 38;
+}
+
+::selection{
+  background-color: var(--color-primary);
+  color: var(--color-light-gray);
+}
+
+
+
+:root{
+  /* --font-display: InterDisplay; */
+  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+
+
+html {
+  scroll-behavior: smooth !important;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* box-sizing: border-box; */
+  /* line-height: 1.15; */
+  /* background-color: var(--background-site); */
+  /* font-size: 62.5%; */
+  /* font-family: Inter, 'system-ui', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol'; */
+}
+body{
+  /* background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb)); */
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
