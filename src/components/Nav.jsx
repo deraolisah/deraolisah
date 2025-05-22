@@ -90,22 +90,22 @@ const Nav = () => {
           border: "1px solid rgba(255, 255, 255, 0.2)",
         }}
       >
-        <li className='flex md:w-full items-center justify-center mr-2'>
+        <li className='flex md:w-full items-center justify-center mr-1.5'>
           <Link to="/" title='<Home>' className={`rounded-full transition-all duration-200 ${activeLink === 'home' ? 'bg-white' : ''}`} onClick={() => handleLinkClick('home')} aria-label="Home" aria-hidden="false">
             <img src={Me} className='min-h-8 min-w-8 max-h-8 max-w-8 rounded-full border-1 border-dark-gray bg-primary pointer-events-none' alt='' />
           </Link>
         </li>
         <li title='<About Me>'>
-          <a href='#about' className={`px-4 py-2 hover:bg-white/60 hover:text-primary rounded-full md:text-base text-sm transition-all duration-200 ${activeLink === 'about' ? 'bg-white' : ''}`} onClick={() => handleLinkClick('about')}> About </a>
+          <a href='#about' className={`px-3.5 py-2 hover:bg-white/60 hover:text-primary rounded-full md:text-base text-sm transition-all duration-200 ${activeLink === 'about' ? 'bg-white' : ''}`} onClick={() => handleLinkClick('about')}> About </a>
         </li>
         <li title='<Services>'>
-          <a href="#services" className={`px-4 py-2 hover:bg-white/60 hover:text-primary rounded-full md:text-base text-sm transition-all duration-200 ${activeLink === 'services' ? 'bg-white' : ''}`} onClick={() => handleLinkClick('craft')}> Services </a>
+          <a href="#services" className={`px-3.5 py-2 hover:bg-white/60 hover:text-primary rounded-full md:text-base text-sm transition-all duration-200 ${activeLink === 'services' ? 'bg-white' : ''}`} onClick={() => handleLinkClick('craft')}> Services </a>
         </li>
         <li title='<My Projects>'>
-          <a href="#projects" className={`px-4 py-2 hover:bg-white/60 hover:text-primary rounded-full md:text-base text-sm transition-all duration-200 ${activeLink === 'projects' ? 'bg-white' : ''}`} onClick={() => handleLinkClick('projects')}> Projects </a>
+          <a href="#projects" className={`px-3.5 py-2 hover:bg-white/60 hover:text-primary rounded-full md:text-base text-sm transition-all duration-200 ${activeLink === 'projects' ? 'bg-white' : ''}`} onClick={() => handleLinkClick('projects')}> Projects </a>
         </li>
         <li title='<Connect/Contact>'>
-          <a href="#connect" className={`px-4 py-2 hover:bg-white/60 hover:text-primary rounded-full md:text-base text-sm transition-all duration-200 ${activeLink === 'connect' ? 'bg-white' : ''}`} onClick={() => handleLinkClick('connect')}> Connect </a>
+          <a href="#connect" className={`px-3.5 py-2 hover:bg-white/60 hover:text-primary rounded-full md:text-base text-sm transition-all duration-200 ${activeLink === 'connect' ? 'bg-white' : ''}`} onClick={() => handleLinkClick('connect')}> Connect </a>
         </li>
       </ul>
     </nav>

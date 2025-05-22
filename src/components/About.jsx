@@ -5,7 +5,7 @@ import profileImg2 from "../assets/profile-2.jpg";
 
 const About = () => {
   return (
-    <section className='flex flex-col items-center justify-center text-center py-20' id='about'>
+    <section className='flex flex-col items-center justify-center text-center py-22' id='about'>
       {/* <h2 className='w-full p-4 border-b border-primary sticky top-0 text-light bg-gray'> If you’re still scrolling, here’s my background </h2> */}
       <p className='md:text-[28px]/[48px] text-[19px]/8'>        
         I’m a multidisciplinary designer/developer who adeptly balances work with a <span className='text-primary'>business-centric approach</span> and a deep understanding of <span className='text-primary'>client & user needs. </span>        
@@ -30,7 +30,7 @@ const About = () => {
       </div>
 
       <p className='text-sm'>
-        I've been freelancing for over 5 years, and I've helped several brands & businesses scale-up their businesses..
+        I've been freelancing for over 5 years, and I've helped several brands & businesses to scale-up.
       </p>
       
     </section>

@@ -1,0 +1,12 @@
+@media screen and (max-width: 768px) {  
+  @for $i from 1 through 9 {
+    .card:nth-child(#{$i}n) {
+      top: $i * 40px;
+    }
+  }
+}
+
+.card:nth-child(0){
+  margin-top: 60px !important;
+  display: flex;
+}

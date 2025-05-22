@@ -4,7 +4,7 @@ import animationData from "../assets/animation.json";
 
 const Connect = () => {
   return (
-    <section className='w-full md:py-20 py-14 pb-25' id='connect'>
+    <section className='w-full md:py-22 py-20 pb-25' id='connect'>
       <div className='flex flex-col gap-2 items-center justify-center'>
         <p className='md:text-[28px]/[48px] text-[19px]/8  font-light'> 
           Interested in working together?

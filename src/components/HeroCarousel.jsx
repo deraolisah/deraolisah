@@ -38,7 +38,7 @@ const HeroCarousel = (props) => {
           <div className="embla__slide cursor-grab flex flex-col md:gap-4 gap-2 group">
             <div className="overflow-hidden w-full md:max-h-80 max-h-60 md:rounded-3xl rounded-2xl">
               <img 
-                className='object-cover object-center transition-all duration-400 group-hover:scale-[1.04]' 
+                className='object-cover object-center transition-all duration-400 group-hover:scale-[1.1]' 
                 src={ChristamelonImg} 
                 alt='Christamelon Foundation Presentation Image' 
               />
@@ -46,10 +46,10 @@ const HeroCarousel = (props) => {
             <div className='w-full mt-4 flex flex-col items-start gap-2'>
               <h3 className="cursor-pointer group-hover:text-primary font-semibold">
                 Christamelon Foundation 
-                <span className='text-dark-gray font-normal'> - Charity Organization </span>
+                <span className='text-dark-gray font-normal'> - Charity NGO </span>
               </h3>
               <hr className='w-full h-1 text-primary/20'/>
-              <p className=''> Multi-page &nbsp; | &nbsp; 8 Weeks &nbsp; | &nbsp; 2022 </p>
+              <p className=''> Multi-page &nbsp; | &nbsp; Completed &nbsp; | &nbsp; 2022 </p>
               <hr className='w-full h-1 text-primary/20'/>
               <a href='https://christamelon.netlify.app/' target='_blank' className='cursor-pointer w-full flex items-center justify-between gap-1'> Visit Project <BsArrowUpRight className='text-xs'/></a>
               <hr className='w-full h-1 text-primary/20'/>
@@ -59,7 +59,7 @@ const HeroCarousel = (props) => {
           <div className="embla__slide cursor-grab flex flex-col md:gap-4 gap-2 group"> 
             <div className="overflow-hidden w-full md:max-h-80 max-h-60 md:rounded-3xl rounded-2xl">
               <img 
-                className='object-cover object-center transition-all duration-400 group-hover:scale-[1.04]' 
+                className='object-cover object-center transition-all duration-400 group-hover:scale-[1.1]' 
                 src='https://framerusercontent.com/images/kIf7jcI0910zDbqoih3cDAAzO9Y.png'
                 alt='Corty Maxwell Presentation Image'
               />
@@ -70,7 +70,7 @@ const HeroCarousel = (props) => {
               <span className='text-dark-gray font-normal'> - Creative Designer </span> 
               </h3>
               <hr className='w-full h-1 text-primary/20'/>
-              <p> 1 page &nbsp; | &nbsp; Ongoing  &nbsp; | &nbsp; 2023 </p>
+              <p> 4 pages &nbsp; | &nbsp; Ongoing  &nbsp; | &nbsp; 2023 </p>
               <hr className='w-full h-1 text-primary/20'/>
               <a href='https://corty.netlify.app/' target='_blank' className='cursor-pointer w-full flex items-center justify-between gap-1'> Visit Project <BsArrowUpRight className='text-xs'/></a>
               <hr className='w-full h-1 text-primary/20'/>
@@ -80,7 +80,7 @@ const HeroCarousel = (props) => {
           <div className="embla__slide cursor-grab flex flex-col md:gap-4 gap-2 group">
             <div className='overflow-hidden w-full md:max-h-80 max-h-60 md:rounded-3xl rounded-2xl'>
               <img 
-                className='object-cover object-center transition-all duration-400 group-hover:scale-[1.04]'
+                className='object-cover object-center transition-all duration-400 group-hover:scale-[1.1]'
                 src={EasyTicketImg}
                 alt='Easy Tickets Presentation Image'
               />
@@ -101,7 +101,7 @@ const HeroCarousel = (props) => {
           <div className="embla__slide cursor-grab flex flex-col md:gap-4 gap-2 group">
             <div className='overflow-hidden w-full md:max-h-80 max-h-60 md:rounded-3xl rounded-2xl'>
               <img 
-                className='object-cover object-center transition-all duration-400 group-hover:scale-[1.04]'
+                className='object-cover object-center transition-all duration-400 group-hover:scale-[1.1]'
                 src={EmekaOnyekaImg}
                 alt='Emeka Onyeka Presentation Image'
               />
@@ -122,7 +122,7 @@ const HeroCarousel = (props) => {
           <div className="embla__slide cursor-grab flex flex-col md:gap-4 gap-2 group">
             <div className='overflow-hidden w-full md:max-h-80 max-h-60 md:rounded-3xl rounded-2xl'>
               <img 
-                className='object-cover object-center transition-all duration-400 group-hover:scale-[1.04]'
+                className='object-cover object-center transition-all duration-400 group-hover:scale-[1.1]'
                 src={DelightImg}
                 alt='Delight Weds Fredrick Presentation Image'
               />
@@ -133,7 +133,7 @@ const HeroCarousel = (props) => {
                 <span className='text-dark-gray font-normal'> - Wedding Ceremony </span> 
               </h3>
               <hr className='w-full h-1 text-primary/20'/>
-              <p> 3 pages &nbsp; | &nbsp; Completed &nbsp; | &nbsp; 2024 </p>
+              <p> 1 page &nbsp; | &nbsp; Completed &nbsp; | &nbsp; 2024 </p>
               <hr className='w-full h-1 text-primary/20'/>
               <a href='https://delight-weds-fredrick.netlify.app/' target='_blank' className='cursor-pointer w-full flex items-center justify-between gap-1'> Visit Project <BsArrowUpRight className='text-xs'/></a>
               <hr className='w-full h-1 text-primary/20'/>
@@ -143,7 +143,7 @@ const HeroCarousel = (props) => {
           <div className="embla__slide cursor-grab flex flex-col md:gap-4 gap-2 group">
             <div className='overflow-hidden w-full md:max-h-80 max-h-60 md:rounded-3xl rounded-2xl'>
               <img 
-                className='object-cover object-center transition-all duration-400 group-hover:scale-[1.04]'
+                className='object-cover object-center transition-all duration-400 group-hover:scale-[1.1]'
                 src="https://framerusercontent.com/images/0Rsj5GaTHrj7RBXZhmeqnp1DHc.jpeg?scale-down-to=1024"
                 alt='TrendMart Presentation Image'
               />
@@ -154,12 +154,54 @@ const HeroCarousel = (props) => {
                 <span className='text-dark-gray font-normal'> - Fashion Store </span> 
               </h3>
               <hr className='w-full h-1 text-primary/20'/>
-              <p> 12 pages &nbsp; | &nbsp; Ongoing &nbsp; | &nbsp; 2024 </p>
+              <p> Multi-page &nbsp; | &nbsp; Ongoing &nbsp; | &nbsp; 2024 </p>
               <hr className='w-full h-1 text-primary/20'/>
               <a href='https://trendmartng.netlify.app/' target='_blank' className='cursor-pointer w-full flex items-center justify-between gap-1'> Visit Project <BsArrowUpRight className='text-xs'/></a>
               <hr className='w-full h-1 text-primary/20'/>
             </div>
           </div>
+
+          {/* <div className="embla__slide cursor-grab flex flex-col md:gap-4 gap-2 group">
+            <div className='overflow-hidden w-full md:max-h-80 max-h-60 md:rounded-3xl rounded-2xl'>
+              <img 
+                className='object-cover object-center transition-all duration-400 group-hover:scale-[1.1]'
+                src="https://framerusercontent.com/images/0Rsj5GaTHrj7RBXZhmeqnp1DHc.jpeg?scale-down-to=1024"
+                alt='TrendMart Presentation Image'
+              />
+            </div>
+            <div className='w-full mt-4 flex flex-col items-start gap-2'>
+              <h3 className="cursor-pointer group-hover:text-primary font-semibold">
+                Kp Oil and Gas
+                <span className='text-dark-gray font-normal'> - Offshore Rig  </span> 
+              </h3>
+              <hr className='w-full h-1 text-primary/20'/>
+              <p> Multi-page &nbsp; | &nbsp; Completed &nbsp; | &nbsp; 2023 </p>
+              <hr className='w-full h-1 text-primary/20'/>
+              <a href='https://kpoilngas.netlify.app/' target='_blank' className='cursor-pointer w-full flex items-center justify-between gap-1'> Visit Project <BsArrowUpRight className='text-xs'/></a>
+              <hr className='w-full h-1 text-primary/20'/>
+            </div>
+          </div> */}
+
+          {/* <div className="embla__slide cursor-grab flex flex-col md:gap-4 gap-2 group">
+            <div className='overflow-hidden w-full md:max-h-80 max-h-60 md:rounded-3xl rounded-2xl'>
+              <img 
+                className='object-cover object-center transition-all duration-400 group-hover:scale-[1.1]'
+                src="https://framerusercontent.com/images/0Rsj5GaTHrj7RBXZhmeqnp1DHc.jpeg?scale-down-to=1024"
+                alt='TrendMart Presentation Image'
+              />
+            </div>
+            <div className='w-full mt-4 flex flex-col items-start gap-2'>
+              <h3 className="cursor-pointer group-hover:text-primary font-semibold">
+                Shop Lindura
+                <span className='text-dark-gray font-normal'> - Tailoring Business  </span> 
+              </h3>
+              <hr className='w-full h-1 text-primary/20'/>
+              <p> Multi-page &nbsp; | &nbsp; Ongoing &nbsp; | &nbsp; 2024 </p>
+              <hr className='w-full h-1 text-primary/20'/>
+              <a href='https://shoplindura.com/' target='_blank' className='cursor-pointer w-full flex items-center justify-between gap-1'> Visit Project <BsArrowUpRight className='text-xs'/></a>
+              <hr className='w-full h-1 text-primary/20'/>
+            </div>
+          </div> */}
         </div>
       </div>
 
@@ -167,6 +209,12 @@ const HeroCarousel = (props) => {
         <div className="embla__buttons">
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+        </div>
+
+        <div className="embla__dots">
+          <span className='text-primary'> {selectedIndex + 1} </span>            
+          / 
+          <span> {scrollSnaps.length} </span>
         </div>
 
         <div className="embla__dots">
@@ -180,6 +228,7 @@ const HeroCarousel = (props) => {
             />
           ))}
         </div>
+
       </div>
     </section>
   )

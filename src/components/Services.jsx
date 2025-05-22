@@ -1,135 +1,55 @@
-import React from 'react';
+import React from "react";
+import "./Services.scss"; // Assuming you have a CSS file for styles
+import interlacedBg from "../assets/interlaced.png"; 
+import doodleBg from "../assets/doodle.png"; 
+import concentricBg from "../assets/concentric.png";
+import dotsBg from "../assets/dots.png";
+import linesBg from "../assets/lines.png";
+import wavesBg from "../assets/waves.png";
+// import stripesBg from "../assets/stripes.png";
 
+const cardData = [
+  { title: "Basic Website", price: "$300", description: "Simple static websites, like landing page, porfolios, a small blogs, etc, used to convert visitors into leads.", backgroundImage: interlacedBg },
+  { title: "Standard Website", price: "$600", description: "Multi-page website (up to 10 pages) that matches/reflects your business goals, brand, makes you look big, and boosts credibility.", backgroundImage: doodleBg  },
+  { title: "E-Commerce Website", price: "$800", description: "Online store that sells your products 24/7, accepts payments, and used to manage orders, inventory and customers.", backgroundImage: concentricBg },
+  { title: "UI-UX Design", price: "$150", description: "Get a professional UI/UX design for your website, that makes your website user-friendly and visually appealing.", backgroundImage: dotsBg },
+  { title: "Graphic Design", price: "from $12", description: "Get a professional design for your business or brand.", backgroundImage: linesBg },
+  { title: "Templates & Source Codes", price: "Get", description: "Get instant access to my pre-made templates and source codes.", backgroundImage: wavesBg },
+];
 
 const Services = () => {
   return (
-    <section className='w-full flex flex-col gap-4 items-start justify-center py-20' id='services'>
-      {/* <p className='md:text-[28px]/[48px] text-[19px]/8 text-dark-gray font-light'> Services and Prices <br/> </p> */}
-      <p className='md:text-[28px]/[48px] text-[19px]/8 font-light'> What do you need? <br/> </p>
-     
-      <div className='w-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6'>
-        <div className='w-full flex flex-col items-start justify-start gap-18 md:p-8 p-6 rounded-2xl border-1 border-primary/10 bg-light-gray hover:bg-primary/10 shadow-sm'>
-          <div className='flex flex-col gap-1'>
-            <span className='md:text-xl text-md flex items-center justify-between'> 
-              <h5 className='font-medium'> Landing Page </h5>
-              <small className='text-xs text-primary'> from $400 </small>
-            </span>
-            <small className='text-dark-gray'> One-page website that matches your business goal and is ready to convert visitors into leads. </small>
-          </div>
-          <div className="flex items-center flex-wrap gap-2 marker:text-primary text-gray text-xs">
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> 1 week </span>
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> Single Page (3-5 Sections) </span>
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> Animations </span>
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> Contact Form </span>
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> External Links </span>
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> Courses </span>
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> Digital Products </span>
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> Coming Soon </span>
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> Referral </span>
-          </div>
-        </div>
+    <section className="bg-gradient-to-b from-gray-0 to-gray-0 w-full min-h-screen flex justify-center py-22" id="services">
+      <div className="w-full">
+        <p className='md:text-[28px]/[48px] text-[19px]/8 font-light mb-4'> What do you need? <br/> </p>
 
-        {/* STANDARD WEBSITE */}
-        <div className='w-full flex flex-col items-start justify-start gap-18 md:p-8 p-6 rounded-2xl border-1 border-primary/10 bg-light-gray hover:bg-primary/8 shadow-sm'>
-          <div className='flex flex-col gap-1'>
-            <span className='md:text-xl text-md flex items-center justify-between'> 
-              <h5 className='font-medium'> Standard Website </h5>
-              <small className='text-xs text-primary'> from $800 </small>
-            </span>
-            <small className='text-dark-gray'> Multi-page website (up to 10) that reflects your brand, makes you look big, and boosts credibility. </small>
-          </div>
-          <div className="flex items-center flex-wrap gap-2 marker:text-primary text-gray text-xs">
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> 2-4 weeks </span>
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> 6-10 Pages</span>
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> Blog </span>
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> Business/Company </span>
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> Personal/Portfolio </span>
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> Nonprofit </span>
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> Educational </span>
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> Church </span>
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> Schosol </span>
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> Hospital </span>
-          </div>
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative">
+          {cardData.map((card, i) => (
+            <div
+              key={i}
+              className={`card w-full flex flex-col items-start justify-start gap-18 md:p-8 p-6 rounded-2xl border-1 border-primary/20 bg-white md:bg-light-gray shadow sticky md:relative`}
+              style={{ 
+                backgroundImage: `url(${card.backgroundImage})`, 
+                backgroundSize: 'cover', 
+                backgroundPosition: 'center', 
+                backgroundRepeat: 'no-repeat',
+                // backgroundOpacity: 0.1,
+                // backgroundBlendMode: 'luminosity',
+                // top: `${i * 20}px`
+              }}
+            >
+              <h5 className="md:text-xl text-md font-medium p-0 w-full flex items-center justify-between">
+                {/* <span className="block text-sm text-blue-700">Project #{i + 1}</span> */}
+                {card.title}
+                <small className="text-primary bg-primary/10 text-sm font-semibold rounded-full py-1 px-4"> {card.price} </small>
+              </h5>
+              <p className="text-sm leading-relaxed mt-2">{card.description}</p>
+            </div>
+          ))}
         </div>
-
-        {/* E-COMMERCE */}
-        <div className='w-full flex flex-col items-start justify-start gap-18 md:p-8 p-6 rounded-2xl border-1 border-primary/10 bg-light-gray hover:bg-primary/8 shadow-sm'>
-          <div className='flex flex-col gap-1'>
-            <span className='md:text-xl text-md flex items-center justify-between'> 
-              <h5 className='font-medium'> E-Commerce Website </h5>
-              <small className='text-xs text-primary'> from $1000 - $1300 </small>
-            </span>
-            <small className='text-dark-gray'> Online store that sells your products 24/7, accepts payments, and manages orders. </small>
-          </div>
-          <div className="flex items-center flex-wrap gap-2 marker:text-primary text-gray text-xs">
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> 4-6 weeks </span>
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> 10+ Pages</span>
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> Admin Dashboard </span>
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> Payment Gateways (Paystack, Paypal, Stripe) </span>
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> Products, Orders, and Shipping Management </span>
-          </div>
-        </div>
-
-        {/* UI-UX DEISGN */}
-        <div className='w-full flex flex-col items-start justify-start gap-18 md:p-8 p-6 rounded-2xl border-1 border-primary/10 bg-light-gray hover:bg-primary/8 shadow-sm'>
-          <div className='flex flex-col gap-1'>
-            <span className='md:text-xl text-md flex items-center justify-between'> 
-              <h5 className='font-medium'> UI-UX Design </h5>
-              <small className='text-xs text-primary'> from $350 </small>
-            </span>
-            <small className='text-dark-gray'> Get a professional UI/UX design for your website, that makes your website user-friendly and visually appealing. </small>
-          </div>
-          <div className="flex items-center flex-wrap gap-2 marker:text-primary text-gray text-xs">
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> 2 weeks+ </span>
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> Wireframes </span>
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> Prototyping </span>
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> User Testing </span>
-          </div>
-        </div>
-
-        {/* GRAPHIC DESIGN */}
-        <div className='w-full flex flex-col items-start justify-start gap-18 md:p-8 p-6 rounded-2xl border-1 border-primary/10 bg-light-gray hover:bg-primary/8 shadow-sm'>
-          <div className='flex flex-col gap-1'>
-            <span className='md:text-xl text-md flex items-center justify-between'> 
-              <h5 className='font-medium'> Graphic Design </h5>
-              <small className='text-xs text-primary'> from $12.5/hour </small>
-            </span>
-            <small className='text-dark-gray'> Online store that sells your products 24/7, accepts payments, and manages orders </small>
-          </div>
-          <div className="flex items-center flex-wrap gap-2 marker:text-primary text-gray text-xs">
-            <span className='bg-primary/10 px-4 py-1.5 rounded-full'> 2-7 days </span>
-            <span className='bg-primary/10 px-4 py-1.5 rounded-full'> Branding (Logos, Stickers, Business Cards) </span>
-            <span className='bg-primary/10 px-4 py-1.5 rounded-full'> Social Media Posts (Flyers, Posters, Banner) </span>
-            <span className='bg-primary/10 px-4 py-1.5 rounded-full'> Covers (Books, Albums, Thumbnails) </span>
-          </div>
-        </div>
-
-        {/* TEMPLATES and SOURCE CODES */}
-        <div className='w-full flex flex-col items-start justify-start gap-18 md:p-8 p-6 rounded-2xl border-1 border-primary/10 bg-primary/10'>
-          <div className='flex flex-col gap-1'>
-            <span className='md:text-xl text-md flex items-center justify-between'>
-              <h5 className='font-medium'> Templates & Source Codes </h5>
-              {/* <small className='text-xs text-primary'> from $10 </small> */}
-            </span>
-            {/* GUMROAD */}
-            <small className='text-dark-gray'> Get instant access to my pre-made templates and source codes. </small>
-          </div>
-          <div className="flex items-center flex-wrap gap-2 marker:text-primary text-gray text-xs">
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> free </span>
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> Website Templates </span>
-            {/* <span className='bg-primary/8 px-4 py-1.5 rounded-full'> Mobile Templates </span> */}
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> Source Codes </span>
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> Design Files </span>
-            <span className='bg-primary/8 px-4 py-1.5 rounded-full'> Resources </span>
-            {/* <span className='bg-primary/8 px-4 py-1.5 rounded-full'> Web Apps </span> */}
-            {/* <span className='bg-primary/8 px-4 py-1.5 rounded-full'> Mobile Apps </span> */}
-            {/* <span className='bg-primary/8 px-4 py-1.5 rounded-full'> Desktop Apps </span> */}
-            <a href='https://deraolisah.gumroad.com/' target='_blank' className='bg-primary hover:bg-primary/90 w-full p-2.5 rounded-full text-center text-white mt-4 shadow-xl'> Get Templates </a>
-          </div>
-        </div>
-      </div>      
+      </div>
     </section>
-  )
-}
+  );
+};
 
 export default Services;

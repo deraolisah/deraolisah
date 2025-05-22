@@ -11,11 +11,11 @@ const Home = () => {
       <Hero />
       {/* <hr className='h-1 w-full border-primary/20'/> */}
       <About />
-      <hr className='h-1 w-full border-primary/20'/>
+      {/* <hr className='h-1 w-full border-primary/20'/> */}
       <Services />
-      <hr className='h-1 w-full border-primary/20'/>
+      {/* <hr className='h-1 w-full border-primary/20'/> */}
       <Projects />
-      <hr className='h-1 w-full border-primary/20'/>
+      {/* <hr className='h-1 w-full border-primary/20'/> */}
       {/* <hr className='h-1 w-full border-primary/20'/> */}
       <Connect />
     </div>
