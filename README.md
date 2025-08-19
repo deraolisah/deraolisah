@@ -1,6 +1,6 @@
 # Hi there 👋
 
-**This** ✨ _special_repo_ ✨ provides a closer look into my Portfolio..
+This ✨ **_special repo_** ✨ provides a closer look into my Portfolio..
 
 - 🔭 I’m currently working on ...
 - 🌱 I’m currently learning NextJs
