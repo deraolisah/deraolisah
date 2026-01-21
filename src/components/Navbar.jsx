@@ -1,5 +1,6 @@
+import { Menu } from 'lucide-react';
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -15,15 +16,19 @@ const Navbar = () => {
       <Link to="/" className='font-medium'> Chidera Olisah </Link>
 
 
-      <ul className='flex items-center gap-6 font-medium'>
+      <ul className='hidden md:flex items-center gap-6 font-medium'>
         {navLinks.map((link, index) => (
           <li key={index}>
-            <Link to={link.href} className='hover:text-dark/60'> {link.name} </Link>
+            <NavLink to={link.href} className={({ isActive }) => isActive ? "underline" : ""}>
+              {link.name} 
+            </NavLink>
           </li>
         ))}
       </ul>
 
-      
+      <div className='flex md:hidden cursor-pointer'>
+        <Menu />
+      </div>
     </nav>
   )
 }
