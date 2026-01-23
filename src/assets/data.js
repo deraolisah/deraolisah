@@ -33,7 +33,7 @@ export const projects = [
     name: "Mosalak Hub", 
     year: "2026", 
     category: "Client's", 
-    link: "https://mosalakhub.netlify.app/", 
+    link: "https://mosalak.netlify.app/", 
     imageUrl: "" 
   },
   { 
