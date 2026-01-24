@@ -40,7 +40,7 @@ const Hero = () => {
 
       {/* Filter through Projects */}
       <div className="flex items-center gap-4 mt-6 font-medium text-sm">
-        {["All", "Client's", "Personal", "Experimental"].map((cat, index) => (
+        {["All", "Web", "Graphics", "Experimental"].map((cat, index) => (
           <button key={index} onClick={() => setFilter(cat)} className={`hover:text-dark/80 cursor-pointer ${filter === cat ? "underline font-semibold" : "text-dark/50"}`}> 
             {cat} 
           </button>

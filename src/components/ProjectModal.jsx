@@ -4,27 +4,69 @@ import { Link } from 'react-router-dom';
 const ProjectModal = ({ project, setModalOpened }) => {
   return (
     <div className='fixed inset-0 z-100 bg-light p-4 w-full h-full'>
-      <div className='flex flex-col md:flex-row gap-4 relative h-full overflow-y-auto scrollbar-hidden'>
+      <div className='flex flex-col gap-4 relative h-full overflow-y-auto scrollbar-hidden'>
+        <div className='grid grid-cols-2 md:grid-cols-4 items-start gap-4 md:gap-2'>
+          <div className='w-full'>
+            <h2 className='text-2xl md:text-4xl font-bold leading-tight tracking-tighter line-clamp-1'>
+              {project.name}
+            </h2>
 
-        <div className='sticky md:top-0 w-full md:max-w-1/2 max-h-68 md:min-h-full bg-gray-200 border border-gray-300 flex items-start justify-center'>
-          <img src={project.imageUrl} alt='' className='w-full mx-auto h-fit aspect-video md:aspect-square object-cover' />
+            <Link to={project.link} target="_blank" className='py-2 flex items-center gap-1 w-fit text-dark/80'> 
+              Live Preview 
+              <ArrowUpRight size={16} className='text-dark/60' /> 
+            </Link>
+          </div>
+
+          <div className='col-span-2'>
+            <p className='whitespace-pre-line text-base font-medium'>{project.description}</p>
+          </div>
+
+          <div className='text-dark/80 space-y-2'>
+            <p> Type: {project.category} Project </p>
+            <p> Date: {project.year} </p>
+            Tools:
+            {project.stack.map((item, index) => (
+              <span key={index}> {item} • </span>
+            ))}
+          </div>
         </div>
 
-        <div className='relative h-full space-y-2'>
-          <h2 className='text-3xl md:text-6xl font-bold leading-tight tracking-tighter'>
-            {project.name}
-          </h2>
 
-          <Link to={project.link} target="_blank" className='py-2 flex items-center gap-1 w-fit text-dark/80'> 
-            Live Preview 
-            <ArrowUpRight size={16} className='text-dark/60' /> 
-          </Link>
-
-          <p className='whitespace-pre-line pb-2 text-xl font-medium'>{project.description}</p>
-
-
-          <p className='text-dark/80'> {project.year} • {project.category} Project </p>
+        {/* <div className='w-full md:max-w-1/2 max-h-68 md:min-h-full bg-gray-200 border border-gray-300 flex items-start justify-center'>
+          {project.mediaType === "img" ? (
+            <img src={project.imageUrl} alt='' className='w-full mx-auto h-fit aspect-video md:aspect-square object-cover' />
+          ) : (
+            <video className='w-full mx-auto h-fit aspect-video md:aspect-square object-cover' autoPlay loop muted>
+              <source src={project.imageUrl} type="video/mp4" />
+            </video>
+          )}
+        </div> */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-10">
+          {project.media.map((item, index) => (
+            <div 
+              key={index} 
+              className="w-full bg-gray-200 border border-gray-300 flex items-start justify-center"
+            >
+              {item.type === "img" ? (
+                <img 
+                  src={item.url} 
+                  alt={`media-${index}`} 
+                  className="w-full h-fit aspect-video object-cover" 
+                />
+              ) : (
+                <video 
+                  className="w-full h-fit aspect-video object-cover" 
+                  autoPlay 
+                  loop 
+                  muted
+                >
+                  <source src={item.url} type="video/mp4" />
+                </video>
+              )}
+            </div>
+          ))}
         </div>
+
       </div>
 
       <button type='button' className='absolute top-5 right-5 cursor-pointer p-1 bg-gray-200 border border-gray-300' onClick={() => setModalOpened(false)} >
