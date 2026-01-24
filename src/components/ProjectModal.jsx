@@ -50,7 +50,7 @@ const ProjectModal = ({ project, setModalOpened }) => {
               {item.type === "img" ? (
                 <img 
                   src={item.url} 
-                  alt={`media-${index}`} 
+                  // alt={`media-${index}`} 
                   className="w-full h-fit aspect-video object-cover" 
                 />
               ) : (

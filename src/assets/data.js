@@ -8,6 +8,7 @@ import Amara from "../assets/Amara.png";
 import Chris from "../assets/Chris.png";
 import Marvel from "../assets/Marvel.png";
 import Swizz from "../assets/Swizz.png";
+import { StepBackIcon } from "lucide-react";
 
 
 export const projects = [
@@ -38,7 +39,8 @@ export const projects = [
       { type: "", url: "" },
       { type: "", url: "" },
     ],
-    description: "Urban Scope is a real estate web application that allows users to explore properties in various cities. \n\nBuilt with React for the frontend and Node.js for the backend, it features advanced search filters, interactive maps, and detailed property listings to enhance user experience."
+    description: "Urban Scope is a real estate web application that allows users to explore properties in various cities. \n\nBuilt with React for the frontend and Node.js for the backend, it features advanced search filters, interactive maps, and detailed property listings to enhance user experience.",
+    stack: [],
   },
   { 
     id: 3, 
@@ -48,11 +50,12 @@ export const projects = [
     link: "https://delight-weds-fredrick.netlify.app/",
     media: [
       { type: "img", url: DelightWedsFredrick },
-      { type: "video", url: "" },
-      { type: "video", url: "" },
-      { type: "video", url: "" },
+      { type: "", url: "" },
+      { type: "", url: "" },
+      { type: "", url: "" },
     ],
-    description: "A beautifully designed wedding website for Delight and Fredrick, featuring event details, RSVP functionality, and a gallery to share their special moments with friends and family. \n\nBuilt with HTML, CSS, and JavaScript to ensure a seamless and engaging user experience." 
+    description: "A beautifully designed wedding website for Delight and Fredrick, featuring event details, RSVP functionality, and a gallery to share their special moments with friends and family. \n\nBuilt with HTML, CSS, and JavaScript to ensure a seamless and engaging user experience." ,
+    stack: [],
   },
   // { 
   //   id: 4, 
