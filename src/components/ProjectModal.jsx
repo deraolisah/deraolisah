@@ -6,7 +6,7 @@ const ProjectModal = ({ project, setModalOpened }) => {
     <div className='fixed inset-0 z-100 bg-light p-4 w-full h-full'>
       <div className='flex flex-col md:flex-row gap-4 relative h-full overflow-y-auto scrollbar-hidden'>
 
-        <div className='sticky md:top-2 w-full md:max-w-1/2 max-h-68 md:min-h-full bg-gray-200 border border-gray-300 flex items-start justify-center'>
+        <div className='sticky md:top-0 w-full md:max-w-1/2 max-h-68 md:min-h-full bg-gray-200 border border-gray-300 flex items-start justify-center'>
           <img src={project.imageUrl} alt='' className='w-full mx-auto h-fit aspect-video md:aspect-square object-cover' />
         </div>
 

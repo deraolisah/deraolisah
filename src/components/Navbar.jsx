@@ -5,9 +5,9 @@ import { NavLink, Link } from 'react-router-dom';
 const Navbar = () => {
 
   const navLinks = [
-    {name: 'Projects', href: '/'}, 
-    {name: 'About me', href: '/about'}, 
-    {name: 'Contact', href: '/contact'}
+    // {name: 'Projects', href: '/'}, 
+    {name: 'About me', href: '#about'}, 
+    {name: 'Contact', href: '#contact'}
   ];
 
 
@@ -16,19 +16,19 @@ const Navbar = () => {
       <Link to="/" className='font-medium'> Chidera Olisah </Link>
 
 
-      <ul className='hidden md:flex items-center gap-6 font-medium'>
+      <ul className='flex items-center gap-6 font-medium'>
         {navLinks.map((link, index) => (
           <li key={index}>
-            <NavLink to={link.href} className={({ isActive }) => isActive ? "underline" : ""}>
+            <a href={link.href} className={({ isActive }) => isActive ? "underline" : ""}>
               {link.name} 
-            </NavLink>
+            </a>
           </li>
         ))}
       </ul>
 
-      <div className='flex md:hidden cursor-pointer'>
+      {/* <div className='flex md:hidden cursor-pointer'>
         <Menu />
-      </div>
+      </div> */}
     </nav>
   )
 }

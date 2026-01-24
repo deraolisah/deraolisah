@@ -1,6 +1,10 @@
 import UrbanScope from "../assets/UrbanScope.gif";
 import DelightWedsFredrick from "../assets/DelightWedsFredrick.gif";  
 import Mosalak from "../assets/Mosalak.png";
+import YoleCouriers from "../assets/YoleCouriers.png";
+import Corty from "../assets/Corty.png";
+import Amara from "../assets/Amara.png";
+import Chris from "../assets/Chris.png";
 
 
 export const projects = [
@@ -46,7 +50,8 @@ export const projects = [
     year: "2025", 
     category: "Client's", 
     link: "https://yolecouriers.com/", 
-    imageUrl: "" 
+    imageUrl: YoleCouriers,
+    description: "Yole Couriers is a logistics and delivery service platform that connects customers with reliable courier services. \n\nBuilt with Vue.js and Node.js, it includes real-time tracking, order management, and customer support features to ensure a smooth delivery experience." 
   },
   { 
     id: 6, 
@@ -54,7 +59,8 @@ export const projects = [
     year: "2023", 
     category: "Experimental", 
     link: "https://corty.netlify.app/", 
-    imageUrl: "" 
+    imageUrl: Corty,
+    description: "Corty Maxwell is a personal portfolio website showcasing the work and achievements of Corty Maxwell. \n\nCreated with Gatsby.js and GraphQL, it features a dynamic project gallery, blog section, and contact form to engage visitors and potential clients."
   },
   { 
     id: 7, 
@@ -62,15 +68,17 @@ export const projects = [
     year: "2024", 
     category: "Experimental", 
     link: "https://amararey.netlify.app/", 
-    imageUrl: "" 
+    imageUrl: Amara,
+    description: "Amara Reynolds is an e-commerce platform specializing in handmade crafts and artisanal products. \n\nDeveloped using Shopify and Liquid templating, it offers a user-friendly shopping experience with secure payment options, product reviews, and personalized recommendations." 
   },
   { 
     id: 8, 
     name: "Chris Dubem Photography", 
     year: "2026", 
     category: "Client's", 
-    link: "", 
-    imageUrl: "" 
+    link: "https://chrisdubemphotography.com/", 
+    imageUrl: Chris,
+    description: "Chris Dubem Photography is a stunning portfolio website that showcases the captivating work of photographer Chris Dubem. \n\nBuilt with WordPress and Elementor, the site features high-resolution image galleries, client testimonials, and a booking system to connect with potential clients."
   },
   { 
     id: 9, 
@@ -81,4 +89,6 @@ export const projects = [
     imageUrl: "" 
   },
   { id: 10, name: "Pixel Perfect", year: "2025", category: "Experimental", imageUrl: "" },
+  { id: 11, name: "CodeCraft", year: "2023", category: "Experimental", imageUrl: "" },
+  { id: 12, name: "DesignHub", year: "2024", category: "Experimental", imageUrl: "" },
 ];
