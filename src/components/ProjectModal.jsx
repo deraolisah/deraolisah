@@ -1,4 +1,4 @@
-import { ArrowUp, ArrowUpRight, X } from 'lucide-react';
+import { ArrowUpRight, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const ProjectModal = ({ project, setModalOpened }) => {
@@ -6,8 +6,8 @@ const ProjectModal = ({ project, setModalOpened }) => {
     <div className='fixed inset-0 z-100 bg-light p-4 w-full h-full'>
       <div className='flex flex-col md:flex-row gap-4 relative h-full overflow-y-auto scrollbar-hidden'>
 
-        <div className='sticky md:top-2 w-full md:max-w-1/2'>
-          <img src={project.imageUrl} alt='' className='min-w-full max-h-68 md:min-h-full object-cover bg-gray-200 border border-gray-300' />
+        <div className='sticky md:top-2 w-full md:max-w-1/2 max-h-68 md:min-h-full bg-gray-200 border border-gray-300 flex items-start justify-center'>
+          <img src={project.imageUrl} alt='' className='w-full mx-auto h-fit aspect-video md:aspect-square object-cover' />
         </div>
 
         <div className='relative h-full space-y-2'>

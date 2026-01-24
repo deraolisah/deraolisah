@@ -1,4 +1,6 @@
-import UrbanScope from "../assets/urbanscope.gif";
+import UrbanScope from "../assets/UrbanScope.gif";
+import DelightWedsFredrick from "../assets/DelightWedsFredrick.gif";  
+import Mosalak from "../assets/Mosalak.png";
 
 
 export const projects = [
@@ -26,7 +28,8 @@ export const projects = [
     year: "2024", 
     category: "Client's", 
     link: "https://delight-weds-fredrick.netlify.app/", 
-    imageUrl: "" 
+    imageUrl: DelightWedsFredrick,
+    description: "A beautifully designed wedding website for Delight and Fredrick, featuring event details, RSVP functionality, and a gallery to share their special moments with friends and family. \n\nBuilt with HTML, CSS, and JavaScript to ensure a seamless and engaging user experience." 
   },
   { 
     id: 4, 
@@ -34,7 +37,8 @@ export const projects = [
     year: "2026", 
     category: "Client's", 
     link: "https://mosalak.netlify.app/", 
-    imageUrl: "" 
+    imageUrl: Mosalak,
+    description: "Mosalak Hub is a comprehensive platform for managing and sharing digital resources. \n\nDeveloped using React.js and TailwindCSS, it offers features such as user authentication, file uploads, and collaborative workspaces to facilitate efficient resource management."
   },
   { 
     id: 5, 
@@ -65,8 +69,8 @@ export const projects = [
     name: "Chris Dubem Photography", 
     year: "2026", 
     category: "Client's", 
-    link: "", imageUrl: 
-    "" 
+    link: "", 
+    imageUrl: "" 
   },
   { 
     id: 9, 
