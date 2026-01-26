@@ -48,7 +48,7 @@ const Hero = () => {
       </div>
 
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-2 gap-y-3 mt-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-2 gap-y-3 mt-3">
         {filteredprojects.map((project) => (
           <ProjectCard project={project} openModal={openModal} />
         ))}

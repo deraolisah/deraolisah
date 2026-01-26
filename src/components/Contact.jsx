@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => {
   return (
     <section className='container py-10 md:py-18 flex flex-col' id="contact">
-      <h1 className="font-semibold text-3xl md:text-[68px] leading-tight tracking-tight">
+      <h1 className="font-semibold text-3xl md:text-[60px] leading-tight tracking-tight">
         Let’s work on
         <br/>
         your project together.
@@ -20,9 +20,7 @@ const Contact = () => {
             Good old email is a safer bet, so just use the form. 
 
             <br/><br/>
-            Or use
-            &nbsp;<a href="https://wa.me/2347088530385/" target='_blank' className='font-bold underline hover:text-primary'>WhatsApp</a>,
-            &nbsp;to reach me!
+            Or use &nbsp;<a href="https://wa.me/2347088530385/" target='_blank' className='font-bold underline hover:text-primary'>WhatsApp</a>, to reach me!
           </div>
         </div>
 
@@ -31,17 +29,17 @@ const Contact = () => {
             <input 
               type='text' 
               placeholder='Name' 
-              className='bg-gray-300 p-4 border border-gray-300 hover:border-gray-800 focus:outline-none' 
+              className='bg-gray-300 p-4 border border-gray-300 hover:border-gray-400 focus:border focus:border-dark focus:outline-0' 
             />
             <input 
               type='email' 
               placeholder='Email' 
-              className='bg-gray-300 p-4 border border-gray-300 hover:border-gray-800 focus:outline-none' 
+              className='bg-gray-300 p-4 border border-gray-300 hover:border-gray-400 focus:border focus:border-dark focus:outline-0' 
             />
             <textarea 
-              placeholder='Drop Some Lines Here' 
-              rows={6} 
-              className='bg-gray-300 p-4 border border-gray-300 hover:border-gray-800 focus:outline-none'>
+              placeholder='Drop Some Lines Here..' 
+              rows={5} 
+              className='bg-gray-300 p-4 border border-gray-300 hover:border-gray-400 focus:border focus:border-dark focus:outline-0'>
 
             </textarea>
             <button 
