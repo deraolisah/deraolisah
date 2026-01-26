@@ -6,7 +6,7 @@ const ProjectModal = ({ modalOpened, project, setModalOpened }) => {
     <div className={`fixed inset-0 z-100 bg-light p-4 w-full h-full transition-all duration-700 ${modalOpened ? "opacity-100 pointer-events-auto translate-y-0" : "opacity-0 pointer-events-none translate-y-8"}`}>
       <div className='flex flex-col gap-4 relative h-full overflow-y-auto scrollbar-hidden'>
         <div className='grid grid-cols-2 md:grid-cols-4 items-start gap-4 md:gap-2'>
-          <div className='w-full'>
+          <div className='w-full col-span-2 md:col-span-1'>
             <h2 className='text-2xl md:text-4xl font-black leading-tight tracking-tighter line-clamp-2 uppercase'>
               {project.name}
             </h2>
@@ -21,14 +21,14 @@ const ProjectModal = ({ modalOpened, project, setModalOpened }) => {
             <p className='whitespace-pre-line text-base font-medium'>{project.description}</p>
           </div>
 
-          <div className='text-dark/80 space-y-2 text-sm'>
+          <div className='w-full col-span-2 md:col-span-1 text-dark/80 space-y-2 text-sm'>
             {project?.role && (
               <p className='flex items-center gap-1'>
                 <b> ROLE: </b>
                 <span> {project.role} </span>
               </p>
             )}
-            <p className='flex items-center gap-1'> 
+            <p className='w-full flex items-center gap-1'> 
               <b> TYPE: </b>
               <span> {project.category} Project </span>
             </p>

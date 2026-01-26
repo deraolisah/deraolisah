@@ -4,9 +4,9 @@ const Contact = () => {
   return (
     <section className='container py-10 md:py-18 flex flex-col' id="contact">
       <h1 className="font-semibold text-3xl md:text-[68px] leading-tight tracking-tight">
-        Let’s work on your
+        Let’s work on
         <br/>
-        project together.
+        your project together.
       </h1>
 
 
@@ -26,10 +26,30 @@ const Contact = () => {
           </div>
         </div>
 
-        <form className=' bg-gray-200 w-full h-full'>
-          <div className=''>
-            <input type='text'  />
+        <form className='w-full h-full' action="">
+          <div className='flex flex-col gap-2'>
+            <input 
+              type='text' 
+              placeholder='Name' 
+              className='bg-gray-300 p-4 border border-gray-300 hover:border-gray-800 focus:outline-none' 
+            />
+            <input 
+              type='email' 
+              placeholder='Email' 
+              className='bg-gray-300 p-4 border border-gray-300 hover:border-gray-800 focus:outline-none' 
+            />
+            <textarea 
+              placeholder='Drop Some Lines Here' 
+              rows={6} 
+              className='bg-gray-300 p-4 border border-gray-300 hover:border-gray-800 focus:outline-none'>
 
+            </textarea>
+            <button 
+              type='submit'
+              className='bg-dark text-light p-4 text-center cursor-pointer'
+            > 
+              Send Message 
+              </button>
           </div>
 
         </form>

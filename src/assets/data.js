@@ -32,7 +32,7 @@ export const projects = [
       { type: "", url: "" },
       { type: "", url: "" },
     ],
-    description: "A modern, responsive website for Meco Club, a UK-based Record Label managing mutiple Artists. \n\nThe site features an event calendar, menu showcase, and reservation system to enhance user engagement and streamline bookings. \n\nA sleek, user-friendly experience.",
+    description: "Website for Meco Club, a UK-based Record Label managing mutiple Artists. \n\nThe site features artist showcase, music release, event calendar, and reservation system to enhance user engagement and streamline bookings. \n\nA sleek, user-friendly experience.",
     stack: [ "React.js", "TailwindCSS", "GSAP" ],
   },
   { 
