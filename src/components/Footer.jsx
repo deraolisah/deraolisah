@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Linkedin, Github, Twitter, Instagram } from 'lucide-react';
 import { Volume2, MoveUpRight } from 'lucide-react';
 
 const Footer = () => {
@@ -22,8 +23,19 @@ const Footer = () => {
   // }, []);
 
   return (
-    <footer className='container py-25 flex items-center justify-between gap-4'>
+    <footer className='container py-25 flex flex-col items-center justify-between gap-8'>
       {/* <p className='text-sm bg-gray-200 border border-dark/20 p-1.5'>{currentTime} (GMT+1) </p> */}
+
+      <div className='text-center space-y-4'> 
+        <p> Connect With Me </p>
+
+        <div className='flex items-center gap-6'>
+          <a href="https://linkedin.com/in/chidera-olisah/" target='_blank' className='font-bold underline hover:text-primary'><Linkedin /></a>
+          <a href="https://github.com/deraolisah/" target='_blank' className='font-bold underline hover:text-primary'><Github /></a>
+          <a href="https://twitter.com/deraolisah/" target='_blank' className='font-bold underline hover:text-primary'><Twitter /></a>
+          <a href="https://instagram.com/deraolisah/" target='_blank' className='font-bold underline hover:text-primary'><Instagram /></a>
+        </div>
+      </div>
 
       <a target='_blank' href='https://open.spotify.com/track/57NBD4H4CIFw5sdOuci0UB?si=65b663237a494fa3' className='w-50 mx-auto bg-gray-200 border border-dark/20 flex items-center justify-center gap-2 px-2 py-1.5 overflow-hidden whitespace-nowrap text-sm hover:bg-gray-200 cursor-pointer relative' title='Spotify'>
       

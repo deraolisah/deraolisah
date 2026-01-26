@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const ProjectModal = ({ modalOpened, project, setModalOpened }) => {
   return (
-    <div className={`fixed inset-0 z-100 bg-light p-4 w-full h-full transition-all duration-500 ${modalOpened ? "opacity-100 pointer-events-auto translate-y-0" : "opacity-0 pointer-events-none translate-y-4"}`}>
+    <div className={`fixed inset-0 z-100 bg-light p-4 w-full h-full transition-all duration-500 ${modalOpened ? "opacity-100 pointer-events-auto translate-y-0" : "opacity-0 pointer-events-none translate-y-8"}`}>
       <div className='flex flex-col gap-4 relative h-full overflow-y-auto scrollbar-hidden'>
         <div className='grid grid-cols-2 md:grid-cols-4 items-start gap-4 md:gap-2'>
           <div className='w-full'>

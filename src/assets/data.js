@@ -2,10 +2,14 @@ import MecoClub from "../assets/mecoclub.gif";
 import UrbanScope01 from "../assets/UrbanScope01.gif";
 import UrbanScope02 from "../assets/UrbanScope02.png";
 import UrbanScope03 from "../assets/UrbanScope03.gif";
+import UrbanScope04 from "../assets/UrbanScope04.png";
+import UrbanScope05 from "../assets/UrbanScope05.png";
+import UrbanScope06 from "../assets/UrbanScope06.png";
 import DelightWedsFredrick from "../assets/DelightWedsFredrick.png";  
 import Mosalak from "../assets/Mosalak.png";
 import YoleCouriers from "../assets/YoleCouriers.png";
 import Corty from "../assets/Corty.png";
+import ShopLindura from "../assets/ShopLindura.png";
 import Amara from "../assets/Amara.png";
 import Chris from "../assets/Chris.png";
 import Marvel from "../assets/Marvel.png";
@@ -41,6 +45,11 @@ export const projects = [
       { type: "img", url: UrbanScope01 },
       { type: "img", url: UrbanScope02 },
       { type: "img", url: UrbanScope03 },
+      { type: "img", url: UrbanScope04 },
+      { type: "img", url: UrbanScope05 },
+      { type: "img", url: UrbanScope06 },
+      { type: "", url: "" },
+      { type: "", url: "" },
       { type: "", url: "" },
       { type: "", url: "" },
     ],
@@ -84,8 +93,8 @@ export const projects = [
     category: "Web", 
     link: "https://yolecouriers.com/", 
     media: [
+      { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/1673650470434-AYMGEP56EMD84QB9W13O/17.gif?format=500w" },
       { type: "img", url: YoleCouriers },
-      { type: "", url: "" },
       { type: "", url: "" },
       { type: "", url: "" },
     ],
@@ -99,6 +108,9 @@ export const projects = [
     category: "Experimental", 
     link: "https://corty.netlify.app/", 
     media: [
+      { type: "img", url: "https://corty.netlify.app/assets/img4-DNrH5ty2.jpg" },
+      { type: "img", url: "https://corty.netlify.app/assets/img5-DjxIQwKB.jpg" },
+      { type: "img", url: "https://corty.netlify.app/assets/img6-BdKV2kyt.jpg" },
       { type: "img", url: Corty },
       { type: "", url: "" },
       { type: "", url: "" },
@@ -122,7 +134,7 @@ export const projects = [
       { type: "", url: "" },
     ],
     description: "Amara Reynolds is an e-commerce platform specializing in handmade crafts and artisanal products. \n\nDeveloped using Shopify and Liquid templating, it offers a user-friendly shopping experience with secure payment options, product reviews, and personalized recommendations.",
-    
+
     stack: [],
   },
   { 
@@ -147,7 +159,7 @@ export const projects = [
     year: "2024", 
     category: "Web", 
     media: [
-      { type: "", url: "" },
+      { type: "img", url: ShopLindura },
       { type: "", url: "" },
       { type: "", url: "" },
       { type: "", url: "" },

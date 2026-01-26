@@ -7,7 +7,10 @@ const About = () => {
       <div className="grid grid-cols-3 md:grid-cols-4 gap-4 md:gap-2">
         
         <div className="col-span-1 relative">
-          <img src={profile} className="object-cover w-full bg-gray-200 border border-gray-300 sticky top-4" />
+          <img src={profile} className="object-cover w-full bg-gray-200 border-2 border-white sticky top-4 saturate-0 hover:saturate-100" style={{
+            // border: "0.5px solid rgba(255,255,255,0.8)",
+            boxShadow: "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset",
+          }} />
         </div>
 
         {/* Content */}

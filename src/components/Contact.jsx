@@ -13,7 +13,7 @@ const Contact = () => {
       <div className='grid grid-cols-1 md:grid-cols-2 gap-2 mt-8'>
         <div className='flex flex-col items-start'>
           <p>
-            Like most Gen Z Techies in the wild, I can be easily spooked with phone calls, as they are strongly associated with one of our primal predators, the Telemarketerus obnoscius.
+            Like most Gen Z Techies in the wild, I can be easily spooked with phone calls, as they are strongly associated with one of our primal predators, the Telemarketerus Obnoscius.
           </p>
           
           <div className='mt-8 whitespace-normal'>
@@ -21,9 +21,7 @@ const Contact = () => {
 
             <br/><br/>
             Or use
-            &nbsp;<a href="https://instagram.com/deraolisah/" target='_blank' className='font-bold underline'>Insta</a>,
-            &nbsp;<a href="https://wa.me/2347088530385/" target='_blank' className='font-bold underline'>WhatsApp</a>, or
-            &nbsp;<a href="https:/x.com/deraolisah/" target='_blank' className='font-bold underline'>X</a>
+            &nbsp;<a href="https://wa.me/2347088530385/" target='_blank' className='font-bold underline hover:text-primary'>WhatsApp</a>,
             &nbsp;to reach me!
           </div>
         </div>
