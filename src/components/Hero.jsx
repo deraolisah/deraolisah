@@ -33,7 +33,7 @@ const Hero = () => {
   return (
     <section className='container pt-18 pb-8 md:py-8 flex flex-col' id='home'>
       <h1 className="font-medium text-xl md:text-[34px] leading-tight tracking-tight">
-        Hello! I'm Nathan
+        Hello! I'm Nathan.
         <br/>
         Independent Designer & Developer.
       </h1>
