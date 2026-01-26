@@ -41,7 +41,7 @@ const Hero = () => {
       {/* Filter through Projects */}
       <div className="flex items-center gap-4 mt-6 font-medium text-sm">
         {["All", "Web", "Graphics", "Experimental"].map((cat, index) => (
-          <button key={index} onClick={() => setFilter(cat)} className={`hover:text-dark/80 cursor-pointer ${filter === cat ? "underline font-semibold" : "text-dark/50"}`}> 
+          <button key={index} onClick={() => setFilter(cat)} className={`hover:text-primary cursor-pointer ${filter === cat ? "underline font-semibold" : "text-dark/50"}`}> 
             {cat} 
           </button>
         ))}
@@ -53,7 +53,9 @@ const Hero = () => {
           <ProjectCard project={project} openModal={openModal} />
         ))}
 
-        {modalOpened && selectedProject && <ProjectModal project={selectedProject} setModalOpened={setModalOpened} /> }
+        {selectedProject && (
+          <ProjectModal modalOpened={modalOpened} project={selectedProject} setModalOpened={setModalOpened} /> 
+        )}
       </div>
     </section>
   )
