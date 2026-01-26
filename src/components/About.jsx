@@ -7,7 +7,7 @@ const About = () => {
       <div className="grid grid-cols-3 md:grid-cols-4 gap-4 md:gap-2">
         
         <div className="col-span-1 relative">
-          <img src={profile} className="object-cover w-full bg-gray-200 border-2 border-white sticky top-4 saturate-0 hover:saturate-100" style={{
+          <img src={profile} className="object-cover w-full bg-gray-200 md:border-2 border-white sticky top-4 saturate-0 hover:saturate-100" style={{
             // border: "0.5px solid rgba(255,255,255,0.8)",
             boxShadow: "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset",
           }} />
@@ -37,7 +37,7 @@ const About = () => {
 
 
             {/* Expertise */}
-            <div className='w-full flex flex-col'>
+            <div className='w-full flex flex-col items-start'>
               <h2 className="text-lg md:text-xl mb-4 md:mb-6 font-bold"> Expertise</h2>
 
               <p className="mb-4">
@@ -62,17 +62,71 @@ const About = () => {
           </div>
 
 
-          <div className='w-full mt-8'>
+          <div className='w-full hidden md:flex flex-col items-start mt-8'>
             <h2 className="text-lg md:text-xl mb-4 md:mb-6 font-bold"> Experience </h2>
-Jack of all trades, Master of Design... literally
+            {/* Jack of all trades, Master of Design... literally */}
 
-Erfahrung
-Alleskönner, Meister des Designs... im wahrsten Sinne des Wortes
+            <div className='flex items-start gap-2 my-2'>
+              <div className='w-30'>
+                2025 - Now
+              </div>
 
-Expérience
-Homme à tout faire, Maître du Design... littéralement
+              <div className='flex-1 space-y-4'>
+                <div className='flex flex-col gap-1'>
+                  <p>
+                    <strong> Superfluous </strong> • 
+                    <span className='text-dark/80'> Creative Director </span>
+                  </p>                  
+                  <p> Partnering with next-gen challenger brands to help them go above and beyond the status quo </p>
+                </div>
+                <div className='flex flex-col gap-1'>
+                  <p>
+                    <strong> Fraymer.com </strong> • 
+                    <span className='text-dark/80'> Founder & Head of Product </span>
+                  </p>                  
+                  <p> A tool to create animated content effortlessly. Dobson Entrepreneurial Excellence Prize </p>
+                </div>
+              </div>
+            </div>
 
-Education
+            <div className='flex items-start gap-2 my-2'>
+              <div className='w-30'>
+                2023 – 2024
+              </div>
+
+              <div className='flex-1 space-y-4'>
+                <div className='flex flex-col gap-1'>
+                  <p>
+                    <strong> EQB Inc. </strong> • 
+                    <span className='text-dark/80'> Principal Visual Designer </span>
+                  </p>
+                  <p> Contracted to help lead EQ Banks’ product design language & brand expression into a modern era </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div className='flex items-start gap-2 my-2'>
+              <div className='w-30'>
+                2018 – 2022
+              </div>
+
+              <div className='flex-1 space-y-4'>
+                <div className='flex flex-col gap-1'>
+                  <p>
+                    <strong> Paystack [Acquired by Stripe] </strong> • 
+                    <span className='text-dark/80'> Design Engineer </span>
+                  </p>                  
+                  <p> 4 years designing apps, tools & experiences used by millions of Africans. Acquired for over $200M </p>
+                </div>
+              </div>
+            </div>
+
+
+            
+
+
+{/* Education
 2021 – 2023
 
 OCAD University
@@ -85,68 +139,11 @@ Student Union Rep. Designed a multisensory Experience for the AGO (Art Gallery o
 Babcock University
 BSc, Computer Science
 
-Member of the Babcock University Computer Club & team that won the 2016 exhibition
+Member of the Babcock University Computer Club & team that won the 2016 exhibition */}
 
-Work
-2025 – Now
+<br/>
+<br/>
 
-Superfluous
-Creative Director
-
-Partnering with next-gen challenger brands to help them go above and beyond the status quo
-
-Fraymer.com
-Founder & Head of Product
-
-A tool to create animated content effortlessly. Dobson Entrepreneurial Excellence Prize
-
-2023 – 2024
-
-EQB Inc.
-Principal Visual Designer
-
-Contracted to help lead EQ Banks’ product design language & brand expression into a modern era
-
-2018 – 2022
-
-Paystack [Acquired by Stripe]
-Design Engineer
-
-4 years designing apps, tools & experiences used by millions of Africans. Acquired for over $200M
-
-Other
-2023 – Now
-
-Fineline Co-op
-Founding Director
-
-Community & co-operative where creatives can sell their work while developing entrepreneurial skills
-
-Artscape Daniels Launchpad
-Artist-in-residence (3 months)
-
-Working alongside collaborators across the fields of Digital Fabrication, Electronics & Photography.
-
-2022 – Now
-
-Sporting Lagos
-Founding Member
-
-Football club that has risen from the Nigerian National League to the 1st division
-
-2021 – Now
-
-Awwwards
-Jury Member
-
-Judging & critiquing work from the the best web designers, developers & agencies in the world
-
-2020
-
-Red Bull Basement
-Judge & Expert Panelist
-
-Selected top idea to represent Nigeria globally & spoke on panel about accessibility in 
           </div>
         </div>
       </div>
