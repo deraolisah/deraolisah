@@ -10,7 +10,6 @@ const Hero = () => {
   const [filter, setFilter] = useState("All");
   const filteredprojects = filter === "All" ? projects : projects.filter(project => project.category === filter);
 
-
   // Open Modal
   const [modalOpened, setModalOpened] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
@@ -55,7 +54,7 @@ const Hero = () => {
 
         {selectedProject && (
           <ProjectModal modalOpened={modalOpened} project={selectedProject} setModalOpened={setModalOpened} /> 
-        )}
+        )} 
       </div>
     </section>
   )
