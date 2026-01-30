@@ -3,15 +3,16 @@ import React from 'react'
 const Contact = () => {
   return (
     <section className='container py-10 md:py-18 flex flex-col' id="contact">
-      <h1 className="font-semibold text-3xl md:text-[60px] leading-tight tracking-tight">
-        Let’s work on
-        <br/>
-        your project together.
-      </h1>
+      
 
 
       <div className='grid grid-cols-1 md:grid-cols-2 gap-2 mt-8'>
         <div className='flex flex-col items-start'>
+          <h1 className="font-semibold text-3xl md:text-[54px] lg:text-[60px] leading-tight tracking-tight mb-4 md:mb-6">
+            Let’s work on
+            <br/>
+            your project together.
+          </h1>
           <p>
             Like most Gen Z Techies in the wild, I can be easily spooked with phone calls, as they are strongly associated with one of our primal predators, the Telemarketerus Obnoscius.
           </p>

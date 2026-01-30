@@ -14,7 +14,6 @@ import Amara from "../assets/Amara.png";
 import Chris from "../assets/Chris.png";
 import Marvel from "../assets/Marvel.png";
 import Swizz from "../assets/Swizz.png";
-import { StepBackIcon } from "lucide-react";
 
 
 export const projects = [
@@ -197,7 +196,7 @@ export const projects = [
     description: "Swizz is an innovative social networking platform that connects users based on shared interests and activities. \n\nBuilt with Angular and Firebase, it offers features such as real-time messaging, event creation, and community groups to foster meaningful connections.",
     stack: [], 
   },
-  { id: 12, name: "DesignHub", year: "2024", category: "Experimental", media: [{ type: "", url: "" }] },
+  { id: 12, name: "DesignHub", year: "2024", category: "Experimental", media: [{ type: "video", url: "" }] },
   { id: 13, name: "TechNova", year: "2025", category: "Graphics", media: [{ type: "", url: "" }] },
   { id: 14, name: "PixelPerfect", year: "2023", category: "Graphics", media: [{ type: "", url: "" }] },
   { 
