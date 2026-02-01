@@ -5,8 +5,6 @@ const Contact = () => {
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
 
-
-
   // Submit Handler
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -48,9 +46,6 @@ const Contact = () => {
 
   return (
     <section className='container py-10 md:py-18 flex flex-col' id="contact">
-      
-
-
       <div className='grid grid-cols-1 md:grid-cols-2 gap-2 mt-8'>
         <div className='flex flex-col items-start'>
           <h1 className="font-semibold text-3xl md:text-[54px] lg:text-[60px] leading-tight tracking-tight mb-4 md:mb-6">
@@ -111,6 +106,7 @@ const Contact = () => {
             </button>
           </div>
         </form>
+      </div>
 
 
         {submitted && (
@@ -125,8 +121,6 @@ const Contact = () => {
           </p>
         )}
 
-
-      </div>
     </section>
   )
 }
