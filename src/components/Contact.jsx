@@ -1,6 +1,51 @@
-import React from 'react'
+import React, { useState } from "react";
 
 const Contact = () => {
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+
+
+  // Submit Handler
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError(false);
+    setLoading(true);
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    try {
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      });
+
+      setSubmitted(true);
+      setLoading(false);
+      form.reset();
+    } catch (err) {
+      setError(true);
+      setLoading(false);
+    }
+  };
+
+
+  // Auto-hide success message after 5s
+  useEffect(() => {
+    if (submitted) {
+      setTimeout(() => setSubmitted(false), 5000);
+    }
+  }, [submitted]);
+
+
+
+  
+
+
+
   return (
     <section className='container py-10 md:py-18 flex flex-col' id="contact">
       
@@ -30,13 +75,10 @@ const Contact = () => {
           method="POST"
           data-netlify="true"
           netlify-honeypot="bot-field"
+          onSubmit={handleSubmit}
           className="w-full h-full"
-          action="/success"
         >
-          {/* Required hidden input */}
           <input type="hidden" name="form-name" value="contact" />
-
-          {/* Honeypot field (spam protection) */}
           <input type="hidden" name="bot-field" />
 
           <div className='flex flex-col gap-2'>
@@ -64,14 +106,26 @@ const Contact = () => {
               className='bg-gray-300 p-4 border border-gray-300 hover:border-gray-400 focus:border-dark focus:outline-0'
             />
 
-            <button
-              type='submit'
-              className='bg-dark text-light p-4 text-center cursor-pointer'
-            >
-              Send Message
+            <button disabled={loading} type='submit' className='bg-dark text-light p-4 text-center cursor-pointer'>
+              {loading ? "Sending..." : "Send Message"}
             </button>
           </div>
         </form>
+
+
+        {submitted && (
+          <p className="mt-4 text-green-600 font-medium">
+            ✅ Message sent successfully! I’ll get back to you shortly.
+          </p>
+        )}
+
+        {error && (
+          <p className="mt-4 text-red-600 font-medium">
+            ❌ Something went wrong. Please try again.
+          </p>
+        )}
+
+
       </div>
     </section>
   )
