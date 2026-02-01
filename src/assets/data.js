@@ -31,7 +31,7 @@ export const projects = [
       { type: "", url: "" },
       { type: "", url: "" },
     ],
-    description: "Website for Meco Club, a UK-based Record Label managing mutiple Artists. \n\nThe site features artist showcase, music release, event calendar, and reservation system to enhance user engagement and streamline bookings. \n\nA sleek, user-friendly experience.",
+    description: "Dynamic web platform for Meco Club, a UK-based Record Label managing multiple signed Artists.  \n\nThe site features artist profiles, music release showcases, event promotion modules, and a store for purchasing branded merch.",
     stack: [ "React.js", "TailwindCSS", "GSAP" ],
   },
   { 
@@ -52,8 +52,8 @@ export const projects = [
       { type: "", url: "" },
       { type: "", url: "" },
     ],
-    description: "Urban Scope is a real estate web application that allows users to explore properties in various cities. \n\nBuilt with React for the frontend and Node.js for the backend, it features advanced search filters, interactive maps, and detailed property listings to enhance user experience.",
-    stack: [],
+    description: "Urban Scope is a modern real estate web application that allows users to explore properties in various cities. \n\nIt features advanced search and filters, detailed property listings with video tours, inspection booking system, user accounts + admin dashoboard, and real-time availability updates.",
+    stack: [ "React.js", "TailwindCSS", "GSAP", "Nodejs", "MongoDB"],
   },
   { 
     id: 3, 

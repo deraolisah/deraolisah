@@ -70,7 +70,7 @@ const ProjectCard = ({ project, openModal }) => {
         </div>
       )}
 
-      <p className="text-xs sm:text-sm font-medium w-full overflow-x-auto scrollbar-hidden">
+      <p className="text-sm font-medium w-full overflow-x-auto scrollbar-hidden">
         {project.name} • {project.year}
       </p>
     </div>
