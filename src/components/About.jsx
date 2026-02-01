@@ -67,57 +67,49 @@ const About = () => {
             {/* Jack of all trades, Master of Design... literally */}
 
             <div className='flex items-start gap-2 my-2'>
-              <div className='w-30'>
-                2025 - Now
+              <div className='w-40'>
+                Mar 2024 - 2025
               </div>
 
               <div className='flex-1 space-y-4'>
                 <div className='flex flex-col gap-1'>
                   <p>
-                    <strong> Superfluous </strong> • 
-                    <span className='text-dark/80'> Creative Director </span>
+                    <strong> NIIT ForteSoft </strong> • 
+                    <span className='text-dark/80'> Cyber‑Security Graduate Trainee </span>
                   </p>                  
-                  <p> Partnering with next-gen challenger brands to help them go above and beyond the status quo </p>
-                </div>
-                <div className='flex flex-col gap-1'>
-                  <p>
-                    <strong> Fraymer.com </strong> • 
-                    <span className='text-dark/80'> Founder & Head of Product </span>
-                  </p>                  
-                  <p> A tool to create animated content effortlessly. Dobson Entrepreneurial Excellence Prize </p>
+                  <p> Hands‑on experience with cybersecurity tools and threat‑response techniques. </p>
                 </div>
               </div>
             </div>
 
             <div className='flex items-start gap-2 my-2'>
-              <div className='w-30'>
-                2023 – 2024
+              <div className='w-40'>
+                 Nov 2023 – 2024
               </div>
 
               <div className='flex-1 space-y-4'>
                 <div className='flex flex-col gap-1'>
                   <p>
-                    <strong> EQB Inc. </strong> • 
-                    <span className='text-dark/80'> Principal Visual Designer </span>
+                    <strong> NIIT ForteSoft </strong> • 
+                    <span className='text-dark/80'> Network Analyst (Cisco Certified) </span>
                   </p>
-                  <p> Contracted to help lead EQ Banks’ product design language & brand expression into a modern era </p>
+                  <p> Setup, upgrade, and maintenance of network infrastructures. </p>
                 </div>
               </div>
             </div>
 
-
             <div className='flex items-start gap-2 my-2'>
-              <div className='w-30'>
-                2018 – 2022
+              <div className='w-40'>
+                Sep 2020 – Present
               </div>
 
               <div className='flex-1 space-y-4'>
                 <div className='flex flex-col gap-1'>
                   <p>
-                    <strong> Paystack [Acquired by Stripe] </strong> • 
-                    <span className='text-dark/80'> Design Engineer </span>
-                  </p>                  
-                  <p> 4 years designing apps, tools & experiences used by millions of Africans. Acquired for over $200M </p>
+                    <strong> Freelance - Remote </strong> • 
+                    <span className='text-dark/80'> Web Applications Developer </span>
+                  </p>
+                  <p> Building full‑stack applications using NodeJS, React, TailwindCSS, and MongoDB </p>
                 </div>
               </div>
             </div>

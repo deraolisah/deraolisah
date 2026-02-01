@@ -1,5 +1,6 @@
 import { ArrowUpRight, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import loadingImg from "../assets/loading.gif";
 
 const ProjectModal = ({ modalOpened, project, setModalOpened }) => {
   return (
@@ -55,6 +56,7 @@ const ProjectModal = ({ modalOpened, project, setModalOpened }) => {
             </video>
           )}
         </div> */}
+
         <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-10">
           {project.media.map((item, index) => (
             <div 
@@ -62,18 +64,10 @@ const ProjectModal = ({ modalOpened, project, setModalOpened }) => {
               className="w-full bg-gray-200 border border-gray-300 flex items-start justify-center"
             >
               {item.type === "img" ? (
-                <img 
-                  src={item.url} 
-                  // alt={`media-${index}`} 
-                  className="w-full h-fit aspect-video object-cover" 
-                />
+                <img src={item?.url || loadingImg} className="w-full h-fit aspect-video object-cover" />
+                // alt={`media-${index}`}
               ) : (
-                <video 
-                  className="w-full h-fit aspect-video object-cover" 
-                  autoPlay 
-                  loop 
-                  muted
-                >
+                <video className="w-full h-fit aspect-video object-cover" autoPlay loop muted>
                   <source src={item.url} type="video/mp4" />
                 </video>
               )}

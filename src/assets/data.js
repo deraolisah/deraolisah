@@ -68,7 +68,7 @@ export const projects = [
       { type: "", url: "" },
     ],
     description: "A beautifully designed wedding website for Delight and Fredrick, featuring event details, RSVP functionality, and a gallery to share their special moments with friends and family. \n\nBuilt with HTML, CSS, and JavaScript to ensure a seamless and engaging user experience." ,
-    stack: [],
+    stack: [ "HTML", "CSS", "JavaScript", "WhatsApp API" ],
   },
   { 
     id: 4, 
@@ -83,7 +83,7 @@ export const projects = [
       { type: "", url: "" },
     ],
     description: "Mosalak Hub is a comprehensive platform for managing and sharing digital resources. \n\nDeveloped using React.js and TailwindCSS, it offers features such as user authentication, file uploads, and collaborative workspaces to facilitate efficient resource management.",
-    stack: [],
+    stack: [ "Figma", "React.js", "TailwindCSS" ],
   },
   { 
     id: 5, 
@@ -98,7 +98,7 @@ export const projects = [
       { type: "", url: "" },
     ],
     description: "Yole Couriers is a logistics and delivery service platform that connects customers with reliable courier services. \n\nBuilt with Vue.js and Node.js, it includes real-time tracking, order management, and customer support features to ensure a smooth delivery experience.",
-    stack: [],
+    stack: [ "React.js", "", "" ],
   },
   { 
     id: 6, 
@@ -116,7 +116,7 @@ export const projects = [
       { type: "", url: "" },
     ],
     description: "Corty Maxwell is a personal portfolio website showcasing the work and achievements of Corty Maxwell. \n\nCreated with Gatsby.js and GraphQL, it features a dynamic project gallery, blog section, and contact form to engage visitors and potential clients.",
-    stack: [],
+    stack: [ "React.js", "" ],
   },
   { 
     id: 7, 
@@ -133,7 +133,6 @@ export const projects = [
       { type: "", url: "" },
     ],
     description: "Amara Reynolds is an e-commerce platform specializing in handmade crafts and artisanal products. \n\nDeveloped using Shopify and Liquid templating, it offers a user-friendly shopping experience with secure payment options, product reviews, and personalized recommendations.",
-
     stack: [],
   },
   { 
@@ -150,7 +149,7 @@ export const projects = [
     ],
     description: "Chris Dubem Photography is a stunning portfolio website that showcases the captivating work of photographer Chris Dubem. \n\nBuilt with WordPress and Elementor, the site features high-resolution image galleries, client testimonials, and a booking system to connect with potential clients.",
     role: "Web Developer",
-    stack: [],
+    stack: [ "" ],
   },
   { 
     id: 9, 
@@ -164,7 +163,7 @@ export const projects = [
       { type: "", url: "" },
     ],
     description: "",
-    stack: [],
+    stack: [ "" ],
   },
   { 
     id: 10, 
@@ -179,7 +178,7 @@ export const projects = [
       { type: "", url: "" },
     ],
     description: "Marvel Consulting is a professional services website offering business consulting and strategic planning solutions. \n\nDeveloped with Next.js and Tailwind CSS, it features service overviews, case studies, and a contact form to facilitate client engagement.",
-    stack: [],
+    stack: [ "" ],
   },
   { 
     id: 11, 
@@ -194,7 +193,7 @@ export const projects = [
       { type: "", url: "" },
     ],
     description: "Swizz is an innovative social networking platform that connects users based on shared interests and activities. \n\nBuilt with Angular and Firebase, it offers features such as real-time messaging, event creation, and community groups to foster meaningful connections.",
-    stack: [], 
+    stack: [ "" ], 
   },
   { id: 12, name: "DesignHub", year: "2024", category: "Experimental", media: [{ type: "video", url: "" }] },
   { id: 13, name: "TechNova", year: "2025", category: "Graphics", media: [{ type: "", url: "" }] },
@@ -205,7 +204,9 @@ export const projects = [
     year: "2026", 
     category: "Graphics", 
     media: [
-      { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/4ef35f32-e7ef-4f3c-b036-718e78de7422/69.png?format=500w" }
-    ] 
+      { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/4ef35f32-e7ef-4f3c-b036-718e78de7422/69.png?format=500w" },
+    ],
+    description: "",
+    stack: [ "" ],
   },
 ];

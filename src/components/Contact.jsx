@@ -37,20 +37,13 @@ const Contact = () => {
               placeholder='Email' 
               className='bg-gray-300 p-4 border border-gray-300 hover:border-gray-400 focus:border focus:border-dark focus:outline-0' 
             />
-            <textarea 
-              placeholder='Drop Some Lines Here..' 
-              rows={5} 
-              className='bg-gray-300 p-4 border border-gray-300 hover:border-gray-400 focus:border focus:border-dark focus:outline-0'>
 
-            </textarea>
-            <button 
-              type='submit'
-              className='bg-dark text-light p-4 text-center cursor-pointer'
-            > 
+            <textarea placeholder='Drop Some Lines Here..' rows={6} className='bg-gray-300 p-4 border border-gray-300 hover:border-gray-400 focus:border focus:border-dark focus:outline-0'></textarea>
+
+            <button type='submit' className='bg-dark text-light p-4 text-center cursor-pointer'> 
               Send Message 
-              </button>
+            </button>
           </div>
-
         </form>
       </div>
     </section>

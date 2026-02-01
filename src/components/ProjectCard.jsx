@@ -38,7 +38,7 @@ const ProjectCard = ({ project, openModal }) => {
           loading="lazy"
           onError={(e) => {
             e.currentTarget.src = loadingImg;
-            e.currentTarget.onerror = null; // Prevent infinite loop
+            e.currentTarget.onerror = null;
             e.currentTarget.alt = "Image failed to load";
           }}
         />
