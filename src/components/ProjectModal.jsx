@@ -1,6 +1,57 @@
+import { useState } from "react";
 import { ArrowUpRight, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import loadingImg from "../assets/loading.gif";
+
+
+
+const MediaItem = ({ item }) => {
+  const [loaded, setLoaded] = useState(false);
+  const [error, setError] = useState(false);
+
+  
+  if (!item?.type || !item?.url) {
+    return (
+      <img src={loadingImg} alt="Loading" className="w-full h-fit aspect-video object-cover" />
+    );
+  }
+
+  if (item.type === "img") {
+    return (
+      <div className="relative w-full">
+        {!loaded && !error && (
+          <img src={loadingImg} alt="Loading" className="absolute inset-0 w-full h-full object-cover" />
+        )}
+
+        <img 
+          src={error ? loadingImg : item.url}
+          alt=""
+          className="w-full h-fit aspect-video object-cover"
+          onLoad={() => setLoaded(true)}
+          onError={() => {
+            setError(true);
+            setLoaded(true);
+          }}
+        />
+      </div>
+    );
+  }
+
+  return (
+    <video
+      className="w-full h-fit aspect-video object-cover"
+      autoPlay
+      loop
+      muted
+      onError={(e) => {
+        e.currentTarget.poster = loadingImg;
+      }}
+    >
+      <source src={item.url} type="video/mp4" />
+    </video>
+  );
+};
+
 
 const ProjectModal = ({ modalOpened, project, setModalOpened }) => {
   return (
@@ -46,35 +97,16 @@ const ProjectModal = ({ modalOpened, project, setModalOpened }) => {
           </div>
         </div>
 
-
-        {/* <div className='w-full md:max-w-1/2 max-h-68 md:min-h-full bg-gray-200 border border-gray-300 flex items-start justify-center'>
-          {project.mediaType === "img" ? (
-            <img src={project.imageUrl} alt='' className='w-full mx-auto h-fit aspect-video md:aspect-square object-cover' />
-          ) : (
-            <video className='w-full mx-auto h-fit aspect-video md:aspect-square object-cover' autoPlay loop muted>
-              <source src={project.imageUrl} type="video/mp4" />
-            </video>
-          )}
-        </div> */}
-
         <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-10">
           {project.media.map((item, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="w-full bg-gray-200 border border-gray-300 flex items-start justify-center"
             >
-              {item.type === "img" ? (
-                <img src={item?.url || loadingImg} className="w-full h-fit aspect-video object-cover" />
-                // alt={`media-${index}`}
-              ) : (
-                <video className="w-full h-fit aspect-video object-cover" autoPlay loop muted>
-                  <source src={item.url} type="video/mp4" />
-                </video>
-              )}
+              <MediaItem item={item} />
             </div>
           ))}
         </div>
-
       </div>
 
       <button type='button' className='absolute top-5 right-5 cursor-pointer p-1 bg-gray-200 border border-gray-300' onClick={() => setModalOpened(false)} >
