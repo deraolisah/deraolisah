@@ -300,9 +300,9 @@ export const projects = [
   },
   {
     id: 16,
-    name: "",
-    year: "",
-    category: "",
+    name: "Niarobi Mats",
+    year: "2025",
+    category: "Graphics",
     media: [
       { type: "", url: "" },
       { type: "", url: "" },
@@ -314,6 +314,6 @@ export const projects = [
       { type: "", url: "" },
     ],
     description: "",
-    stack: [ "" ],
+    stack: [ "Photoshop", "Figma", "Corel Draw" ],
   }
 ];
