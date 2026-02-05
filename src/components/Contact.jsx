@@ -15,7 +15,7 @@ const Contact = () => {
     const formData = new FormData(form);
 
     try {
-      await fetch("/", {
+      const response = await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData).toString(),
@@ -71,7 +71,7 @@ const Contact = () => {
           name="contact"
           method="POST"
           netlify
-          data-netlify="true"
+          // data-netlify="true"
           netlify-honeypot="bot-field"
           onSubmit={handleSubmit}
           className="w-full h-full"
