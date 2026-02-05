@@ -21,6 +21,9 @@ const Contact = () => {
         body: new URLSearchParams(formData).toString(),
       });
 
+      if (!response.ok) throw new Error("Network response was not ok");
+
+
       setSubmitted(true);
       setLoading(false);
       form.reset();
@@ -34,11 +37,10 @@ const Contact = () => {
   // Auto-hide success message after 5s
   useEffect(() => {
     if (submitted) {
-      setTimeout(() => setSubmitted(false), 5000);
+      const timer = setTimeout(() => setSubmitted(false), 5000);
+      return () => clearTimeout(timer);
     }
   }, [submitted]);
-
-
 
   
 
@@ -68,6 +70,7 @@ const Contact = () => {
         <form
           name="contact"
           method="POST"
+          netlify
           data-netlify="true"
           netlify-honeypot="bot-field"
           onSubmit={handleSubmit}

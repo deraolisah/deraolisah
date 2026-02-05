@@ -282,7 +282,7 @@ export const projects = [
   },
   { 
     id: 15, 
-    name: "CodeCrafters", 
+    name: "Bluevolt Marine", 
     year: "2026", 
     category: "Graphics", 
     media: [
