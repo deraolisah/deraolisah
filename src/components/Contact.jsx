@@ -1,46 +1,23 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  // Submit Handler
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleSubmit = (e) => {
     setError(false);
     setLoading(true);
-
-    const form = e.target;
-    const formData = new FormData(form);
-
-    try {
-      // Store the response in a variable
-      const response = await fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString(),
-      });
-
-      if (!response.ok) throw new Error("Network response was not ok");
-
-      setSubmitted(true);
-      setLoading(false);
-      form.reset();
-    } catch (err) {
-      setError(true);
-      setLoading(false);
-      // Don't reset form on error so user doesn't lose their input
-    }
+    
+    // Let Netlify handle the submission automatically
+    // The form will submit to Netlify's endpoint
+    // We'll use setTimeout to show success state (Netlify redirects to thank you page)
+    
+    // For a SPA, you might want to prevent default and handle differently
+    // But for Netlify Forms, you can let it submit normally
   };
 
-  // Auto-hide success message after 5s
-  useEffect(() => {
-    if (submitted) {
-      const timer = setTimeout(() => setSubmitted(false), 5000);
-      return () => clearTimeout(timer);
-    }
-  }, [submitted]);
+  // For Netlify Forms in a React SPA, you have 2 options:
 
   return (
     <section className='container py-10 md:py-18 flex flex-col' id="contact">
@@ -57,18 +34,18 @@ const Contact = () => {
           
           <div className='mt-8 whitespace-normal'>
             Good old email is a safer bet, so just use the form. 
-
             <br/><br/>
             Or use &nbsp;<a href="https://wa.me/2347088530385/" target='_blank' rel="noopener noreferrer" className='font-bold underline hover:text-primary'>WhatsApp</a>, to reach me!
           </div>
         </div>
 
+        {/* OPTION 1: Standard Netlify Form (redirects to thank you page) */}
         <form
           name="contact"
           method="POST"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
-          onSubmit={handleSubmit}
+          action="/thank-you"  // Netlify will redirect here after submission
           className="w-full h-full"
         >
           <input type="hidden" name="form-name" value="contact" />
@@ -104,17 +81,55 @@ const Contact = () => {
             />
 
             <button 
-              disabled={loading} 
               type='submit' 
-              className='bg-dark text-light p-4 text-center cursor-pointer disabled:opacity-70 disabled:cursor-not-allowed'
+              className='bg-dark text-light p-4 text-center cursor-pointer'
             >
-              {loading ? "Sending..." : "Send Message"}
+              Send Message
             </button>
           </div>
         </form>
+
+        {/* OPTION 2: For SPA without redirect (with JavaScript handling) */}
+        {/* 
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          onSubmit={async (e) => {
+            e.preventDefault();
+            setLoading(true);
+            setError(false);
+            
+            const form = e.target;
+            const formData = new FormData(form);
+            
+            try {
+              // Encode the form data
+              const encodedData = new URLSearchParams(formData).toString();
+              
+              // Submit to Netlify's form endpoint
+              await fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: encodedData,
+              });
+              
+              setSubmitted(true);
+              setLoading(false);
+              form.reset();
+            } catch (err) {
+              setError(true);
+              setLoading(false);
+            }
+          }}
+          className="w-full h-full"
+        >
+          {/* Same form fields as above * /}
+        </form>
+        */}
       </div>
 
-      {/* Success/Error Messages */}
       {submitted && (
         <div className="mt-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded">
           ✅ Message sent successfully! I'll get back to you shortly.
@@ -127,7 +142,7 @@ const Contact = () => {
         </div>
       )}
     </section>
-  )
+  );
 }
 
 export default Contact;

@@ -192,7 +192,7 @@ export const projects = [
     id: 10, 
     name: "Marvel Consulting", 
     year: "2023", 
-    category: "Web", 
+    category: "Experimental", 
     link: "https://marvelca.netlify.app/",
     media: [
       { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/1669747475194-CIY4LABRAD90U3T4U8TG/FOR+HER+%280-00-00-07%29.png?format=500w" },
@@ -284,7 +284,7 @@ export const projects = [
     id: 15, 
     name: "Bluevolt Marine", 
     year: "2026", 
-    category: "Graphics", 
+    category: "Web", 
     media: [
       { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/4ef35f32-e7ef-4f3c-b036-718e78de7422/69.png?format=500w" },
       { type: "", url: "" },
