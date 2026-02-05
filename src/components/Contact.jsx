@@ -70,8 +70,8 @@ const Contact = () => {
         <form
           name="contact"
           method="POST"
-          netlify
-          // data-netlify="true"
+          // netlify
+          data-netlify="true"
           netlify-honeypot="bot-field"
           onSubmit={handleSubmit}
           className="w-full h-full"
