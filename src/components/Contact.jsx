@@ -5,19 +5,50 @@ const Contact = () => {
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     setError(false);
     setLoading(true);
-    
-    // Let Netlify handle the submission automatically
-    // The form will submit to Netlify's endpoint
-    // We'll use setTimeout to show success state (Netlify redirects to thank you page)
-    
-    // For a SPA, you might want to prevent default and handle differently
-    // But for Netlify Forms, you can let it submit normally
-  };
+    setSubmitted(false);
 
-  // For Netlify Forms in a React SPA, you have 2 options:
+    const form = e.target;
+    const formData = new FormData(form);
+    
+    // Add the form-name to the formData
+    formData.append("form-name", "contact");
+
+    try {
+      // For Netlify Forms, we need to send the data as URL encoded
+      const encodedData = new URLSearchParams(formData).toString();
+      
+      // Submit to Netlify's form endpoint
+      const response = await fetch("/", {
+        method: "POST",
+        headers: { 
+          "Content-Type": "application/x-www-form-urlencoded" 
+        },
+        body: encodedData,
+      });
+
+      if (!response.ok) {
+        throw new Error("Form submission failed");
+      }
+
+      setSubmitted(true);
+      setLoading(false);
+      form.reset();
+      
+      // Auto-hide success message after 5 seconds
+      setTimeout(() => {
+        setSubmitted(false);
+      }, 5000);
+      
+    } catch (err) {
+      console.error("Form submission error:", err);
+      setError(true);
+      setLoading(false);
+    }
+  };
 
   return (
     <section className='container py-10 md:py-18 flex flex-col' id="contact">
@@ -39,13 +70,12 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* OPTION 1: Standard Netlify Form (redirects to thank you page) */}
         <form
           name="contact"
           method="POST"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
-          action="/thank-you"  // Netlify will redirect here after submission
+          onSubmit={handleSubmit}
           className="w-full h-full"
         >
           <input type="hidden" name="form-name" value="contact" />
@@ -61,7 +91,8 @@ const Contact = () => {
               name="name"
               placeholder='Name'
               required
-              className='bg-gray-300 p-4 border border-gray-300 hover:border-gray-400 focus:border-dark focus:outline-0'
+              disabled={loading}
+              className='bg-gray-300 p-4 border border-gray-300 hover:border-gray-400 focus:border-dark focus:outline-0 disabled:opacity-50'
             />
 
             <input
@@ -69,7 +100,8 @@ const Contact = () => {
               name="email"
               placeholder='Email'
               required
-              className='bg-gray-300 p-4 border border-gray-300 hover:border-gray-400 focus:border-dark focus:outline-0'
+              disabled={loading}
+              className='bg-gray-300 p-4 border border-gray-300 hover:border-gray-400 focus:border-dark focus:outline-0 disabled:opacity-50'
             />
 
             <textarea
@@ -77,57 +109,19 @@ const Contact = () => {
               placeholder='Drop Some Lines Here..'
               rows={6}
               required
-              className='bg-gray-300 p-4 border border-gray-300 hover:border-gray-400 focus:border-dark focus:outline-0'
+              disabled={loading}
+              className='bg-gray-300 p-4 border border-gray-300 hover:border-gray-400 focus:border-dark focus:outline-0 disabled:opacity-50'
             />
 
             <button 
               type='submit' 
-              className='bg-dark text-light p-4 text-center cursor-pointer'
+              disabled={loading}
+              className={`bg-dark text-light p-4 text-center cursor-pointer ${loading ? 'opacity-70 cursor-not-allowed' : ''}`}
             >
-              Send Message
+              {loading ? "Sending..." : "Send Message"}
             </button>
           </div>
         </form>
-
-        {/* OPTION 2: For SPA without redirect (with JavaScript handling) */}
-        {/* 
-        <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          onSubmit={async (e) => {
-            e.preventDefault();
-            setLoading(true);
-            setError(false);
-            
-            const form = e.target;
-            const formData = new FormData(form);
-            
-            try {
-              // Encode the form data
-              const encodedData = new URLSearchParams(formData).toString();
-              
-              // Submit to Netlify's form endpoint
-              await fetch("/", {
-                method: "POST",
-                headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: encodedData,
-              });
-              
-              setSubmitted(true);
-              setLoading(false);
-              form.reset();
-            } catch (err) {
-              setError(true);
-              setLoading(false);
-            }
-          }}
-          className="w-full h-full"
-        >
-          {/* Same form fields as above * /}
-        </form>
-        */}
       </div>
 
       {submitted && (
