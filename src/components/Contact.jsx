@@ -5,6 +5,9 @@ const Contact = () => {
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
 
+  // Correct way to access env variable in Vite
+  const formENDPOINT = import.meta.env.VITE_FORMSPREE_ENDPOINT;
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError(false);
@@ -13,40 +16,68 @@ const Contact = () => {
 
     const form = e.target;
     const formData = new FormData(form);
-    
-    // Add the form-name to the formData
-    formData.append("form-name", "contact");
 
-    try {
-      // For Netlify Forms, we need to send the data as URL encoded
-      const encodedData = new URLSearchParams(formData).toString();
-      
-      // Submit to Netlify's form endpoint
-      const response = await fetch("/", {
-        method: "POST",
-        headers: { 
-          "Content-Type": "application/x-www-form-urlencoded" 
-        },
-        body: encodedData,
-      });
-
-      if (!response.ok) {
-        throw new Error("Form submission failed");
-      }
-
+    // Check honeypot field
+    const honeypot = formData.get('honeypot');
+    if (honeypot) {
+      // Bot detected - pretend it succeeded
       setSubmitted(true);
       setLoading(false);
       form.reset();
-      
-      // Auto-hide success message after 5 seconds
-      setTimeout(() => {
-        setSubmitted(false);
-      }, 5000);
+      setTimeout(() => setSubmitted(false), 5000);
+      return;
+    }
+    
+    // Convert FormData to plain object
+    const data = Object.fromEntries(formData.entries());
+    
+    try {
+      // Validate endpoint exists
+      if (!formENDPOINT) {
+        throw new Error("Form endpoint not configured");
+      }
+
+      const response = await fetch(formENDPOINT, {
+        method: "POST",
+        headers: {
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          ...data,
+          _subject: `New Message from ${data.name}`,
+          _replyto: data.email,
+          // Add timestamp for tracking
+          _date: new Date().toISOString(),
+        })
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setSubmitted(true);
+        setLoading(false);
+        form.reset();
+        
+        // Auto-hide success message after 5 seconds
+        setTimeout(() => {
+          setSubmitted(false);
+        }, 5000);
+      } else {
+        // Log error details for debugging
+        console.error("Formspree error:", result);
+        throw new Error(result.error || "Form submission failed");
+      }
       
     } catch (err) {
       console.error("Form submission error:", err);
       setError(true);
       setLoading(false);
+      
+      // Auto-hide error message after 5 seconds
+      setTimeout(() => {
+        setError(false);
+      }, 8000);
     }
   };
 
@@ -71,19 +102,24 @@ const Contact = () => {
         </div>
 
         <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
           onSubmit={handleSubmit}
           className="w-full h-full"
+          noValidate // Disable browser validation for better UX
         >
-          <input type="hidden" name="form-name" value="contact" />
-          <p className="hidden">
-            <label>
-              Don't fill this out if you're human: <input name="bot-field" />
+          {/* Honeypot field for spam protection */}
+          <div className="hidden">
+            <label htmlFor="honeypot">
+              Leave this empty if you're human:
+              <input 
+                type="text" 
+                id="honeypot" 
+                name="honeypot" 
+                tabIndex="-1" 
+                autoComplete="off" 
+                defaultValue="" 
+              />
             </label>
-          </p>
+          </div>
 
           <div className='flex flex-col gap-2'>
             <input
@@ -92,7 +128,9 @@ const Contact = () => {
               placeholder='Name'
               required
               disabled={loading}
-              className='bg-gray-300 p-4 border border-gray-300 hover:border-gray-400 focus:border-dark focus:outline-0 disabled:opacity-50'
+              className='bg-gray-300 p-4 border border-gray-300 hover:border-gray-400 focus:border-dark focus:outline-0 disabled:opacity-50 transition-colors duration-200'
+              minLength={2}
+              maxLength={100}
             />
 
             <input
@@ -101,7 +139,9 @@ const Contact = () => {
               placeholder='Email'
               required
               disabled={loading}
-              className='bg-gray-300 p-4 border border-gray-300 hover:border-gray-400 focus:border-dark focus:outline-0 disabled:opacity-50'
+              className='bg-gray-300 p-4 border border-gray-300 hover:border-gray-400 focus:border-dark focus:outline-0 disabled:opacity-50 transition-colors duration-200'
+              pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+              title="Please enter a valid email address"
             />
 
             <textarea
@@ -110,31 +150,39 @@ const Contact = () => {
               rows={6}
               required
               disabled={loading}
-              className='bg-gray-300 p-4 border border-gray-300 hover:border-gray-400 focus:border-dark focus:outline-0 disabled:opacity-50'
+              className='bg-gray-300 p-4 border border-gray-300 hover:border-gray-400 focus:border-dark focus:outline-0 disabled:opacity-50 transition-colors duration-200 resize-none'
+              minLength={10}
+              maxLength={2000}
             />
 
             <button 
               type='submit' 
               disabled={loading}
-              className={`bg-dark text-light p-4 text-center cursor-pointer ${loading ? 'opacity-70 cursor-not-allowed' : ''}`}
+              className={`bg-dark text-light p-4 text-center cursor-pointer transition-opacity duration-200 ${loading ? 'opacity-70 cursor-not-allowed' : 'hover:opacity-90'}`}
+              aria-label={loading ? "Sending message" : "Send message"}
             >
               {loading ? "Sending..." : "Send Message"}
             </button>
           </div>
         </form>
       </div>
+      <div>
 
-      {submitted && (
-        <div className="mt-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded">
-          ✅ Message sent successfully! I'll get back to you shortly.
-        </div>
-      )}
+      </div>
 
-      {error && (
-        <div className="mt-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded">
-          ❌ Something went wrong. Please try again.
-        </div>
-      )}
+      <div>
+        {submitted && (
+          <div className="mt-4 p-4 bg-green-100 border border-green-400 text-green-700 rounded animate-fade-in">
+            ✅ Message sent successfully! I'll get back to you shortly.
+          </div>
+        )}
+
+        {error && (
+          <div className="mt-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded animate-fade-in">
+            ❌ Something went wrong. Please try again or email me directly.
+          </div>
+        )}
+      </div>
     </section>
   );
 }
