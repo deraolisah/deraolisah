@@ -179,7 +179,8 @@ const Contact = () => {
 
         {error && (
           <div className="mt-4 p-4 bg-red-100 border border-red-400 text-red-700 rounded animate-fade-in">
-            ❌ Something went wrong. Please try again or email me directly.
+            ❌ Something went wrong. Please try again or email me directly 
+            <a href="mailto:deraolisah@gmail.com" target="_blank"> deraolisah@gmail.com. </a>
           </div>
         )}
       </div>
