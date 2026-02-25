@@ -82,7 +82,7 @@ export const projects = [
     link: "https://bluevoltmarine.com/", 
     media: [
       { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/1681767326789-Q6KE29YQAXXDW24IGK1H/Neologia-IV.gif?format=500w" },
-      { type: "img", url: "" },
+      { type: "", url: "" },
       { type: "", url: "" },
       { type: "", url: "" },
       { type: "", url: "" },
