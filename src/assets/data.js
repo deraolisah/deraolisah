@@ -6,7 +6,7 @@ import UrbanScope04 from "../assets/UrbanScope04.png";
 import UrbanScope05 from "../assets/UrbanScope05.png";
 import UrbanScope06 from "../assets/UrbanScope06.png";
 import DelightWedsFredrick from "../assets/DelightWedsFredrick.png";  
-import Mosalak from "../assets/Mosalak.png";
+// import Mosalak from "../assets/Mosalak.png";
 import YoleCouriers from "../assets/YoleCouriers.png";
 import Corty from "../assets/Corty.png";
 import ShopLindura from "../assets/ShopLindura.png";
@@ -76,13 +76,13 @@ export const projects = [
   },
   { 
     id: 4, 
-    name: "Mosalak Hub", 
+    name: "BlueVoltMarine", 
     year: "2026", 
     category: "Web", 
-    link: "https://mosalak.netlify.app/", 
+    link: "https://bluevoltmarine.com/", 
     media: [
       { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/1681767326789-Q6KE29YQAXXDW24IGK1H/Neologia-IV.gif?format=500w" },
-      { type: "img", url: Mosalak },
+      { type: "img", url: "" },
       { type: "", url: "" },
       { type: "", url: "" },
       { type: "", url: "" },
@@ -90,7 +90,7 @@ export const projects = [
       { type: "", url: "" },
       { type: "", url: "" },
     ],
-    description: "Mosalak Hub is a comprehensive platform for managing and sharing digital resources. \n\nDeveloped using React.js and TailwindCSS, it offers features such as user authentication, file uploads, and collaborative workspaces to facilitate efficient resource management.",
+    description: "Certified Maritime Vessel Brokerage, uptime machinery, electrical and emergency system survey",
     stack: [ "Figma", "React.js", "TailwindCSS" ],
   },
   { 
