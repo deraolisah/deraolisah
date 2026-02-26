@@ -11,8 +11,9 @@ import YoleCouriers from "../assets/YoleCouriers.png";
 import Corty from "../assets/Corty.png";
 import ShopLindura from "../assets/ShopLindura.png";
 import Amara from "../assets/Amara.png";
-import Chris from "../assets/Chris.png";
-import Chris02 from "../assets/Chris02.png";
+import Chris01 from "../assets/Chris-01.png";
+import Chris02 from "../assets/Chris-02.png";
+// import Chris03 from "../assets/Chris-03.png";
 import Marvel from "../assets/Marvel.png";
 import Swizz from "../assets/Swizz.png";
 
@@ -158,8 +159,9 @@ export const projects = [
     category: "Web", 
     link: "https://chrisdubemphotography.com/", 
     media: [
+      { type: "img", url: Chris01 },
       { type: "img", url: Chris02 },
-      { type: "img", url: Chris },
+      // { type: "img", url: Chris03 },
       { type: "", url: "" },
       { type: "", url: "" },
       { type: "", url: "" },

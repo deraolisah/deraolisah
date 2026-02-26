@@ -34,7 +34,7 @@ const ProjectCard = ({ project, openModal }) => {
         <img 
           src={firstMedia.url || loadingImg} 
           alt={project.name}
-          className="w-full h-fit bg-gray-200 border border-gray-300 aspect-video md:aspect-3/2 object-cover flex items-center justify-center" 
+          className="w-full h-fit bg-gray-200 border border-gray-300 aspect-video object-cover flex items-center justify-center" 
           loading="lazy"
           onError={(e) => {
             e.currentTarget.src = loadingImg;
