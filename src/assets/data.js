@@ -12,6 +12,7 @@ import Corty from "../assets/Corty.png";
 import ShopLindura from "../assets/ShopLindura.png";
 import Amara from "../assets/Amara.png";
 import Chris from "../assets/Chris.png";
+import Chris02 from "../assets/Chris02.png";
 import Marvel from "../assets/Marvel.png";
 import Swizz from "../assets/Swizz.png";
 
@@ -157,8 +158,8 @@ export const projects = [
     category: "Web", 
     link: "https://chrisdubemphotography.com/", 
     media: [
+      { type: "img", url: Chris02 },
       { type: "img", url: Chris },
-      { type: "", url: "" },
       { type: "", url: "" },
       { type: "", url: "" },
       { type: "", url: "" },
@@ -282,8 +283,8 @@ export const projects = [
   },
   { 
     id: 15, 
-    name: "Bluevolt Marine", 
-    year: "2026", 
+    name: "Adina Hotel & Spa", 
+    year: "2025", 
     category: "Web", 
     media: [
       { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/4ef35f32-e7ef-4f3c-b036-718e78de7422/69.png?format=500w" },
