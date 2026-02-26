@@ -140,7 +140,6 @@ export const projects = [
     category: "Experimental", 
     link: "https://amararey.netlify.app/", 
     media: [
-      { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/049bdb15-54d2-4ef8-8ae7-3ea0d09abaca/GIF_09-min.gif?format=500w" },
       { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/50e3b24e-7d04-49b0-bbd1-05510d22831c/GIF_08-min.gif?format=500w" },
       { type: "img", url: Amara },
       { type: "", url: "" },
@@ -253,7 +252,7 @@ export const projects = [
     year: "2025", 
     category: "Graphics", 
     media: [
-      { type: "", url: "" },
+      { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/049bdb15-54d2-4ef8-8ae7-3ea0d09abaca/GIF_09-min.gif?format=500w" },
       { type: "", url: "" },
       { type: "", url: "" },
       { type: "", url: "" },

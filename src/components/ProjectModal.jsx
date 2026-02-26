@@ -1,15 +1,13 @@
 import { useState } from "react";
 import { ArrowUpRight, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
 import loadingImg from "../assets/loading.gif";
-
-
 
 const MediaItem = ({ item }) => {
   const [loaded, setLoaded] = useState(false);
   const [error, setError] = useState(false);
 
-  
   if (!item?.type || !item?.url) {
     return (
       <img src={loadingImg} alt="Loading" className="w-full h-fit aspect-video object-cover" />
@@ -52,67 +50,168 @@ const MediaItem = ({ item }) => {
   );
 };
 
+// Animation variants for the modal backdrop
+const backdropVariants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 }
+};
+
+// Animation variants for the modal content
+const modalVariants = {
+  hidden: { 
+    opacity: 0,
+    y: 50,
+    scale: 0.95
+  },
+  visible: { 
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      type: "spring",
+      damping: 25,
+      stiffness: 300,
+      duration: 0.5
+    }
+  },
+  exit: { 
+    opacity: 0,
+    y: 50,
+    scale: 0.95,
+    transition: {
+      duration: 0.3
+    }
+  }
+};
+
+// Animation variants for the content elements (staggered)
+const contentVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.2
+    }
+  }
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { 
+    opacity: 1, 
+    y: 0,
+    transition: {
+      type: "spring",
+      damping: 15,
+      stiffness: 200
+    }
+  }
+};
 
 const ProjectModal = ({ modalOpened, project, setModalOpened }) => {
   return (
-    <div className={`fixed inset-0 z-100 bg-light p-4 w-full h-full transition-all duration-700 ${modalOpened ? "opacity-100 pointer-events-auto translate-y-0" : "opacity-0 pointer-events-none translate-y-8"}`}>
-      <div className='flex flex-col gap-4 relative h-full overflow-y-auto scrollbar-hidden'>
-        <div className='grid grid-cols-2 md:grid-cols-4 items-start gap-4 md:gap-2.5'>
-          <div className='w-full col-span-2 md:col-span-1'>
-            <h2 className='text-2xl md:text-4xl font-black leading-tight tracking-tighter line-clamp-2 uppercase'>
-              {project.name}
-            </h2>
+    <AnimatePresence mode="wait">
+      {modalOpened && (
+        <motion.div
+          key="modal-backdrop"
+          variants={backdropVariants}
+          initial="hidden"
+          animate="visible"
+          exit="hidden"
+          className="fixed inset-0 z-100 bg-light/90 backdrop-blur-sm p-4 w-full h-full overflow-y-auto"
+        >
+          <motion.div
+            key="modal-content"
+            variants={modalVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            className="relative min-h-full"
+          >
+            <div className='flex flex-col gap-4 relative h-full'>
+              <motion.div 
+                variants={contentVariants}
+                initial="hidden"
+                animate="visible"
+                className='grid grid-cols-2 md:grid-cols-4 items-start gap-4 md:gap-2.5'
+              >
+                <motion.div variants={itemVariants} className='w-full col-span-2 md:col-span-1'>
+                  <h2 className='text-2xl md:text-4xl font-black leading-tight tracking-tighter line-clamp-2 uppercase'>
+                    {project.name}
+                  </h2>
 
-            <Link to={project.link} target="_blank" className='py-2 flex items-center gap-1 w-fit text-primary'> 
-              Live Preview 
-              <ArrowUpRight size={16} className='text-primary' /> 
-            </Link>
-          </div>
+                  <Link to={project.link} target="_blank" className='py-2 flex items-center gap-1 w-fit text-primary hover:gap-2 transition-all duration-300'> 
+                    Live Preview 
+                    <ArrowUpRight size={16} className='text-primary' /> 
+                  </Link>
+                </motion.div>
 
-          <div className='col-span-2'>
-            <p className='whitespace-pre-line text-base font-medium'>{project.description}</p>
-          </div>
+                <motion.div variants={itemVariants} className='col-span-2'>
+                  <p className='whitespace-pre-line text-base font-medium'>{project.description}</p>
+                </motion.div>
 
-          <div className='w-full col-span-2 md:col-span-1 text-dark/80 space-y-2 text-sm border-t border-dark/20 pt-4 md:pt-0 md:border-0'>
-            {project?.role && (
-              <p className='flex items-center gap-1'>
-                <b> ROLE: </b>
-                <span> {project.role} </span>
-              </p>
-            )}
-            <p className='w-full flex items-center gap-1'> 
-              <b> TYPE: </b>
-              <span> {project.category} Project </span>
-            </p>
-            <p className='flex items-center gap-1'>
-              <b> DATE: </b>
-              <span> {project.year} </span>
-            </p>
-            <p className='w-full flex items-center flex-wrap gap-1.5'>
-              <b className="flex"> TOOLS: </b>
-              {project.stack?.map((item, index) => (
-                <span key={index}> {item} • </span>
-              ))}
-            </p>
-          </div>
-        </div>
+                <motion.div variants={itemVariants} className='w-full col-span-2 md:col-span-1 text-dark/80 space-y-2 text-sm border-t border-dark/20 pt-4 md:pt-0 md:border-0'>
+                  {project?.role && (
+                    <motion.p variants={itemVariants} className='flex items-center gap-1'>
+                      <b> ROLE: </b>
+                      <span> {project.role} </span>
+                    </motion.p>
+                  )}
+                  <motion.p variants={itemVariants} className='w-full flex items-center gap-1'> 
+                    <b> TYPE: </b>
+                    <span> {project.category} Project </span>
+                  </motion.p>
+                  <motion.p variants={itemVariants} className='flex items-center gap-1'>
+                    <b> DATE: </b>
+                    <span> {project.year} </span>
+                  </motion.p>
+                  <motion.p variants={itemVariants} className='w-full flex items-center flex-wrap gap-1.5'>
+                    <b className="flex"> TOOLS: </b>
+                    {project.stack?.map((item, index) => (
+                      <span key={index}> {item} • </span>
+                    ))}
+                  </motion.p>
+                </motion.div>
+              </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-10">
-          {project.media.map((item, index) => (
-            <div
-              key={index}
-              className="w-full bg-gray-200 border border-gray-300 flex items-start justify-center"
-            >
-              <MediaItem item={item} />
+              <motion.div 
+                variants={contentVariants}
+                initial="hidden"
+                animate="visible"
+                className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-10"
+              >
+                {project.media.map((item, index) => (
+                  <motion.div
+                    key={index}
+                    variants={itemVariants}
+                    custom={index}
+                    className="w-full bg-gray-200 border border-gray-300 flex items-start justify-center overflow-hidden"
+                    whileHover={{ scale: 1.02 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                  >
+                    <MediaItem item={item} />
+                  </motion.div>
+                ))}
+              </motion.div>
             </div>
-          ))}
-        </div>
-      </div>
 
-      <button type='button' className='absolute top-5 right-5 cursor-pointer p-1 bg-gray-200 border border-gray-300' onClick={() => setModalOpened(false)} >
-        <X size={20} strokeWidth={1.5}  />
-      </button>
-    </div>
+            <motion.button 
+              type='button' 
+              className='absolute top-5 right-5 cursor-pointer p-1 bg-gray-200 border border-gray-300 hover:bg-gray-300 transition-colors duration-300 rounded-full'
+              onClick={() => setModalOpened(false)}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.95 }}
+              initial={{ opacity: 0, rotate: -90 }}
+              animate={{ opacity: 1, rotate: 0 }}
+              transition={{ delay: 0.3, type: "spring" }}
+            >
+              <X size={20} strokeWidth={1.5} />
+            </motion.button>
+          </motion.div>
+        </motion.div>
+      )}
+    </AnimatePresence>
   )
 }
 

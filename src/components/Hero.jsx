@@ -1,11 +1,11 @@
 import React from 'react';
 import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from 'framer-motion';
 import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
 import { projects } from "../assets/data";
 
 const Hero = () => {
-
   // Filter Projects
   const [filter, setFilter] = useState("All");
   const filteredprojects = filter === "All" ? projects : projects.filter(project => project.category === filter);
@@ -28,34 +28,67 @@ const Hero = () => {
     }
   }, [modalOpened]);
 
+  // Animation variants for the container
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
+  };
 
   return (
     <section className='container pt-18 pb-10 flex flex-col' id='home'>
-      <h1 className="font-medium text-xl md:text-[34px] leading-tight tracking-tight">
+      <motion.h1 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="font-medium text-xl md:text-[34px] leading-tight tracking-tight"
+      >
         Hello! I'm Nathan.
         <br/>
         Independent Designer & Developer.
-      </h1>
+      </motion.h1>
 
       {/* Filter through Projects */}
-      <div className="flex items-center gap-4 mt-6 font-medium text-sm">
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        className="flex items-center gap-4 mt-6 font-medium text-sm"
+      >
         {["All", "Web", "Graphics", "Experimental"].map((cat, index) => (
-          <button key={index} onClick={() => setFilter(cat)} className={`hover:text-primary cursor-pointer ${filter === cat ? "underline font-semibold" : "text-dark/50"}`}> 
+          <motion.button 
+            key={index} 
+            onClick={() => setFilter(cat)} 
+            className={`hover:text-primary cursor-pointer ${filter === cat ? "underline font-semibold" : "text-dark/50"}`}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ type: "spring", stiffness: 400 }}
+          > 
             {cat} 
-          </button>
+          </motion.button>
         ))}
-      </div>
+      </motion.div>
 
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-2 gap-y-3 mt-3">
-        {filteredprojects.map((project) => (
-          <ProjectCard project={project} openModal={openModal} />
-        ))}
+      <motion.div 
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-2 gap-y-3 mt-3"
+      >
+        <AnimatePresence mode="wait">
+          {filteredprojects.map((project) => (
+            <ProjectCard key={project.id} project={project} openModal={openModal} />
+          ))}
+        </AnimatePresence>
 
         {selectedProject && (
           <ProjectModal modalOpened={modalOpened} project={selectedProject} setModalOpened={setModalOpened} /> 
         )} 
-      </div>
+      </motion.div>
     </section>
   )
 }
