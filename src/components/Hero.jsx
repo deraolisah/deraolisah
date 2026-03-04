@@ -10,6 +10,7 @@ const Hero = () => {
   // Filter Projects
   const [filter, setFilter] = useState("All");
   const filteredprojects = filter === "All" ? projects : projects.filter(project => project.category === filter);
+  const [activeLayout, setActiveLayout] = useState("grid");
 
   // Open Modal
   const [modalOpened, setModalOpened] = useState(false);
@@ -54,40 +55,38 @@ const Hero = () => {
       </motion.h1>
 
       <div className='mt-6 flex items-center justify-between gap-2 flex-wrap'>
+        {/* Filter through Projects */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="flex items-center gap-x-4 flex-wrap font-medium text-sm"
+        >
+          {["All", "Web", "Graphics", "Experimental"].map((cat, index) => (
+            <motion.button 
+              key={index} 
+              onClick={() => setFilter(cat)} 
+              className={`hover:text-primary cursor-pointer ${filter === cat ? "underline font-semibold" : "text-dark/50"}`}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 400 }}
+            > 
+              {cat} 
+            </motion.button>
+          ))}
+        </motion.div>
 
-
-      {/* Filter through Projects */}
-      <motion.div 
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.1 }}
-        className="flex items-center gap-x-4 flex-wrap font-medium text-sm"
-      >
-        {["All", "Web", "Graphics", "Experimental"].map((cat, index) => (
-          <motion.button 
-            key={index} 
-            onClick={() => setFilter(cat)} 
-            className={`hover:text-primary cursor-pointer ${filter === cat ? "underline font-semibold" : "text-dark/50"}`}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            transition={{ type: "spring", stiffness: 400 }}
-          > 
-            {cat} 
-          </motion.button>
-        ))}
-      </motion.div>
-
-        <div className='flex items-center gap-1 bg-gray-100 rounded-md border border-gray-200'> 
-          <button className='p-1.5 rounded-md bg-transparent flex items-center gap-1 text-xs cursor-pointer'>
-            <List size={16} />
+        <div className='flex items-center gap-px bg-gray-100 rounded-md border border-gray-300'> 
+          <button className={`p-1.5 rounded-md flex items-center gap-1 text-xs cursor-pointer ${activeLayout === "grid" ? "bg-transparent" : "bg-gray-300"}`} onClick={() => {setActiveLayout("list")}} title='List'>
+            <List size={16} className='text-gray-600' />
             <span className='hidden pr-1.5'> List </span>
           </button>
-          <button className='p-1.5 rounded-md bg-gray-300 flex items-center gap-1 text-xs cursor-pointer'>
-            <Grid2x2 size={16} />
-           <span className='hidden pr-1.5'> Grid </span>
+          
+          <button className={`p-1.5 rounded-md flex items-center gap-1 text-xs cursor-pointer ${activeLayout === "grid" ? "bg-gray-300" : "bg-transparent"}`} onClick={() => {setActiveLayout("grid")}} title='Grid'>
+            <Grid2x2 size={16} className='text-gray-600'/>
+            <span className='hidden pr-1.5'> Grid </span>
           </button>
         </div>
-
       </div>
 
       <motion.div 
