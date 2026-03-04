@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
 import { projects } from "../assets/data";
+import { Grid2x2, List } from 'lucide-react';
 
 const Hero = () => {
   // Filter Projects
@@ -52,12 +53,15 @@ const Hero = () => {
         Independent Designer & Developer.
       </motion.h1>
 
+      <div className='mt-6 flex items-center justify-between gap-2 flex-wrap'>
+
+
       {/* Filter through Projects */}
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.1 }}
-        className="flex items-center gap-4 mt-6 font-medium text-sm"
+        className="flex items-center gap-x-4 flex-wrap font-medium text-sm"
       >
         {["All", "Web", "Graphics", "Experimental"].map((cat, index) => (
           <motion.button 
@@ -72,6 +76,19 @@ const Hero = () => {
           </motion.button>
         ))}
       </motion.div>
+
+        <div className='flex items-center gap-1 bg-gray-100 rounded-md border border-gray-200'> 
+          <button className='p-1.5 rounded-md bg-transparent flex items-center gap-1 text-xs cursor-pointer'>
+            <List size={16} />
+            <span className='hidden pr-1.5'> List </span>
+          </button>
+          <button className='p-1.5 rounded-md bg-gray-300 flex items-center gap-1 text-xs cursor-pointer'>
+            <Grid2x2 size={16} />
+           <span className='hidden pr-1.5'> Grid </span>
+          </button>
+        </div>
+
+      </div>
 
       <motion.div 
         variants={containerVariants}
