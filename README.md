@@ -1,11 +1,11 @@
-<h1 align="center">Hi 👋, I'm Nathan</h1>
-<h3 align="center">A passionate Freelance Full-Stack Web Developer.</h3>
+<h1 align="center">Hi, I'm Nathan</h1>
+<h3 align="center">A Freelance Full-Stack Dev.</h3>
 
-<p align="left"> <a href="https://twitter.com/deraolisah" target="blank"><img src="https://img.shields.io/twitter/follow/deraolisah?logo=twitter&style=for-the-badge" alt="deraolisah" /></a> </p>
+<p align="center"> <a href="https://twitter.com/deraolisah" target="blank"><img src="https://img.shields.io/twitter/follow/deraolisah?logo=twitter&style=for-the-badge" alt="deraolisah" /></a> </p>
 
 - 🔭 I’m currently working on [BlueVoltMarine](https://bluevoltmarine.com)
 
-- 🌱 I’m currently learning **TypeScript**
+- 🌱 I’m currently learning **TypeScript**, **NextJs**
 
 - 👨‍💻 All of my projects are available at [https://deraolisah.com](https://deraolisah.com)
 
