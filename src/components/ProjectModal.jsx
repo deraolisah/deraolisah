@@ -167,7 +167,7 @@ const ProjectModal = ({ modalOpened, project, setModalOpened }) => {
                     <span> {project.year} </span>
                   </motion.p>
                   <motion.p variants={itemVariants} className='w-full flex items-center flex-wrap gap-1.5'>
-                    <b className="flex"> TOOLS: </b>
+                    <b className="flex"> STACK: </b>
                     {project.stack?.map((item, index) => (
                       <span key={index}> {item} • </span>
                     ))}

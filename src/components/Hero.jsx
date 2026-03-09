@@ -54,7 +54,7 @@ const Hero = () => {
         Independent Designer & Developer.
       </motion.h1>
 
-      <div className='mt-6 flex items-center justify-between gap-2 flex-wrap'>
+      <div className='mt-6 flex items-center justify-between gap-2 flex-wrap py-2 bg-[whitesmoke] sticky top-0 z-20'>
         {/* Filter through Projects */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -65,7 +65,7 @@ const Hero = () => {
           {["All", "Web", "Graphics", "Experimental"].map((cat, index) => (
             <motion.button 
               key={index} 
-              onClick={() => setFilter(cat)} 
+              onClick={() => { setFilter(cat); scrollTo(0,0); }} 
               className={`hover:text-primary cursor-pointer ${filter === cat ? "underline font-semibold" : "text-dark/50"}`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -76,14 +76,14 @@ const Hero = () => {
           ))}
         </motion.div>
 
-        <div className='flex items-center gap-px bg-gray-100 rounded-md border border-gray-300'> 
-          <button className={`p-1.5 rounded-md flex items-center gap-1 text-xs cursor-pointer ${activeLayout === "grid" ? "bg-transparent" : "bg-gray-300"}`} onClick={() => {setActiveLayout("list")}} title='List'>
-            <List size={16} className='text-gray-600' />
+        <div className='flex items-center gap-px bg-gray-100 rounded-sm border border-gray-300'> 
+          <button className={`p-1.5 flex items-center gap-1 text-xs cursor-pointer ${activeLayout === "grid" ? "bg-transparent" : "bg-gray-300"}`} onClick={() => {setActiveLayout("list")}} title='List'>
+            <List size={14} className='text-gray-600' />
             <span className='hidden pr-1.5'> List </span>
           </button>
           
-          <button className={`p-1.5 rounded-md flex items-center gap-1 text-xs cursor-pointer ${activeLayout === "grid" ? "bg-gray-300" : "bg-transparent"}`} onClick={() => {setActiveLayout("grid")}} title='Grid'>
-            <Grid2x2 size={16} className='text-gray-600'/>
+          <button className={`p-1.5 flex items-center gap-1 text-xs cursor-pointer ${activeLayout === "grid" ? "bg-gray-300" : "bg-transparent"}`} onClick={() => {setActiveLayout("grid")}} title='Grid'>
+            <Grid2x2 size={14} className='text-gray-600'/>
             <span className='hidden pr-1.5'> Grid </span>
           </button>
         </div>
@@ -93,7 +93,7 @@ const Hero = () => {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-2 gap-y-3 mt-3"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-2 gap-y-3 mt-1"
       >
         <AnimatePresence mode="wait">
           {filteredprojects.map((project) => (

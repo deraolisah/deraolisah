@@ -20,14 +20,20 @@ const About = () => {
               <h2 className="text-lg md:text-xl mb-4 md:mb-6 font-bold"> About Me </h2>
 
               <p className="mb-6">
-                I’m a multi-disciplinary <strong>Designer, Engineer, and Artist</strong> with over <strong>5 years of experience</strong> crafting meaningful digital experiences and visual artefacts.
+                I’m a multi-disciplinary <strong>Designer, Engineer, Artist, and Entreprenuer</strong> with over <strong>5 years of experience</strong> crafting meaningful digital experiences and visual artefacts.
               </p>
 
               <p className="mb-6">
-                Originally with a first degree in <strong>Mechanical Engineering</strong>, alongside formal training in Full-Stack Web Development and Cybersecurity... 
+                Originally with a first degree in <strong>Mechanical Engineering</strong>, 
+                before I transitioned to Tech by obtaining formal training in Full-Stack Web Development and Cybersecurity...
+
 
                 <br/><br/>
-                I transitioned to Tech in order to design, create and blend analytical thinking with artistic expression to build interfaces and systems that are both functional and emotionally engaging.
+                
+                
+                Which enables me to design, create and blend analytical thinking with artistic expression, to build interfaces and systems that are both functional and emotionally engaging.
+                
+               
               </p>
 
               <p>
@@ -50,7 +56,7 @@ const About = () => {
                 <li>Content Creation & Digital Media</li>
                 <li>Frontend & Backend Development</li>
                 <li>Computer Networking</li>
-                <li>Cybersecurity</li>
+                <li>CyberSecurity</li>
               </ul>
 
               <p>
@@ -109,7 +115,7 @@ const About = () => {
                     <strong> Freelance - Remote </strong> • 
                     <span className='text-dark/80'> Web Applications Developer </span>
                   </p>
-                  <p> Building full‑stack applications using NodeJS, React, TailwindCSS, and MongoDB </p>
+                  <p> Building static and dynamic web applications using ExpressJs, NodeJs, ReactJs, TailwindCSS, and MongoDB. </p>
                 </div>
               </div>
             </div>

@@ -93,7 +93,7 @@ export const projects = [
       { type: "", url: "" },
     ],
     description: "Certified Maritime Vessel Brokerage, uptime machinery, electrical and emergency system survey",
-    stack: [ "Figma", "React.js", "TailwindCSS" ],
+    stack: [ "Figma", "ReactJs", "TailwindCSS" ],
   },
   { 
     id: 5, 
@@ -112,7 +112,7 @@ export const projects = [
       { type: "", url: "" },
     ],
     description: "Yole Couriers is a logistics and delivery service platform that connects customers with reliable courier services. \n\nBuilt with Vue.js and Node.js, it includes real-time tracking, order management, and customer support features to ensure a smooth delivery experience.",
-    stack: [ "React.js", "", "" ],
+    stack: [ "ReactJs", "TailwindCSS", "" ],
   },
   { 
     id: 6, 
@@ -131,7 +131,7 @@ export const projects = [
       { type: "", url: "" },
     ],
     description: "Corty Maxwell is a personal portfolio website showcasing the work and achievements of Corty Maxwell. \n\nCreated with Gatsby.js and GraphQL, it features a dynamic project gallery, blog section, and contact form to engage visitors and potential clients.",
-    stack: [ "React.js", "" ],
+    stack: [ "ReactJs", "" ],
   },
   { 
     id: 7, 
@@ -168,9 +168,9 @@ export const projects = [
       { type: "", url: "" },
       { type: "", url: "" },
     ],
-    description: "Chris Dubem Photography is a stunning portfolio website that showcases the captivating work of photographer Chris Dubem. \n\nBuilt with WordPress and Elementor, the site features high-resolution image galleries, client testimonials, and a booking system to connect with potential clients.",
+    description: "Chris Dubem Photography is a stunning photography portfolio website that showcases the captivating work of photographer Chris Dubem. \n\nBuilt with GreenSock Animation Library, the site features high-resolution image galleries, project modals, his services, contact form, and a booking system to schedule an appointment with him.",
     role: "Web Developer",
-    stack: [ "" ],
+    stack: [ "ReactJs", "TailwindCSS", "GSAP", "Figma", "NodeJs", "ExpressJS", "MongoDB" ],
   },
   { 
     id: 9, 
@@ -230,7 +230,7 @@ export const projects = [
   },
   { 
     id: 12,
-    name: "DesignHub", 
+    name: "Design Hub", 
     year: "2024", 
     category: "Experimental", 
     media: [
@@ -286,7 +286,7 @@ export const projects = [
     id: 15, 
     name: "Adina Hotel & Spa", 
     year: "2025", 
-    category: "Web", 
+    category: "Experimental", 
     media: [
       { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/4ef35f32-e7ef-4f3c-b036-718e78de7422/69.png?format=500w" },
       { type: "", url: "" },
