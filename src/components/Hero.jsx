@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from 'framer-motion';
-import ProjectCard from "./ProjectCard";
+import { motion } from 'framer-motion';
+import ProjectList from "./ProjectList"; // Import the new component
 import ProjectModal from "./ProjectModal";
 import { projects } from "../assets/data";
 import { Grid2x2, List } from 'lucide-react';
@@ -30,7 +30,7 @@ const Hero = () => {
     }
   }, [modalOpened]);
 
-  // Animation variants for the container
+  // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -76,35 +76,43 @@ const Hero = () => {
           ))}
         </motion.div>
 
+        {/* Layout Toggle Buttons - Fixed */}
         <div className='flex items-center gap-px bg-gray-100 rounded-sm border border-gray-300'> 
-          <button className={`p-1.5 flex items-center gap-1 text-xs cursor-pointer ${activeLayout === "grid" ? "bg-transparent" : "bg-gray-300"}`} onClick={() => {setActiveLayout("list")}} title='List'>
-            <List size={14} className='text-gray-600' />
-            <span className='hidden pr-1.5'> List </span>
+          <button 
+            className={`p-1.5 flex items-center gap-1 text-xs cursor-pointer transition-colors duration-200 ${
+              activeLayout === "list" ? "bg-gray-300" : "bg-transparent hover:bg-gray-200"
+            }`} 
+            onClick={() => setActiveLayout("list")} 
+            title='List view'
+          >
+            <List size={14} className={activeLayout === "list" ? "text-gray-700" : "text-gray-500"} />
+            <span className='hidden pr-1.5'>List</span>
           </button>
           
-          <button className={`p-1.5 flex items-center gap-1 text-xs cursor-pointer ${activeLayout === "grid" ? "bg-gray-300" : "bg-transparent"}`} onClick={() => {setActiveLayout("grid")}} title='Grid'>
-            <Grid2x2 size={14} className='text-gray-600'/>
-            <span className='hidden pr-1.5'> Grid </span>
+          <button 
+            className={`p-1.5 flex items-center gap-1 text-xs cursor-pointer transition-colors duration-200 ${
+              activeLayout === "grid" ? "bg-gray-300" : "bg-transparent hover:bg-gray-200"
+            }`} 
+            onClick={() => setActiveLayout("grid")} 
+            title='Grid view'
+          >
+            <Grid2x2 size={14} className={activeLayout === "grid" ? "text-gray-700" : "text-gray-500"} />
+            <span className='hidden pr-1.5'>Grid</span>
           </button>
         </div>
       </div>
 
-      <motion.div 
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-2 gap-y-3 mt-1"
-      >
-        <AnimatePresence mode="wait">
-          {filteredprojects.map((project) => (
-            <ProjectCard key={project.id} project={project} openModal={openModal} />
-          ))}
-        </AnimatePresence>
+      {/* Project List Component */}
+      <ProjectList 
+        projects={filteredprojects} 
+        openModal={openModal} 
+        layout={activeLayout}
+      />
 
-        {selectedProject && (
-          <ProjectModal modalOpened={modalOpened} project={selectedProject} setModalOpened={setModalOpened} /> 
-        )} 
-      </motion.div>
+      {/* Modal */}
+      {selectedProject && (
+        <ProjectModal modalOpened={modalOpened} project={selectedProject} setModalOpened={setModalOpened} /> 
+      )} 
     </section>
   )
 }
