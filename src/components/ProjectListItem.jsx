@@ -18,7 +18,7 @@ const ProjectListItem = ({ project, openModal }) => {
       }
     },
     hover: {
-      x: 5,
+      x: 2,
       transition: {
         type: "spring",
         stiffness: 400,
@@ -36,11 +36,11 @@ const ProjectListItem = ({ project, openModal }) => {
       initial="hidden"
       animate="visible"
       whileHover="hover"
-      className="flex items-center gap-4 p-3 bg-white border border-gray-200 rounded-lg cursor-pointer hover:border-gray-400 transition-colors duration-200"
+      className="flex items-center gap-4 p-3 bg-white border border-gray-200 rounded-lg cursor-pointer hover:border-gray-300 transition-colors duration-200"
       onClick={() => openModal(project.id)}
     >
       {/* Thumbnail */}
-      <div className="relative w-20 h-20 flex-shrink-0 bg-gray-100 border border-gray-200 rounded-md overflow-hidden">
+      <div className="relative w-20 h-20 shrink-0 bg-gray-100 border border-gray-200 rounded-md overflow-hidden">
         {firstMedia?.url ? (
           firstMedia.type === "img" ? (
             <img 
@@ -73,7 +73,7 @@ const ProjectListItem = ({ project, openModal }) => {
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2 mb-1">
           <h3 className="font-medium text-base truncate">{project.name}</h3>
-          <span className="text-xs text-gray-500 flex-shrink-0">• {project.year}</span>
+          <span className="text-xs text-gray-500 shrink-0">• {project.year}</span>
         </div>
         
         <p className="text-sm text-gray-600 line-clamp-1">

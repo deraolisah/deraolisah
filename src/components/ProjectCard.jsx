@@ -18,7 +18,7 @@ const ProjectCard = ({ project, openModal }) => {
       }
     },
     hover: {
-      y: -5,
+      y: -3,
       transition: {
         type: "spring",
         stiffness: 400,
