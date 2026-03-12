@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from "react";
 import { motion } from 'framer-motion';
-import ProjectList from "./ProjectList"; // Import the new component
+import Projects from "./Projects"; 
 import ProjectModal from "./ProjectModal";
 import { projects } from "../assets/data";
 import { Grid2x2, List } from 'lucide-react';
@@ -77,7 +77,7 @@ const Hero = () => {
         </motion.div>
 
         {/* Layout Toggle Buttons - Fixed */}
-        <div className='flex items-center gap-px bg-gray-100 rounded-sm border border-gray-300'> 
+        <div className='flex items-center gap-0 bg-gray-100 rounded-sm border border-gray-300'> 
           <button 
             className={`p-1.5 flex items-center gap-1 text-xs cursor-pointer transition-colors duration-200 ${
               activeLayout === "list" ? "bg-gray-300" : "bg-transparent hover:bg-gray-200"
@@ -103,7 +103,7 @@ const Hero = () => {
       </div>
 
       {/* Project List Component */}
-      <ProjectList 
+      <Projects
         projects={filteredprojects} 
         openModal={openModal} 
         layout={activeLayout}

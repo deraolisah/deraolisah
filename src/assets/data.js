@@ -1,10 +1,14 @@
-import MecoClub from "../assets/mecoclub.gif";
-import UrbanScope01 from "../assets/UrbanScope01.gif";
-import UrbanScope02 from "../assets/UrbanScope02.png";
-import UrbanScope03 from "../assets/UrbanScope03.gif";
-import UrbanScope04 from "../assets/UrbanScope04.png";
-import UrbanScope05 from "../assets/UrbanScope05.png";
-import UrbanScope06 from "../assets/UrbanScope06.png";
+import MecoClub01 from "../assets/MecoClub-01.png";
+import MecoClub02 from "../assets/MecoClub-02.png";
+import MecoClub03 from "../assets/MecoClub-03.png";
+import MecoClub04 from "../assets/mecoclub.gif";
+import UrbanScope01 from "../assets/UrbanScope-01.png";
+import UrbanScope02 from "../assets/UrbanScope01.gif";
+import UrbanScope03 from "../assets/UrbanScope02.png";
+// import UrbanScope04 from "../assets/UrbanScope03.gif";
+// import UrbanScope04 from "../assets/UrbanScope04.png";
+import UrbanScope04 from "../assets/UrbanScope05.png";
+import UrbanScope05 from "../assets/UrbanScope06.png";
 import DelightWedsFredrick from "../assets/DelightWedsFredrick.png";  
 // import Mosalak from "../assets/Mosalak.png";
 import YoleCouriers from "../assets/YoleCouriers.png";
@@ -26,8 +30,11 @@ export const projects = [
     category: "Web", 
     link: "https://mecoclub.netlify.app/",
     media: [
+      { type: "img", url: MecoClub01 },
+      { type: "img", url: MecoClub02 },
+      { type: "img", url: MecoClub03 },
+      { type: "img", url: MecoClub04 },
       { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/1637238516875-RM5BHZ62RUAKHD9O60MG/Riccardo-Agostinelli---Neologia-v2.gif?format=500w" },
-      { type: "img", url: MecoClub },
       { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/476066f1-a572-4556-ab22-439e9bf7a644/Precomposizione+1.gif?format=500w" },
       { type: "", url: "" },
       { type: "", url: "" },
@@ -50,7 +57,6 @@ export const projects = [
       { type: "img", url: UrbanScope03 },
       { type: "img", url: UrbanScope04 },
       { type: "img", url: UrbanScope05 },
-      { type: "img", url: UrbanScope06 },
       { type: "", url: "" },
       { type: "", url: "" },
     ],

@@ -59,7 +59,7 @@ const ProjectCard = ({ project, openModal }) => {
       variants={cardVariants}
       initial="hidden"
       animate="visible"
-      whileHover="hover"
+      // whileHover="hover"
       className="flex flex-col items-start gap-1 overflow-hidden truncate whitespace-nowrap cursor-pointer" 
       onClick={() => openModal(project.id)}
     >
@@ -69,7 +69,7 @@ const ProjectCard = ({ project, openModal }) => {
           alt={project.name}
           className="w-full h-fit bg-gray-200 border border-gray-300 aspect-video object-cover flex items-center justify-center" 
           loading="lazy"
-          whileHover={{ scale: 1.05 }}
+          // whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}
           onError={(e) => {
             e.currentTarget.src = loadingImg;
@@ -81,7 +81,7 @@ const ProjectCard = ({ project, openModal }) => {
         <div className="relative w-full aspect-video md:aspect-3/2 bg-gray-200 border border-gray-300 overflow-hidden">
           <motion.video 
             className="w-full h-full object-cover"
-            whileHover={{ scale: 1.05 }}
+            // whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
             autoPlay 
             loop 

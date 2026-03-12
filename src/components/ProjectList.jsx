@@ -1,48 +1,115 @@
-import React from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import ProjectCard from "./ProjectCard";
-import ProjectListItem from "./ProjectListItem"; // We'll create this next
+import { motion } from 'framer-motion';
+import loadingImg from "../assets/loading.gif";
+import { Image, Film } from 'lucide-react';
 
-const ProjectList = ({ projects, openModal, layout }) => {
-  // Animation variants for the container
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
+const ProjectList = ({ project, openModal }) => {
+  const firstMedia = project.media?.[0];
+
+  // Animation variants for the list item
+  const itemVariants = {
+    hidden: { opacity: 0, x: -20 },
+    visible: { 
+      opacity: 1, 
+      x: 0,
       transition: {
-        staggerChildren: 0.1
+        type: "spring",
+        damping: 15,
+        stiffness: 200
+      }
+    },
+    hover: {
+      x: 1,
+      transition: {
+        type: "spring",
+        stiffness: 400,
+        damping: 25
       }
     }
   };
 
-  // Different grid layouts based on view
-  const gridLayout = "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-2 gap-y-3";
-  const listLayout = "flex flex-col gap-3";
+  // Determine media type icon
+  const MediaIcon = firstMedia?.type === "img" ? Image : Film;
 
   return (
     <motion.div
-      variants={containerVariants}
+      variants={itemVariants}
       initial="hidden"
       animate="visible"
-      className={layout === "grid" ? gridLayout : listLayout}
+      whileHover="hover"
+      className="flex items-center gap-3 p-2 bg-white  cursor-pointer hover:border-gray-300 transition-colors duration-200"
+      onClick={() => openModal(project.id)}
     >
-      <AnimatePresence mode="wait">
-        {projects.map((project) => (
-          layout === "grid" ? (
-            <ProjectCard 
-              key={project.id} 
-              project={project} 
-              openModal={openModal} 
+      {/* Thumbnail */}
+      <div className="relative h-20 aspect-video shrink-0 bg-gray-100 border border-gray-200 rounded-md overflow-hidden">
+        {firstMedia?.url ? (
+          firstMedia.type === "img" ? (
+            <img 
+              src={firstMedia.url} 
+              alt={project.name}
+              className="w-full h-full object-cover aspect-video"
+              onError={(e) => {
+                e.currentTarget.src = loadingImg;
+              }}
             />
           ) : (
-            <ProjectListItem
-              key={project.id}
-              project={project}
-              openModal={openModal}
-            />
+            <video 
+              className="w-full h-full object-cover aspect-video"
+              autoPlay 
+              loop 
+              muted
+              playsInline
+            >
+              <source src={firstMedia.url} type="video/mp4" />
+            </video>
           )
-        ))}
-      </AnimatePresence>
+        ) : (
+          <div className="w-full h-full flex items-center justify-center">
+            <MediaIcon size={24} className="text-gray-400" />
+          </div>
+        )}
+      </div>
+
+      {/* Content */}
+      <div className="flex-1 min-w-0">
+        <div className="flex items-center gap-2 mb-1">
+          <h3 className="text-base md:text-xl font-medium truncate">{project.name}</h3>
+          <span className="text-sm text-gray-500 shrink-0"> • &nbsp; {project.year}</span>
+        </div>
+        
+        {/* <p className="text-sm text-gray-600 line-clamp-1">
+          {project.description || `${project.category} Project`}
+        </p> */}
+
+        {/* Stack tags */}
+        {project.stack && project.stack.length > 0 && (
+          <div className="flex items-center gap-1.5 mt-2">
+            {project.stack.slice(0, 3).map((tech, index) => (
+              <span 
+                key={index} 
+                className="text-xs px-2 py-0.5 bg-gray-100 rounded-full text-gray-600"
+              >
+                {tech}
+              </span>
+            ))}
+            {project.stack.length > 3 && (
+              <span className="text-xs text-gray-400">
+                +{project.stack.length - 3}
+              </span>
+            )}
+          </div>
+        )}
+      </div>
+
+      {/* Arrow indicator */}
+      <motion.div 
+        className="shrink-0 text-gray-400"
+        whileHover={{ x: 3 }}
+        transition={{ type: "spring", stiffness: 300 }}
+      >
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+          <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
+        </svg>
+      </motion.div>
     </motion.div>
   );
 };
