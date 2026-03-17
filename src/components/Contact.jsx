@@ -1,3 +1,4 @@
+import { ArrowUpRight } from "lucide-react";
 import React, { useState } from "react";
 
 const Contact = () => {
@@ -97,7 +98,10 @@ const Contact = () => {
           <div className='mt-8 whitespace-normal'>
             Good old email is a safer bet, so just use the form. 
             <br/><br/>
-            Or use &nbsp;<a href="https://wa.me/2347088530385/" target='_blank' rel="noopener noreferrer" className='font-bold underline hover:text-primary'>WhatsApp</a>, to reach me!
+            Or use &nbsp;<a href="https://wa.me/2347088530385/" target='_blank' rel="noopener noreferrer" className='font-bold underline text-primary inline-flex items-center group'>
+              WhatsApp 
+              <ArrowUpRight size={16} className="group-hover:ml-1.5 group-hover:rotate-45 transition-all duration-300" />
+            </a>, to reach me!
           </div>
         </div>
 
@@ -158,7 +162,7 @@ const Contact = () => {
             <button 
               type='submit' 
               disabled={loading}
-              className={`bg-dark text-light p-4 text-center cursor-pointer transition-opacity duration-200 ${loading ? 'opacity-70 cursor-not-allowed' : 'hover:opacity-90'}`}
+              className={`bg-primary text-light p-4 text-center cursor-pointer transition-opacity duration-200 ${loading ? 'opacity-70 cursor-not-allowed' : 'hover:opacity-90'}`}
               aria-label={loading ? "Sending message" : "Send message"}
             >
               {loading ? "Sending..." : "Send Message"}

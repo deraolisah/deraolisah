@@ -60,13 +60,13 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="flex items-center gap-x-4 flex-wrap font-medium text-sm"
+          className="flex-1 flex items-center gap-x-4 flex-wrap font-medium text-sm"
         >
           {["All", "Web", "Graphics", "Experimental"].map((cat, index) => (
             <motion.button 
               key={index} 
               onClick={() => { setFilter(cat); scrollTo(0,0); }} 
-              className={`hover:text-primary cursor-pointer ${filter === cat ? "underline font-semibold" : "text-dark/50"}`}
+              className={`hover:text-primary cursor-pointer ${filter === cat ? "underline font-semibold text-primary" : "text-dark/50"}`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 400 }}
@@ -76,27 +76,32 @@ const Hero = () => {
           ))}
         </motion.div>
 
+        <p className='flex items-center gap-1 font-semibold text-xs text-light bg-primary p-1 px-2 rounded-full'>
+          {filteredprojects.length} 
+          <span className='hidden md:flex'> projects </span>
+        </p>
+
         {/* Layout Toggle Buttons - Fixed */}
-        <div className='flex items-center gap-0 bg-gray-100 rounded-sm border border-gray-300'> 
+        <div className='flex items-center gap-0 bg-gray-100 rounded-sm border border-primary/50 overflow-hidden'> 
           <button 
             className={`p-1.5 flex items-center gap-1 text-xs cursor-pointer transition-colors duration-200 ${
-              activeLayout === "list" ? "bg-gray-300" : "bg-transparent hover:bg-gray-200"
+              activeLayout === "list" ? "bg-primary" : "bg-transparent hover:bg-gray-200"
             }`} 
             onClick={() => setActiveLayout("list")} 
             title='List view'
           >
-            <List size={14} className={activeLayout === "list" ? "text-gray-700" : "text-gray-500"} />
+            <List size={14} className={activeLayout === "list" ? "text-light" : "text-gray-500"} />
             <span className='hidden pr-1.5'>List</span>
           </button>
           
           <button 
             className={`p-1.5 flex items-center gap-1 text-xs cursor-pointer transition-colors duration-200 ${
-              activeLayout === "grid" ? "bg-gray-300" : "bg-transparent hover:bg-gray-200"
+              activeLayout === "grid" ? "bg-primary" : "bg-transparent hover:bg-gray-200"
             }`} 
             onClick={() => setActiveLayout("grid")} 
             title='Grid view'
           >
-            <Grid2x2 size={14} className={activeLayout === "grid" ? "text-gray-700" : "text-gray-500"} />
+            <Grid2x2 size={14} className={activeLayout === "grid" ? "text-light" : "text-gray-500"} />
             <span className='hidden pr-1.5'>Grid</span>
           </button>
         </div>

@@ -82,7 +82,7 @@ const ProjectList = ({ project, openModal }) => {
 
         {/* Stack tags */}
         {project.stack && project.stack.length > 0 && (
-          <div className="flex items-center gap-1.5 mt-2">
+          <div className="flex items-center flex-wrap gap-1.5 mt-2">
             {project.stack.slice(0, 3).map((tech, index) => (
               <span 
                 key={index} 

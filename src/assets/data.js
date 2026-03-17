@@ -1,3 +1,5 @@
+import FoodByAma01 from "../assets/FoodByAma-01.png";
+import FoodByAma02 from "../assets/FoodByAma-02.png";
 import MecoClub01 from "../assets/MecoClub-01.png";
 import MecoClub02 from "../assets/MecoClub-02.png";
 import MecoClub03 from "../assets/MecoClub-03.png";
@@ -5,11 +7,13 @@ import MecoClub04 from "../assets/mecoclub.gif";
 import UrbanScope01 from "../assets/UrbanScope-01.png";
 import UrbanScope02 from "../assets/UrbanScope01.gif";
 import UrbanScope03 from "../assets/UrbanScope02.png";
-// import UrbanScope04 from "../assets/UrbanScope03.gif";
+import UrbanScope from "../assets/UrbanScope.gif";
 // import UrbanScope04 from "../assets/UrbanScope04.png";
 import UrbanScope04 from "../assets/UrbanScope05.png";
 import UrbanScope05 from "../assets/UrbanScope06.png";
-import DelightWedsFredrick from "../assets/DelightWedsFredrick.png";  
+import DelightWedsFredrick from "../assets/DelightWedsFredrick.gif";
+import DelightWedsFredrick01 from "../assets/DelightWedsFredrick-01.png";
+import DelightWedsFredrick02 from "../assets/DelightWedsFredrick-02.png";
 // import Mosalak from "../assets/Mosalak.png";
 import YoleCouriers from "../assets/YoleCouriers.png";
 import Corty from "../assets/Corty.png";
@@ -25,17 +29,14 @@ import Swizz from "../assets/Swizz.png";
 export const projects = [
   { 
     id: 1, 
-    name: "Meco Club", 
-    year: "2025", 
-    category: "Web", 
-    link: "https://mecoclub.netlify.app/",
+    name: "FoodByAma", 
+    year: "2026", 
+    category: "Experimental", 
+    link: "https://foodbyama.netlify.app/",
     media: [
-      { type: "img", url: MecoClub01 },
-      { type: "img", url: MecoClub02 },
-      { type: "img", url: MecoClub03 },
-      { type: "img", url: MecoClub04 },
+      { type: "img", url: FoodByAma01 },
+      { type: "img", url: FoodByAma02 },
       { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/1637238516875-RM5BHZ62RUAKHD9O60MG/Riccardo-Agostinelli---Neologia-v2.gif?format=500w" },
-      { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/476066f1-a572-4556-ab22-439e9bf7a644/Precomposizione+1.gif?format=500w" },
       { type: "", url: "" },
       { type: "", url: "" },
       { type: "", url: "" },
@@ -47,6 +48,25 @@ export const projects = [
   },
   { 
     id: 2, 
+    name: "Meco Club", 
+    year: "2025", 
+    category: "Web", 
+    link: "https://mecoclub.netlify.app/",
+    media: [
+      { type: "img", url: MecoClub01 },
+      { type: "img", url: MecoClub02 },
+      { type: "img", url: MecoClub03 },
+      { type: "img", url: MecoClub04 },
+      { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/476066f1-a572-4556-ab22-439e9bf7a644/Precomposizione+1.gif?format=500w" },
+      { type: "", url: "" },
+      { type: "", url: "" },
+      { type: "", url: "" },
+    ],
+    description: "Dynamic web platform for Meco Club, a UK-based Record Label managing multiple signed Artists.  \n\nThe site features artist profiles, music release showcases, event promotion modules, and a store for purchasing branded merch.",
+    stack: [ "React.js", "TailwindCSS", "GSAP" ],
+  },
+  { 
+    id: 3, 
     name: "Urban Scope", 
     year: "2025", 
     category: "Web", 
@@ -56,6 +76,7 @@ export const projects = [
       { type: "img", url: UrbanScope02 },
       { type: "img", url: UrbanScope03 },
       { type: "img", url: UrbanScope04 },
+      { type: "img", url: UrbanScope },
       { type: "img", url: UrbanScope05 },
       { type: "", url: "" },
       { type: "", url: "" },
@@ -64,15 +85,15 @@ export const projects = [
     stack: [ "React.js", "TailwindCSS", "GSAP", "Nodejs", "MongoDB"],
   },
   { 
-    id: 3, 
+    id: 4, 
     name: "Delight Weds Fredrick", 
     year: "2024", 
     category: "Web", 
     link: "https://delight-weds-fredrick.netlify.app/",
     media: [
       { type: "img", url: DelightWedsFredrick },
-      { type: "", url: "" },
-      { type: "", url: "" },
+      { type: "img", url: DelightWedsFredrick01 },
+      { type: "img", url: DelightWedsFredrick02 },
       { type: "", url: "" },
       { type: "", url: "" },
       { type: "", url: "" },
@@ -83,7 +104,7 @@ export const projects = [
     stack: [ "HTML", "CSS", "JavaScript", "WhatsApp API" ],
   },
   { 
-    id: 4, 
+    id: 5, 
     name: "BlueVoltMarine", 
     year: "2026", 
     category: "Web", 
@@ -102,7 +123,7 @@ export const projects = [
     stack: [ "Figma", "ReactJs", "TailwindCSS" ],
   },
   { 
-    id: 5, 
+    id: 6, 
     name: "Yole Couriers", 
     year: "2025", 
     category: "Web", 
@@ -121,7 +142,7 @@ export const projects = [
     stack: [ "ReactJs", "TailwindCSS", "" ],
   },
   { 
-    id: 6, 
+    id: 7, 
     name: "Corty Maxwell", 
     year: "2023", 
     category: "Experimental", 
@@ -140,7 +161,7 @@ export const projects = [
     stack: [ "ReactJs", "" ],
   },
   { 
-    id: 7, 
+    id: 8, 
     name: "Amara Reynolds", 
     year: "2024", 
     category: "Experimental", 
@@ -158,7 +179,7 @@ export const projects = [
     stack: [],
   },
   { 
-    id: 8, 
+    id: 9, 
     name: "Chris Dubem Photography", 
     year: "2026", 
     category: "Web", 
@@ -179,7 +200,7 @@ export const projects = [
     stack: [ "ReactJs", "TailwindCSS", "GSAP", "Figma", "NodeJs", "ExpressJS", "MongoDB" ],
   },
   { 
-    id: 9, 
+    id: 10, 
     name: "Shop Lindura", 
     year: "2024", 
     category: "Web", 
@@ -197,7 +218,7 @@ export const projects = [
     stack: [ "" ],
   },
   { 
-    id: 10, 
+    id: 11, 
     name: "Marvel Consulting", 
     year: "2023", 
     category: "Experimental", 
@@ -216,7 +237,7 @@ export const projects = [
     stack: [ "" ],
   },
   { 
-    id: 11, 
+    id: 12, 
     name: "Swizz", 
     year: "2023", 
     category: "Experimental", 
@@ -235,10 +256,11 @@ export const projects = [
     stack: [ "" ], 
   },
   { 
-    id: 12,
-    name: "Design Hub", 
+    id: 13,
+    name: "Emeka Onyeka & Co", 
     year: "2024", 
     category: "Experimental", 
+    link: "",
     media: [
       { type: "video", url: "" },
       { type: "video", url: "" },
@@ -253,10 +275,11 @@ export const projects = [
     stack: [ "" ],
   },
   { 
-    id: 13, 
-    name: "TechNova", 
+    id: 14, 
+    name: "Easy Tickets", 
     year: "2025", 
     category: "Graphics", 
+    link: "",
     media: [
       { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/049bdb15-54d2-4ef8-8ae7-3ea0d09abaca/GIF_09-min.gif?format=500w" },
       { type: "", url: "" },
@@ -271,10 +294,11 @@ export const projects = [
     stack: [ "" ],
   },
   { 
-    id: 14, 
-    name: "PixelPerfect", 
-    year: "2023", 
-    category: "Graphics", 
+    id: 15, 
+    name: "Christamelon Foundation", 
+    year: "2022", 
+    category: "Web", 
+    link: "",
     media: [
       { type: "", url: "" },
       { type: "", url: "" },
@@ -289,10 +313,11 @@ export const projects = [
     stack: [ "" ],
   },
   { 
-    id: 15, 
+    id: 16, 
     name: "Adina Hotel & Spa", 
     year: "2025", 
     category: "Experimental", 
+    link: "https://adinahotel.netlify.app/",
     media: [
       { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/4ef35f32-e7ef-4f3c-b036-718e78de7422/69.png?format=500w" },
       { type: "", url: "" },
@@ -307,12 +332,12 @@ export const projects = [
     stack: [ "" ],
   },
   {
-    id: 16,
+    id: 17,
     name: "Niarobi Mats",
     year: "2025",
     category: "Graphics",
     media: [
-      { type: "", url: "" },
+      { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/476066f1-a572-4556-ab22-439e9bf7a644/Precomposizione+1.gif?format=500w" },
       { type: "", url: "" },
       { type: "", url: "" },
       { type: "", url: "" },
