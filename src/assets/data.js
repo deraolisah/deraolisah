@@ -43,7 +43,7 @@ export const projects = [
       { type: "", url: "" },
       { type: "", url: "" },
     ],
-    description: "Dynamic web platform for Meco Club, a UK-based Record Label managing multiple signed Artists.  \n\nThe site features artist profiles, music release showcases, event promotion modules, and a store for purchasing branded merch.",
+    description: "Catering Website for a food business in Awka. \n\nThe site features various meals to order, payment gateway, account, and loyalty package..",
     stack: [ "React.js", "TailwindCSS", "GSAP" ],
   },
   { 
