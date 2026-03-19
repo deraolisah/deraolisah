@@ -76,13 +76,13 @@ const Hero = () => {
           ))}
         </motion.div>
 
-        <p className='flex items-center gap-1 font-semibold text-xs text-light bg-primary p-1 px-2 rounded-full'>
+        <p className='flex items-center gap-1 font-medium text-xs text-light bg-primary p-1 px-2 rounded-full'>
           {filteredprojects.length} 
           <span className='hidden md:flex'> projects </span>
         </p>
 
         {/* Layout Toggle Buttons - Fixed */}
-        <div className='flex items-center gap-0 bg-gray-100 rounded-sm border border-primary/50 overflow-hidden'> 
+        <div className='flex items-center gap-0 bg-gray-100 rounded-sm border border-primary/80 overflow-hidden'> 
           <button 
             className={`p-1.5 flex items-center gap-1 text-xs cursor-pointer transition-colors duration-200 ${
               activeLayout === "list" ? "bg-primary" : "bg-transparent hover:bg-gray-200"
