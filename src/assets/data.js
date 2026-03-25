@@ -278,7 +278,7 @@ export const projects = [
     id: 14, 
     name: "Easy Tickets", 
     year: "2025", 
-    category: "Graphics", 
+    category: "Experimental", 
     link: "",
     media: [
       { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/049bdb15-54d2-4ef8-8ae7-3ea0d09abaca/GIF_09-min.gif?format=500w" },
