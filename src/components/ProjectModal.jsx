@@ -198,7 +198,7 @@ const ProjectModal = ({ modalOpened, project, setModalOpened }) => {
 
             <motion.button 
               type='button' 
-              className='absolute top-5 right-5 cursor-pointer p-1 bg-gray-200 border border-gray-300 hover:bg-gray-300 transition-colors duration-300 rounded-full'
+              className='absolute top-2.5 right-2.5 cursor-pointer p-1 bg-gray-200 border border-gray-300 hover:bg-gray-300 transition-colors duration-300 rounded-full'
               onClick={() => setModalOpened(false)}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}

@@ -43,8 +43,8 @@ export const projects = [
       { type: "", url: "" },
       { type: "", url: "" },
     ],
-    description: "Catering Website for a food business in Awka. \n\nThe site features various meals to order, payment gateway, account, and loyalty package..",
-    stack: [ "React.js", "TailwindCSS", "GSAP" ],
+    description: "A Catering Website for a food business based in Awka. \n\nThe site features various meals to add to cart, place an order, payment gateway, account creation, and a loyalty package.",
+    stack: [ "React.js", "TailwindCSS", "GSAP", "Paystack" ],
   },
   { 
     id: 2, 
@@ -62,7 +62,7 @@ export const projects = [
       { type: "", url: "" },
       { type: "", url: "" },
     ],
-    description: "Dynamic web platform for Meco Club, a UK-based Record Label managing multiple signed Artists.  \n\nThe site features artist profiles, music release showcases, event promotion modules, and a store for purchasing branded merch.",
+    description: "A Dynamic Web Platform for Meco Club, a UK-based Record Label managing multiple signed Artists.  \n\nThe site features artist profiles, music release showcases, event promotion modules, and a store for purchasing branded merch.",
     stack: [ "React.js", "TailwindCSS", "GSAP" ],
   },
   { 
@@ -81,7 +81,7 @@ export const projects = [
       { type: "", url: "" },
       { type: "", url: "" },
     ],
-    description: "Urban Scope is a modern real estate web application that allows users to explore properties in various cities. \n\nIt features advanced search and filters, detailed property listings with video tours, inspection booking system, user accounts + admin dashoboard, and real-time availability updates.",
+    description: "A Modern Real Estate Web App that allows users to explore properties in various cities. \n\nIt features advanced search and filters, detailed property listings with video tours, inspection booking system, user accounts + admin dashboard, and real-time availability updates.",
     stack: [ "React.js", "TailwindCSS", "GSAP", "Nodejs", "MongoDB"],
   },
   { 
@@ -100,7 +100,7 @@ export const projects = [
       { type: "", url: "" },
       { type: "", url: "" },
     ],
-    description: "A beautifully designed wedding website for Delight and Fredrick, featuring event details, RSVP functionality, and a gallery to share their special moments with friends and family. \n\nBuilt with HTML, CSS, and JavaScript to ensure a seamless and engaging user experience." ,
+    description: "A beautifully designed wedding website for Delight and Fredrick, featuring event details, RSVP functionality, and a gallery to share their special moments with friends and family. \n\nBuilt to ensure a seamless and engaging wedding ceremony." ,
     stack: [ "HTML", "CSS", "JavaScript", "WhatsApp API" ],
   },
   { 
@@ -119,7 +119,7 @@ export const projects = [
       { type: "", url: "" },
       { type: "", url: "" },
     ],
-    description: "Certified Maritime Vessel Brokerage, uptime machinery, electrical and emergency system survey",
+    description: "Certified Maritime Vessel Brokerage, uptime machinery, electrical and emergency system survey.",
     stack: [ "Figma", "ReactJs", "TailwindCSS" ],
   },
   { 
@@ -138,7 +138,7 @@ export const projects = [
       { type: "", url: "" },
       { type: "", url: "" },
     ],
-    description: "Yole Couriers is a logistics and delivery service platform that connects customers with reliable courier services. \n\nBuilt with Vue.js and Node.js, it includes real-time tracking, order management, and customer support features to ensure a smooth delivery experience.",
+    description: "A Logistics and Delivery service platform that connects customers with reliable courier services. \n\nIt includes real-time tracking, order management, and customer support features to ensure a smooth delivery experience.",
     stack: [ "ReactJs", "TailwindCSS", "" ],
   },
   { 
