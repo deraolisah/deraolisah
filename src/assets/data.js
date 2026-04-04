@@ -72,8 +72,8 @@ export const projects = [
     category: "Web", 
     link: "https://urbanscope.netlify.app/",
     media: [
-      { type: "img", url: UrbanScope01 },
       { type: "img", url: UrbanScope02 },
+      { type: "img", url: UrbanScope01 },
       { type: "img", url: UrbanScope03 },
       { type: "img", url: UrbanScope04 },
       { type: "img", url: UrbanScope },
