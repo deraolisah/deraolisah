@@ -97,7 +97,7 @@ const ProjectCard = ({ project, openModal }) => {
           </div>
         )
       ) : (
-        <div className="w-full h-full flex items-center justify-center">
+        <div className="w-full h-full flex items-center justify-center aspect-video bg-gray-200 border border-gray-300">
           <MediaIcon size={24} className="text-gray-400" />
         </div>
       )}

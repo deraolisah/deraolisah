@@ -20,18 +20,18 @@ const About = () => {
               <h2 className="text-lg md:text-xl mb-4 md:mb-6 font-bold"> About Me </h2>
 
               <p className="mb-6">
-                I’m a multi-disciplinary <strong>Designer, Engineer, Artist, and Entreprenuer</strong> with over <strong>5 years of experience</strong> crafting meaningful digital experiences and visual artefacts.
+                I’m a multi-disciplinary <strong className='font-semibold'>Designer, Engineer, Artist, and Entreprenuer</strong> with over <strong className='font-semibold'>5 years of experience</strong> crafting meaningful digital experiences and visual artefacts.
               </p>
 
               <p className="mb-6">
-                Originally with a first degree in <strong>Mechanical Engineering</strong>, 
+                Originally with a first degree in <strong className='font-semibold'>Mechanical Engineering</strong>, 
                 before I transitioned to Tech by obtaining formal training in Full-Stack Web Development and Cybersecurity...
 
 
                 <br/><br/>
                 
                 
-                Which enables me to design, create and blend analytical thinking with artistic expression, to build interfaces and systems that are both functional and emotionally engaging.
+                Which enables me to design, create and blend analytical thinking with artistic creativity, to build interfaces and systems that are both functional and emotionally engaging.
                 
                
               </p>
@@ -79,9 +79,10 @@ const About = () => {
 
               <div className='flex-1 space-y-4'>
                 <div className='flex flex-col gap-1'>
-                  <p>
-                    <strong> NIIT ForteSoft </strong> • 
-                    <span className='text-dark/80'> Cyber‑Security Graduate Trainee </span>
+                  <p className='space-x-1'>
+                    <strong className='font-semibold'> NIIT ForteSoft </strong> 
+                    <span> • </span> 
+                    <span className='text-dark/70'> Cyber‑Security Graduate Trainee </span>
                   </p>                  
                   <p> Hands‑on experience with cybersecurity tools and threat‑response techniques. </p>
                 </div>
@@ -95,9 +96,10 @@ const About = () => {
 
               <div className='flex-1 space-y-4'>
                 <div className='flex flex-col gap-1'>
-                  <p>
-                    <strong> NIIT ForteSoft </strong> • 
-                    <span className='text-dark/80'> Network Analyst (Cisco Certified) </span>
+                  <p className='space-x-1'>
+                    <strong className='font-semibold'> NIIT ForteSoft </strong> 
+                    <span> • </span> 
+                    <span className='text-dark/70'> Network Analyst (Cisco Certified) </span>
                   </p>
                   <p> Setup, upgrade, and maintenance of network infrastructures. </p>
                 </div>
@@ -111,9 +113,10 @@ const About = () => {
 
               <div className='flex-1 space-y-4'>
                 <div className='flex flex-col gap-1'>
-                  <p>
-                    <strong> Freelance - Remote </strong> • 
-                    <span className='text-dark/80'> Web Applications Developer </span>
+                  <p className='space-x-1'>
+                    <strong className='font-semibold'> Freelance - Remote </strong>
+                    <span> • </span>
+                    <span className='text-dark/70'> Web Applications Developer </span>
                   </p>
                   <p> Building static and dynamic web applications using ExpressJs, NodeJs, ReactJs, TailwindCSS, and MongoDB. </p>
                 </div>

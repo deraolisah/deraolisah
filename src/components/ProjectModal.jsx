@@ -137,7 +137,7 @@ const ProjectModal = ({ modalOpened, project, setModalOpened }) => {
                 className='grid grid-cols-2 md:grid-cols-4 items-start gap-4 md:gap-2.5'
               >
                 <motion.div variants={itemVariants} className='w-full col-span-2 md:col-span-1'>
-                  <h2 className='text-2xl md:text-4xl font-black leading-tight tracking-tighter line-clamp-2 uppercase mb-2'>
+                  <h2 className='w-full text-2xl md:text-4xl font-black leading-tight tracking-tighter line-clamp-2 uppercase mb-2'>
                     {project.name}
                   </h2>
 
@@ -148,26 +148,26 @@ const ProjectModal = ({ modalOpened, project, setModalOpened }) => {
                 </motion.div>
 
                 <motion.div variants={itemVariants} className='col-span-2'>
-                  <p className='whitespace-pre-line text-base font-medium'>{project.description}</p>
+                  <p className='whitespace-pre-line text-base font-normal'>{project.description}</p>
                 </motion.div>
 
                 <motion.div variants={itemVariants} className='w-full col-span-2 md:col-span-1 text-dark/80 space-y-2 text-sm border-t border-dark/20 pt-4 md:pt-0 md:border-0'>
                   {project?.role && (
                     <motion.p variants={itemVariants} className='flex items-center gap-1'>
-                      <b> ROLE: </b>
+                      <b className="font-semibold"> ROLE: </b>
                       <span> {project.role} </span>
                     </motion.p>
                   )}
                   <motion.p variants={itemVariants} className='w-full flex items-center gap-1'> 
-                    <b> TYPE: </b>
+                    <b className="font-semibold"> TYPE: </b>
                     <span> {project.category} Project </span>
                   </motion.p>
                   <motion.p variants={itemVariants} className='flex items-center gap-1'>
-                    <b> DATE: </b>
+                    <b className="font-semibold"> DATE: </b>
                     <span> {project.year} </span>
                   </motion.p>
                   <motion.p variants={itemVariants} className='w-full flex items-center flex-wrap gap-1.5'>
-                    <b className="flex"> STACK: </b>
+                    <b className="font-semibold"> STACK: </b>
                     {project.stack?.map((item, index) => (
                       <span key={index}> {item} • </span>
                     ))}

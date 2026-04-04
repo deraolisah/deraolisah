@@ -157,7 +157,7 @@ export const projects = [
       { type: "", url: "" },
       { type: "", url: "" },
     ],
-    description: "Corty Maxwell is a personal portfolio website showcasing the work and achievements of Corty Maxwell. \n\nCreated with Gatsby.js and GraphQL, it features a dynamic project gallery, blog section, and contact form to engage visitors and potential clients.",
+    description: "Corty Maxwell is a personal portfolio website showcasing the work and achievements of Corty Maxwell. \n\nCreated with React.js and GraphQL, it features a dynamic artist gallery, blog section, and contact form to engage visitors and potential clients.",
     stack: [ "ReactJs", "" ],
   },
   { 
@@ -309,7 +309,7 @@ export const projects = [
       { type: "", url: "" },
       { type: "", url: "" },
     ],
-    description: "",
+    description: "A Non Government Organization based in Zimbabwe, that supports and provide for the girl child. They operate nation-wide. This is their project catalogue.",
     stack: [ "" ],
   },
   { 
