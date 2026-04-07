@@ -90,7 +90,7 @@ const Hero = () => {
             onClick={() => setActiveLayout("list")} 
             title='List view'
           >
-            <List size={14} className={activeLayout === "list" ? "text-light" : "text-gray-500"} />
+            <List size={14} className={activeLayout === "list" ? "text-light" : "text-primary"} />
             <span className='hidden pr-1.5'>List</span>
           </button>
           
@@ -101,7 +101,7 @@ const Hero = () => {
             onClick={() => setActiveLayout("grid")} 
             title='Grid view'
           >
-            <Grid2x2 size={14} className={activeLayout === "grid" ? "text-light" : "text-gray-500"} />
+            <Grid2x2 size={14} className={activeLayout === "grid" ? "text-light" : "text-primary"} />
             <span className='hidden pr-1.5'>Grid</span>
           </button>
         </div>

@@ -24,16 +24,12 @@ const About = () => {
               </p>
 
               <p className="mb-6">
-                Originally with a first degree in <strong className='font-semibold'>Mechanical Engineering</strong>, 
-                before I transitioned to Tech by obtaining formal training in Full-Stack Web Development and Cybersecurity...
-
+                Originally with a first degree in <strong className='font-semibold'>Mechanical Engineering</strong>,
+                I transitioned to Tech by obtaining formal training in Full-Stack Web Development and CyberSecurity...
 
                 <br/><br/>
                 
-                
-                Which enables me to design, create and blend analytical thinking with artistic creativity, to build interfaces and systems that are both functional and emotionally engaging.
-                
-               
+                Which enabled me to design, create and blend analytical thinking with artistic creativity, when building interfaces and logical systems that are both functional and emotionally engaging.               
               </p>
 
               <p>
@@ -44,7 +40,7 @@ const About = () => {
 
             {/* Expertise */}
             <div className='w-full flex flex-col items-start'>
-              <h2 className="text-lg md:text-xl mb-4 md:mb-6 font-bold"> Expertise</h2>
+              <h2 className="text-lg md:text-xl mb-4 md:mb-6 font-bold"> Expertise </h2>
 
               <p className="mb-4">
                 My work spans a wide range of creative and technical disciplines, allowing me to approach problems holistically, from concept to execution. Which includes the following:
@@ -68,7 +64,7 @@ const About = () => {
           </div>
 
 
-          <div className='w-full hidden md:flex flex-col items-start mt-8'>
+          <div className='w-full hidden md:flex flex-col items-start mt-12'>
             <h2 className="text-lg md:text-xl mb-4 md:mb-6 font-bold"> Experience </h2>
             {/* Jack of all trades, Master of Design... literally */}
 
