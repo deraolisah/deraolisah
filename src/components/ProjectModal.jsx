@@ -24,6 +24,7 @@ const MediaItem = ({ item, onClick }) => {
         <img 
           src={error ? loadingImg : item.url}
           alt=""
+          draggable="false"
           className="w-full h-fit aspect-video object-cover"
           onLoad={() => setLoaded(true)}
           onError={() => {
@@ -115,6 +116,7 @@ const Lightbox = ({ items, currentIndex, onClose, onNext, onPrev }) => {
             transition={{ type: "spring", damping: 20 }}
             src={currentItem.url}
             alt=""
+            draggable="false"
             className="max-w-[90vw] max-h-[90vh] object-contain"
           />
         ) : (
@@ -127,6 +129,7 @@ const Lightbox = ({ items, currentIndex, onClose, onNext, onPrev }) => {
             className="max-w-[90vw] max-h-[90vh] object-contain"
             controls
             autoPlay
+            draggable="false"
             onLoadedData={() => setVideoLoaded(true)}
           >
             <source src={currentItem.url} type="video/mp4" />

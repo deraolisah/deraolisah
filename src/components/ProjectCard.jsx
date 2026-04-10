@@ -74,6 +74,7 @@ const ProjectCard = ({ project, openModal }) => {
             alt={project.name}
             className="w-full h-fit bg-gray-200 border border-gray-300 aspect-video object-cover flex items-center justify-center" 
             loading="lazy"
+            draggable="false"
             // whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
             onError={(e) => {
@@ -88,6 +89,7 @@ const ProjectCard = ({ project, openModal }) => {
               className="w-full h-full object-cover"
               // whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
+              draggable="false"
               autoPlay 
               loop 
               muted
