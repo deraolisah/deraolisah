@@ -98,7 +98,7 @@ const Contact = () => {
           <div className='mt-8 whitespace-normal'>
             Good old email is a safer bet, so just use the form. 
             <br/><br/>
-            Or use &nbsp;<a href="https://wa.me/2347088530385/" target='_blank' rel="noopener noreferrer" className='font-bold underline text-primary inline-flex items-center group'>
+            Or use &nbsp;<a href="https://wa.me/2349033520428/" target='_blank' rel="noopener noreferrer" className='font-bold underline text-primary inline-flex items-center group'>
               WhatsApp 
               <ArrowUpRight size={16} className="group-hover:ml-1.5 group-hover:rotate-45 transition-all duration-300" />
             </a>, to reach me!
