@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Linkedin, Github, Twitter, Instagram } from 'lucide-react';
 import { Volume2, MoveUpRight } from 'lucide-react';
+import gumroad from "../assets/gumroad.svg";
 
 const Footer = () => {
 
@@ -34,6 +35,7 @@ const Footer = () => {
           <a href="https://github.com/deraolisah/" target='_blank' className='font-bold underline hover:text-primary'><Github /></a>
           <a href="https://twitter.com/deraolisah/" target='_blank' className='font-bold underline hover:text-primary'><Twitter /></a>
           <a href="https://instagram.com/deraolisah/" target='_blank' className='font-bold underline hover:text-primary'><Instagram /></a>
+          <a href="https://deraolisah.gumroad.com/" target='_blank' className='font-bold underline hover:text-primary'><img src={gumroad} alt='' className='h-fit w-6.5 object-cover' /></a>
         </div>
       </div>
 
