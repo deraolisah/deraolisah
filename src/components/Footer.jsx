@@ -31,11 +31,11 @@ const Footer = () => {
         <p> Connect With Me </p>
 
         <div className='flex items-center gap-6'>
-          <a href="https://linkedin.com/in/chidera-olisah/" target='_blank' className='font-bold underline hover:text-primary'><Linkedin /></a>
-          <a href="https://github.com/deraolisah/" target='_blank' className='font-bold underline hover:text-primary'><Github /></a>
-          <a href="https://twitter.com/deraolisah/" target='_blank' className='font-bold underline hover:text-primary'><Twitter /></a>
-          <a href="https://instagram.com/deraolisah/" target='_blank' className='font-bold underline hover:text-primary'><Instagram /></a>
-          <a href="https://deraolisah.gumroad.com/" target='_blank' className='font-bold underline hover:text-primary'><img src={gumroad} alt='' className='h-fit w-6.5 object-cover' /></a>
+          <a title="LinkedIn" href="https://linkedin.com/in/chidera-olisah/" target='_blank' className='font-bold underline hover:text-primary'><Linkedin /></a>
+          <a title="GitHub" href="https://github.com/deraolisah/" target='_blank' className='font-bold underline hover:text-primary'><Github /></a>
+          <a title="Twitter" href="https://twitter.com/deraolisah/" target='_blank' className='font-bold underline hover:text-primary'><Twitter /></a>
+          <a title="Instagram" href="https://instagram.com/deraolisah/" target='_blank' className='font-bold underline hover:text-primary'><Instagram /></a>
+          <a title="Gumroad" href="https://deraolisah.gumroad.com/" target='_blank' className='font-bold underline hover:text-primary'><img src={gumroad} alt='' className='h-fit w-6.5 object-cover' /></a>
         </div>
       </div>
 
