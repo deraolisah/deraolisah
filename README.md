@@ -45,8 +45,12 @@ Hi, I’m **Chidera**, a Graduate Mechanical Engineer based in Ireland, passiona
 ## Featured Projects
 
 - **[Tilo Store - AI-Integrated Retail Platform for Smarter Shopping](https://tilo-store.netlify.app)**  
-   A modern e-commerce solution powered by AI to deliver personalized shopping, seamless transactions, and smarter customer experiences. Built with Next.js, TypeScript, and Firebase for speed, scalability, and intelligence.
-  **Tech:** Next.js, TypeScript, Google AI & Claude kit, TailwindCSS.
+   A modern e-commerce solution powered by AI to deliver personalized shopping, seamless transactions, and smarter customer experiences
+  **Tech:** Next.js, TypeScript, Google AI & Claude kit, TailwindCSS, and Firebase for speed, scalability, and intelligence.
+
+- **[Tilo Store - AI-Integrated Retail Platform for Smarter Shopping](https://tilo-store.netlify.app)**  
+   A modern e-commerce solution powered by AI to deliver personalized shopping, seamless transactions, and smarter customer experiences
+  **Tech:** Next.js, TypeScript, Google AI & Claude kit, TailwindCSS, and Firebase for speed, scalability, and intelligence.
 
 ---
 
@@ -56,11 +60,10 @@ Hi, I’m **Chidera**, a Graduate Mechanical Engineer based in Ireland, passiona
 - **Frameworks & Libraries:** React · Express.js · JQuery · TailwindCSS · Bootstrap · Sass · GSAP · Framer Motion
 - **Database & ORMs:** MongoDB · MySQL ·
 - **AI & NLP:** OpenAI API (GPT-4) · prompt engineering · keyword extraction  
-<!-- - **Cloud & DevOps:** Google Cloud Platform (GCP) · Firebase · Docker · GitHub Actions   -->
-- **Cybersecurity:** Vulnerability Assessment · Network Security · Secure System Implementation · Basic Penetration Testing
+- **Cybersecurity:** Vulnerability Assessment · Network Security · Penetration Testing · Zero Trust Architecture · Data Encryption · Secure Authentication
 - **Networking:** TCP/IP · Routers · Switches · Access Points · Network Troubleshooting
 - **Tools & Platforms:** Git/GitHub · WordPress · Figma · Framer · RESTful APIs · Paystack API · Google Maps API · Node Package Manager · Postman · VSCode · Command Line Interface (CLI) · Stack Overflow, Slack · Kali Linux · Wireshark · Nmap · Splunk · Oracle VirtualBox
-- **Concepts:** JWT Authentication · Responsive Web Design · SPAs · PWAs · SEO · Performance Optimization · Debugging · Cross-Browser Compatibility · Version Control
+- **Concepts:** JWT Authentication · Responsive Web Design · SPAs · PWAs · SEO Dominance · Performance Optimization · Debugging · Cross-Platform Compatibility · Version Control
 
 ---
 
@@ -68,7 +71,7 @@ Hi, I’m **Chidera**, a Graduate Mechanical Engineer based in Ireland, passiona
 
 [![GitHub stats](https://github-readme-stats.vercel.app/api?username=deraolisah&show_icons=true&theme=radical)](https://github.com/deraolisah)
 
-<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=deraolisah&show_icons=true&locale=en&layout=compact" alt="deraolisah" /></p>
+<p width="100%"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=deraolisah&show_icons=true&locale=en&layout=compact" alt="deraolisah" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=deraolisah&" alt="deraolisah" /></p> 
 
