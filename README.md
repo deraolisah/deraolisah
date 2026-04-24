@@ -1,4 +1,4 @@
-<h1 align="center">Hi, I'm Nathan</h1>
+<!-- <h1 align="center">Hi, I'm Nathan</h1>
 <h3 align="center">A Freelance Full-Stack Dev.</h3>
 
 <p align="center"> <a href="https://twitter.com/deraolisah" target="blank"><img src="https://img.shields.io/twitter/follow/deraolisah?logo=twitter&style=for-the-badge" alt="deraolisah" /></a> </p>
@@ -28,4 +28,57 @@
 
 <p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=deraolisah&show_icons=true&locale=en&layout=compact" alt="deraolisah" /></p>
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=deraolisah&" alt="deraolisah" /></p>
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=deraolisah&" alt="deraolisah" /></p> -->
+
+
+
+
+
+# Nathan
+
+Hi, I’m **Chidera**, a Graduate Mechanical Engineer based in Ireland, passionate about CyberSecurity, AI-driven automation, cloud computing, and full-stack development. Welcome to my GitHub profile; here you’ll find a curated selection of projects that showcase my technical expertise and problem-solving focus.
+
+[Sponser My Work](https://buymeacoffee.com/deraolisah)
+
+---
+
+## Featured Projects
+
+- **[Tilo Store - AI-Integrated Retail Platform for Smarter Shopping](https://tilo-store.netlify.app)**  
+   A modern e-commerce solution powered by AI to deliver personalized shopping, seamless transactions, and smarter customer experiences. Built with Next.js, TypeScript, and Firebase for speed, scalability, and intelligence.
+  **Tech:** Next.js, TypeScript, Google AI & Claude kit, TailwindCSS.
+
+---
+
+## Skills & Technologies
+
+- **Languages:** JavaScript · HTML5 · CSS3 · PHP · Python · SQL · Node.js
+- **Frameworks & Libraries:** React · Express.js · JQuery · TailwindCSS · Bootstrap · Sass · GSAP · Framer Motion
+- **Database & ORMs:** MongoDB · MySQL ·
+- **AI & NLP:** OpenAI API (GPT-4) · prompt engineering · keyword extraction  
+<!-- - **Cloud & DevOps:** Google Cloud Platform (GCP) · Firebase · Docker · GitHub Actions   -->
+- **Cybersecurity:** Vulnerability Assessment · Network Security · Secure System Implementation · Basic Penetration Testing
+- **Networking:** TCP/IP · Routers · Switches · Access Points · Network Troubleshooting
+- **Tools & Platforms:** Git/GitHub · WordPress · Figma · Framer · RESTful APIs · Paystack API · Google Maps API · Node Package Manager · Postman · VSCode · Command Line Interface (CLI) · Stack Overflow, Slack · Kali Linux · Wireshark · Nmap · Splunk · Oracle VirtualBox
+- **Concepts:** JWT Authentication · Responsive Web Design · SPAs · PWAs · SEO · Performance Optimization · Debugging · Cross-Browser Compatibility · Version Control
+
+---
+
+## 📈 GitHub Stats
+
+[![GitHub stats](https://github-readme-stats.vercel.app/api?username=deraolisah&show_icons=true&theme=radical)](https://github.com/deraolisah)
+
+<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=deraolisah&show_icons=true&locale=en&layout=compact" alt="deraolisah" /></p>
+
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=deraolisah&" alt="deraolisah" /></p> 
+
+
+---
+
+## Let’s Connect
+
+- 🔗 Portfolio: https://deraolisah.com/  
+- 💼 LinkedIn: https://www.linkedin.com/in/chidera-olisah/
+- ✉️ Email: deraolisah@gmail.com  
+
+Feel free to explore, star, or fork any project; feedback, and collaboration ideas are always welcome.  

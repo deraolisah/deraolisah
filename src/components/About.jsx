@@ -58,7 +58,7 @@ const About = () => {
               <p>
                 {/* This multidisciplinary background enables me to design and build solutions that are visually compelling, technically sound, and scalable. */}
                 {/* This has enabled me to be a very competent contributor across all areas of the ideation & creation process while empowering me to easily collaborate with, manage & direct partners from a multitude of backgrounds with varying experience levels. */}
-                These have made me a versatile contributor, able to lead and collaborate across diverse teams.
+                All these have made me a versatile contributor, able to lead and collaborate across diverse teams.
               </p>
             </div>
           </div>

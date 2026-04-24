@@ -24,7 +24,7 @@ const Projects = ({ projects, openModal, layout }) => {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className={layout === "grid" ? gridLayout : listLayout}
+      className={ `overflow-hidden ${layout === "grid" ? gridLayout : listLayout + " rounded-lg"}` }
     >
       <AnimatePresence mode="wait">
         {projects.map((project) => (

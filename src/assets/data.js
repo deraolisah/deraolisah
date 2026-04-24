@@ -368,7 +368,7 @@ export const projects = [
       { type: "", url: "" },
       { type: "", url: "" },
     ],
-    description: "",
-    stack: [ "Chrome", "Figma", "Corel Draw" ],
+    description: "A modern e-commerce solution powered by AI to deliver personalized shopping, seamless transactions, and smarter customer experiences. \n\nBuilt with React.js, TypeScript, and Firebase for speed, scalability, and intelligence.",
+    stack: [ "ReactJs", "TailwindCSS", "OpenAI" ],
   }
 ];

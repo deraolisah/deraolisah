@@ -36,7 +36,7 @@ const ProjectList = ({ project, openModal }) => {
       initial="hidden"
       animate="visible"
       whileHover="hover"
-      className="flex items-center gap-3 p-2 bg-white  cursor-pointer hover:border-gray-300 transition-colors duration-200"
+      className="flex items-center gap-3 p-2 bg-white cursor-pointer hover:border-gray-300 transition-colors duration-200"
       onClick={() => openModal(project.id)}
     >
       {/* Thumbnail */}
