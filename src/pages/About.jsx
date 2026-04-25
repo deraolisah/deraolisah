@@ -78,16 +78,16 @@ const About = () => {
                   <p className='space-x-1'>
                     <strong className='font-semibold'> NIIT ForteSoft </strong> 
                     <span> • </span> 
-                    <span className='text-dark/70'> Cyber‑Security Graduate Trainee </span>
+                    <span className='text-dark/70'> CyberSecurity Graduate Trainee </span>
                   </p>                  
-                  <p> Hands‑on experience with cybersecurity tools and threat‑response techniques. </p>
+                  <p> Hands-on experience with cybersecurity tools and threat-response techniques. </p>
                 </div>
               </div>
             </div>
 
             <div className='flex items-start gap-2 my-2'>
               <div className='w-40'>
-                 Nov 2023 – 2024
+                 Nov 2023 - 2024
               </div>
 
               <div className='flex-1 space-y-4'>
@@ -104,7 +104,7 @@ const About = () => {
 
             <div className='flex items-start gap-2 my-2'>
               <div className='w-40'>
-                Sep 2020 – Present
+                Sep 2021 - Present
               </div>
 
               <div className='flex-1 space-y-4'>
@@ -118,27 +118,37 @@ const About = () => {
                 </div>
               </div>
             </div>
-
-
-            
-
-
-{/* Education
-2021 – 2023
-
-OCAD University
-Master of Design, Digital Futures
-
-Student Union Rep. Designed a multisensory Experience for the AGO (Art Gallery of Ontario)
-
-2012 – 2017
-
-Babcock University
-BSc, Computer Science
-
-Member of the Babcock University Computer Club & team that won the 2016 exhibition */}
-
           </div>
+
+
+          {/* <div className='flex flex-col sm:flex-row gap-12 md:gap-6 mt-12'>     
+            <div className='w-full'>
+              <h2 className="text-lg md:text-xl mb-4 md:mb-6 font-bold"> Education </h2>
+
+              <span> 2018 - 2023 </span>
+              <h3> Nnamdi Azikiwe University </h3>
+              <p> Bachelor of Engineering, Mechanical Engineering </p>
+
+              <br/><br/>
+              <span> 2024 - 2025 </span>
+              <h3> NIIT Ikeja </h3>
+              <p> Diploma, CyberSecurity </p>
+            </div>
+
+
+            <div className='w-full flex flex-col items-start'>
+              <h2 className="text-lg md:text-xl mb-4 md:mb-6 font-bold"> Other little things </h2>
+
+              <span> MBTI: ESTJ </span>
+              <span> Favorite color: Blue💙 </span>
+              <span> Currently watching: Hunter x Hunter </span>
+
+              <br/><br/>
+              <span> Song on repeat: E85 - Don Toliver </span>
+              <span> Always a coffee addict </span>
+            </div>
+          </div> */}
+
         </div>
       </div>
     </section>

@@ -5,27 +5,27 @@ import gumroad from "../assets/gumroad.svg";
 
 const Footer = () => {
 
-  // const [currentTime, setCurrentTime] = useState('');
+  const [currentTime, setCurrentTime] = useState('');
 
-  // useEffect(() => {
-  //   const updateTime = () => {
-  //     const date = new Date();
-  //     const currentTimeString = date.toLocaleTimeString('en-US', {
-  //       timeZone: 'Europe/Dublin',
-  //       hour: '2-digit',
-  //       minute: '2-digit',
-  //       second: '2-digit',
-  //     });
-  //     setCurrentTime(currentTimeString);
-  //   };
-  //   updateTime();
-  //   const intervalId = setInterval(updateTime, 1000); // update every 1 second
-  //   return () => clearInterval(intervalId);
-  // }, []);
+  useEffect(() => {
+    const updateTime = () => {
+      const date = new Date();
+      const currentTimeString = date.toLocaleTimeString('en-US', {
+        timeZone: 'Europe/Dublin',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+      });
+      setCurrentTime(currentTimeString);
+    };
+    updateTime();
+    const intervalId = setInterval(updateTime, 1000); // update every 1 second
+    return () => clearInterval(intervalId);
+  }, []);
 
   return (
-    <footer className='container py-25 flex flex-col items-center justify-between gap-8'>
-      {/* <p className='text-sm bg-gray-200 border border-dark/20 p-1.5'>{currentTime} (GMT+1) </p> */}
+    <footer className='container pt-10 mt-10 flex flex-col items-center justify-between gap-8 border-t border-gray-300'>
+      {/* <p className='text-sm bg-gray-200 border border-dark/20 p-1.5 text-center'>{currentTime} (GMT+1) </p> */}
 
       <div className='text-center space-y-4'> 
         <p> Connect With Me </p>
@@ -63,9 +63,11 @@ const Footer = () => {
         </span>
       </a>
 
+      <div className='w-full flex items-center justify-between border-t border-gray-300 py-6 mt-4'>
+        <span> Thanks for stopping by! :) </span>
 
-
-      
+        <span> Nathan © 2026 </span>
+      </div>
     </footer>
   )
 }

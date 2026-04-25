@@ -48,8 +48,12 @@ Hi, I’m **Chidera**, a Graduate Mechanical Engineer based in Ireland, passiona
    A modern e-commerce solution powered by AI to deliver personalized shopping, seamless transactions, and smarter customer experiences
   **Tech:** Next.js, TypeScript, Google AI & Claude kit, TailwindCSS, and Firebase for speed, scalability, and intelligence.
 
-- **[Tilo Store - AI-Integrated Retail Platform for Smarter Shopping](https://tilo-store.netlify.app)**  
+- **[FoodByAma - AI-Integrated Retail Platform for Smarter Shopping](https://tilo-store.netlify.app)**  
    A modern e-commerce solution powered by AI to deliver personalized shopping, seamless transactions, and smarter customer experiences
+  **Tech:** Next.js, TypeScript, Google AI & Claude kit, TailwindCSS, and Firebase for speed, scalability, and intelligence.
+
+- **[UrbanScope - AI-Integrated Retail Platform for Smarter Shopping](https://tilo-store.netlify.app)**  
+   Real Estate platform designed to simplify property discovery and management.
   **Tech:** Next.js, TypeScript, Google AI & Claude kit, TailwindCSS, and Firebase for speed, scalability, and intelligence.
 
 ---
@@ -71,17 +75,17 @@ Hi, I’m **Chidera**, a Graduate Mechanical Engineer based in Ireland, passiona
 
 [![GitHub stats](https://github-readme-stats.vercel.app/api?username=deraolisah&show_icons=true&theme=radical)](https://github.com/deraolisah)
 
-<p width="100%"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=deraolisah&show_icons=true&locale=en&layout=compact" alt="deraolisah" /></p>
+<img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=deraolisah&show_icons=true&locale=en&layout=compact" alt="deraolisah" />
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=deraolisah&" alt="deraolisah" /></p> 
+<img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=deraolisah&" alt="deraolisah" />
 
 
 ---
 
 ## Let’s Connect
 
-- 🔗 Portfolio: https://deraolisah.com/  
-- 💼 LinkedIn: https://www.linkedin.com/in/chidera-olisah/
+- 🔗 Portfolio: https://deraolisah.com
+- 💼 LinkedIn: https://www.linkedin.com/in/chidera-olisah
 - ✉️ Email: deraolisah@gmail.com  
 
 Feel free to explore, star, or fork any project; feedback, and collaboration ideas are always welcome.  
