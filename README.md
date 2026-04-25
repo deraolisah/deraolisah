@@ -73,7 +73,7 @@ Hi, I’m **Chidera**, a Graduate Mechanical Engineer based in Ireland, passiona
 
 ## 📈 GitHub Stats
 
-[![GitHub stats](https://github-readme-stats.vercel.app/api?username=deraolisah&show_icons=true&theme=radical)](https://github.com/deraolisah)
+<!-- [![GitHub stats](https://github-readme-stats.vercel.app/api?username=deraolisah&show_icons=true&theme=radical)](https://github.com/deraolisah) -->
 
 <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=deraolisah&show_icons=true&locale=en&layout=compact" alt="deraolisah" />
 
