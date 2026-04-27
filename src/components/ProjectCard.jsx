@@ -105,7 +105,7 @@ const ProjectCard = ({ project, openModal }) => {
       )}
 
       <motion.p 
-        className="text-sm font-medium w-full overflow-x-auto scrollbar-hidden"
+        className="text-xs sm:text-sm font-medium w-full overflow-x-auto scrollbar-hidden"
         whileHover={{ x: 5 }}
         transition={{ type: "spring", stiffness: 300 }}
       >

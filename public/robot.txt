@@ -1,0 +1,17 @@
+# Applies to all search engine bots
+User-agent: *
+
+# Pages to hide from search results (admin, drafts, or private folders)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /drafts/
+Disallow: /tmp/
+
+# Optimizes crawl budget by blocking non-essential high-res source files
+Disallow: /assets/raw-images/
+
+# General rule: Allow everything else
+Allow: /
+
+# Link to your sitemap (REPLACE with your actual domain)
+Sitemap: https://deraolisah.com

@@ -16,7 +16,7 @@ const Projects = ({ projects, openModal, layout }) => {
   };
 
   // Different grid layouts based on view
-  const gridLayout = "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-2 gap-y-3";
+  const gridLayout = "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-2 gap-y-3";
   const listLayout = "flex flex-col gap-px bg-gray-200";
 
   return (
