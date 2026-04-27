@@ -18,9 +18,12 @@ const Navbar = () => {
       <ul className='flex items-center gap-6 font-normal'>
         {navLinks.map((link, index) => (
           <li key={index}>
-            <a href={link.href} className={({ isActive }) => isActive ? "underline" : ""}>
+            <NavLink 
+              to={link.href} 
+              className={({ isActive }) => isActive ? "underline" : ""}
+            >
               {link.name} 
-            </a>
+            </NavLink>
           </li>
         ))}
       </ul>

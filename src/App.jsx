@@ -5,6 +5,9 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Contact from "./pages/Contact.jsx";
+import CaseStudy from "./pages/CaseStudy.jsx";
+
+import { projects } from "./assets/data.js"
 
 function App() {
 
@@ -13,9 +16,10 @@ function App() {
       <Navbar />
 
       <Routes>
-        <Route index path="/" element={<Home />} />
+        <Route index element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/case-study/:id" element={<CaseStudy projects={projects} />} />
       </Routes>
 
       <Footer />
