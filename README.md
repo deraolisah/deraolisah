@@ -63,7 +63,7 @@ Hi, I’m **Chidera**, a Graduate Mechanical Engineer based in Ireland, passiona
 - **Languages:** JavaScript · HTML5 · CSS3 · PHP · Python · SQL · Node.js
 - **Frameworks & Libraries:** React · Express.js · JQuery · TailwindCSS · Bootstrap · Sass · GSAP · Framer Motion
 - **Database & ORMs:** MongoDB · MySQL ·
-- **AI & NLP:** OpenAI API (GPT-4) · prompt engineering · keyword extraction  
+- **AI & NLP:** OpenAI API (GPT-4) · Claude Ai · Microsoft Copilot  
 - **Cybersecurity:** Vulnerability Assessment · Network Security · Penetration Testing · Zero Trust Architecture · Data Encryption · Secure Authentication
 - **Networking:** TCP/IP · Routers · Switches · Access Points · Network Troubleshooting
 - **Tools & Platforms:** Git/GitHub · WordPress · Figma · Framer · RESTful APIs · Paystack API · Google Maps API · Node Package Manager · Postman · VSCode · Command Line Interface (CLI) · Stack Overflow, Slack · Kali Linux · Wireshark · Nmap · Splunk · Oracle VirtualBox
