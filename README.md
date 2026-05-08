@@ -34,6 +34,7 @@
 
 
 
+
 # Nathan
 
 Hi, I’m **Chidera**, a Graduate Mechanical Engineer based in Ireland, passionate about CyberSecurity, AI-driven automation, cloud computing, and full-stack development. Welcome to my GitHub profile; here you’ll find a curated selection of projects that showcase my technical expertise and problem-solving focus.
@@ -48,12 +49,12 @@ Hi, I’m **Chidera**, a Graduate Mechanical Engineer based in Ireland, passiona
   A modern e-commerce solution powered by AI to deliver personalized shopping, seamless transactions, and smarter customer experiences
   **Tech:** Next.js, TypeScript, Google AI & Claude kit, TailwindCSS, and Firebase for speed, scalability, and intelligence.
 
-- **[FoodByAma - AI-Integrated Retail Platform for Smarter Shopping](https://tilo-store.netlify.app)**  
+- **[FoodByAma - AI-Integrated Retail Platform for Smarter Shopping](https://foodbyama.netlify.app)**  
   A complete catering e-commerce solution for a food business in Awka, featuring cart management, Paystack payment integration, order tracking, user accounts, admin dashboard, WhatsApp order fallback, and a loyalty points system.
   **Tech:** React.js, Node.js, TailwindCSS, MongoDb, and PayStack.
 
-- **[UrbanScope - AI-Integrated Retail Platform for Smarter Shopping](https://tilo-store.netlify.app)**  
-  Real Estate platform designed to simplify property discovery and management.
+- **[UrbanScope - AI-Integrated Retail Platform for Smarter Shopping](https://urbanscope.netlify.app)**  
+  A cutting-edge real estate platform designed to simplify property discovery and management. Whether you're searching for your dream home, investment property, or rental opportunity, UrbanScope provides a seamless experience with powerful filtering, intelligent search, and comprehensive property details.
   **Tech:** Next.js, TypeScript, Google AI & Claude kit, TailwindCSS, and Firebase for speed, scalability, and intelligence.
 
 ---
@@ -71,7 +72,7 @@ Hi, I’m **Chidera**, a Graduate Mechanical Engineer based in Ireland, passiona
 
 ---
 
-## 📈 GitHub Stats
+## GitHub Stats
 
 <!-- [![GitHub stats](https://github-readme-stats.vercel.app/api?username=deraolisah&show_icons=true&theme=radical)](https://github.com/deraolisah) -->
 
