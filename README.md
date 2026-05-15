@@ -57,7 +57,11 @@ Hi, I’m **Chidera**, a Graduate Mechanical Engineer based in Ireland, passiona
   A cutting-edge real estate platform designed to simplify property discovery and management. Whether you're searching for your dream home, investment property, or rental opportunity, UrbanScope provides a seamless experience with powerful filtering, intelligent search, and comprehensive property details.
   **Tech:** Next.js, TypeScript, Google AI & Claude kit, TailwindCSS, and Firebase for speed, scalability, and intelligence.
 
-- **[Autos - ]**
+- **[Autos - ](https://autos-exclusive.netlify.app)**
+  A monorepo containing multiple distinct folders (admin, frontend, backend) of a large project, with a well-defined structure and relationships.
+
+- **[Bluevolt - ](https://bluevoltmarine.com/)**
+
 
 ---
 
