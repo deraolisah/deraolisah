@@ -76,7 +76,7 @@ const Hero = () => {
           ))}
         </motion.div>
 
-        <p className='flex items-center gap-1 font-medium text-xs text-light bg-primary p-1 px-2 rounded-full'>
+        <p className='flex items-center gap-1 font-medium text-xs text-light border border-primary bg-primary p-1 px-2 rounded-md'>
           {filteredprojects.length} 
           <span className='hidden md:flex'> projects </span>
         </p>

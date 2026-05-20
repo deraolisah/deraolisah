@@ -46,7 +46,7 @@ Hi, I’m **Chidera**, a Graduate Mechanical Engineer based in Ireland, passiona
 ## Featured Projects
 
 - **[Tilo Store - AI-Integrated Retail Platform for Smarter Shopping](https://tilo-store.netlify.app)**  
-  A modern e-commerce solution powered by AI to deliver personalized shopping, seamless transactions, and smarter customer experiences
+  A modern e-commerce solution powered with an AI Chatbot to deliver personalized shopping, seamless transactions, and smarter customer experiences.
   **Tech:** Next.js, TypeScript, Google AI & Claude kit, TailwindCSS, and Firebase for speed, scalability, and intelligence.
 
 - **[FoodByAma - AI-Integrated Retail Platform for Smarter Shopping](https://foodbyama.netlify.app)**  
