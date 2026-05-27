@@ -248,11 +248,12 @@ const ProjectModal = ({ modalOpened, project, setModalOpened }) => {
                     <h2 className='w-full text-2xl md:text-4xl font-black leading-tight tracking-tighter line-clamp-2 uppercase mb-2'>
                       {project.name}
                     </h2>
-
-                    <Link to={project.link} target="_blank" className='py-2 px-3 flex items-center gap-1 w-fit text-white hover:gap-2 transition-all duration-300 bg-primary'> 
-                      Live Preview 
-                      <ArrowUpRight size={16} className='text-white' /> 
-                    </Link>
+                    {project.link && (
+                      <Link to={project?.link} target="_blank" className='py-2 px-3 flex items-center gap-1 w-fit text-white hover:gap-2 transition-all duration-300 bg-primary'> 
+                        Live Preview 
+                        <ArrowUpRight size={16} className='text-white' /> 
+                      </Link>
+                    )}
                   </motion.div>
 
                   <motion.div variants={itemVariants} className='col-span-2'>
