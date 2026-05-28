@@ -39,7 +39,7 @@
 
 Hi, I’m **Chidera**, a Graduate Mechanical Engineer based in Ireland, passionate about CyberSecurity, AI-driven automation, cloud computing, and full-stack development. Welcome to my GitHub profile; here you’ll find a curated selection of projects that showcase my technical expertise and problem-solving focus.
 
-[Sponser My Work](https://buymeacoffee.com/deraolisah)
+[Sponsor My Work](https://buymeacoffee.com/deraolisah)
 
 ---
 
