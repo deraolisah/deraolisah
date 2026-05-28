@@ -62,7 +62,7 @@ Hi, I’m **Chidera**, a Graduate Mechanical Engineer based in Ireland, passiona
   **Tech:** ExpressJs, NodeJs, Postman, MongoDB, ReactJs, TailwindCSS, 
 
 - **[O-Tickets - Online Ticketing Website:](https://o-tickets.netlify.app)**
-  A modern event‑ticketing platform designed to help users discover, share, sell, and book tickets for the best events nearby. It provides a seamless experience for both event organizers and attendees, combining social discovery with secure ticket transactions. Built with accessibility and user engagement in mind, O‑Tickets makes finding and attending events in Nigeria effortless.
+   A modern event‑ticketing platform designed to help users discover, share, sell, and book tickets for the best events nearby. It provides a seamless experience for both event organizers and attendees, combining social discovery with secure ticket transactions. Built with accessibility and user engagement in mind, O‑Tickets makes finding and attending events in Nigeria effortless.
   **Tech:** NodeJs, MongoDB, ReactJs, TailwindCSS, Lucide-React,  
 
 

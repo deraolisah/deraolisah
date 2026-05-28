@@ -28,6 +28,7 @@ const Contact = () => {
       setTimeout(() => setSubmitted(false), 5000);
       return;
     }
+
     
     // Convert FormData to plain object
     const data = Object.fromEntries(formData.entries());
