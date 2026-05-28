@@ -14,16 +14,27 @@ import UrbanScope05 from "../assets/UrbanScope06.png";
 import DelightWedsFredrick from "../assets/DelightWedsFredrick.gif";
 import DelightWedsFredrick01 from "../assets/DelightWedsFredrick-01.png";
 import DelightWedsFredrick02 from "../assets/DelightWedsFredrick-02.png";
-// import Mosalak from "../assets/Mosalak.png";
-import Corty from "../assets/Corty.png";
-import Amara from "../assets/Amara.png";
+
+import Bluevolt01 from "../assets/Bluevolt-01.png";
+
+import Corty01 from "../assets/Corty-01.png";
+import Corty02 from "../assets/Corty-02.png";
+
 import Chris01 from "../assets/Chris-01.png";
 import Chris02 from "../assets/Chris-02.png";
 // import Chris03 from "../assets/Chris-03.png";
 import Marvel from "../assets/Marvel.png";
-import Swizz from "../assets/Swizz.png";
-import Tilo from "../assets/Tilo.png";
+import Swizz01 from "../assets/Swizz-01.png";
+import Swizz02 from "../assets/Swizz-02.png";
 
+import Tilo01 from "../assets/Tilo-01.png";
+import Tilo02 from "../assets/Tilo-02.png";
+
+import Corporate01 from "../assets/Corporate-01.png";
+import Corporate02 from "../assets/Corporate-02.png";
+import Corporate03 from "../assets/Corporate-03.png";
+
+import Events01 from "../assets/Events-01.png";
 
 
 export const projects = [
@@ -110,8 +121,8 @@ export const projects = [
     category: "Web", 
     link: "https://bluevoltmarine.com/", 
     media: [
+      { type: "img", url: Bluevolt01 },
       { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/1681767326789-Q6KE29YQAXXDW24IGK1H/Neologia-IV.gif?format=500w" },
-      { type: "", url: "" },
       { type: "", url: "" },
       { type: "", url: "" },
       { type: "", url: "" },
@@ -169,8 +180,8 @@ export const projects = [
     category: "Graphics", 
     link: "", 
     media: [
+      { type: "img", url: Events01 },
       { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/50e3b24e-7d04-49b0-bbd1-05510d22831c/GIF_08-min.gif?format=500w" },
-      { type: "img", url: Amara },
       { type: "", url: "" },
       { type: "", url: "" },
       { type: "", url: "" },
@@ -187,11 +198,11 @@ export const projects = [
     category: "Experimental", 
     link: "https://corty.netlify.app/", 
     media: [
-      { type: "img", url: Corty },
+      { type: "img", url: Corty02 },
+      { type: "img", url: Corty01 },
       { type: "img", url: "https://corty.netlify.app/assets/img5-DjxIQwKB.jpg" },
       { type: "img", url: "https://corty.netlify.app/assets/img4-DNrH5ty2.jpg" },
       { type: "img", url: "https://corty.netlify.app/assets/img6-BdKV2kyt.jpg" },
-      { type: "", url: "" },
       { type: "", url: "" },
       { type: "", url: "" },
       { type: "", url: "" },
@@ -225,8 +236,8 @@ export const projects = [
     category: "Experimental", 
     link: "https://swizz.netlify.app/",
     media: [
-      { type: "img", url: Swizz },
-      { type: "", url: "" },
+      { type: "img", url: Swizz01 },
+      { type: "img", url: Swizz02 },
       { type: "", url: "" },
       { type: "", url: "" },
       { type: "", url: "" },
@@ -244,12 +255,12 @@ export const projects = [
     category: "Graphics", 
     link: "",
     media: [
-      { type: "video", url: "" },
-      { type: "video", url: "" },
-      { type: "video", url: "" },
-      { type: "video", url: "" },
-      { type: "video", url: "" },
-      { type: "video", url: "" },
+      { type: "img", url: Corporate03 },
+      { type: "img", url: Corporate02 },
+      { type: "img", url: Corporate01 },
+      { type: "img", url: "" },
+      { type: "img", url: "" },
+      { type: "img", url: "" },
       { type: "video", url: "" },
       { type: "video", url: "" },
     ],
@@ -338,7 +349,8 @@ export const projects = [
     category: "Web",    
     link: "https://tilo-store.netlify.app/",
     media: [
-      { type: "img", url: Tilo },
+      { type: "img", url: Tilo01 },
+      { type: "img", url: Tilo02 },
       { type: "", url: "" },
       { type: "", url: "" },
       { type: "", url: "" },

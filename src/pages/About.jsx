@@ -20,7 +20,7 @@ const About = () => {
               <h2 className="text-lg md:text-xl mb-4 md:mb-6 font-bold"> About Me </h2>
 
               <p className="mb-6">
-                I’m a multi-disciplinary <strong className='font-semibold'>Designer, Engineer, Artist, and Entreprenuer</strong> with over <strong className='font-semibold'>5 years of experience</strong> crafting meaningful digital experiences and visual artefacts.
+                I’m a multi-disciplinary <strong className='font-semibold'>Designer, Developer, Engineer, Artist, and Entreprenuer</strong> with over <strong className='font-semibold'>5 years of experience</strong> crafting meaningful digital experiences and visual artefacts.
               </p>
 
               <p className="mb-6">
@@ -40,13 +40,13 @@ const About = () => {
 
             {/* Expertise */}
             <div className='w-full flex flex-col items-start'>
-              <h2 className="text-lg md:text-xl mb-4 md:mb-6 font-bold"> Expertise </h2>
+              <h2 className="text-lg md:text-xl mb-5 md:mb-6 font-bold"> Expertise </h2>
 
-              <p className="mb-4">
+              <p className="mb-5">
                 My work spans a wide range of creative and technical disciplines, allowing me to approach problems holistically, from concept to execution. Which includes the following:
               </p>
 
-              <ul className="mb-4 list-disc pl-4 text-base space-y-2">
+              <ul className="mb-5 list-disc pl-4 text-base space-y-1.5">
                 <li>Branding & Visual Identity Design</li>
                 <li>UI-UX Design</li>
                 <li>Content Creation & Digital Media</li>

@@ -47,33 +47,36 @@ Hi, I’m **Chidera**, a Graduate Mechanical Engineer based in Ireland, passiona
 
 - **[Tilo Store - AI-Integrated Retail Platform for Smarter Shopping](https://tilo-store.netlify.app)**  
   A modern e-commerce solution powered with an AI Chatbot to deliver personalized shopping, seamless transactions, and smarter customer experiences.
-  **Tech:** Next.js, TypeScript, Google AI & Claude kit, TailwindCSS, and Firebase for speed, scalability, and intelligence.
+  **Tech:** NextJs, TypeScript, Google AI & Claude kit, TailwindCSS, and Firebase for speed, scalability, and intelligence.
 
 - **[FoodByAma - AI-Integrated Retail Platform for Smarter Shopping](https://foodbyama.netlify.app)**  
   A complete catering e-commerce solution for a food business in Awka, featuring cart management, Paystack payment integration, order tracking, user accounts, admin dashboard, WhatsApp order fallback, and a loyalty points system.
-  **Tech:** React.js, Node.js, TailwindCSS, MongoDb, and PayStack.
+  **Tech:** ReactJs, NodeJs, TailwindCSS, MongoDB, and PayStack.
 
 - **[UrbanScope - AI-Integrated Retail Platform for Smarter Shopping](https://urbanscope.netlify.app)**  
   A cutting-edge real estate platform designed to simplify property discovery and management. Whether you're searching for your dream home, investment property, or rental opportunity, UrbanScope provides a seamless experience with powerful filtering, intelligent search, and comprehensive property details.
-  **Tech:** Next.js, TypeScript, Google AI & Claude kit, TailwindCSS, and Firebase for speed, scalability, and intelligence.
+  **Tech:** NextJs, TypeScript, Google AI & Claude kit, TailwindCSS, and Firebase for speed, scalability, and intelligence.
 
-- **[Autos - ](https://autos-exclusive.netlify.app)**
-  A monorepo containing multiple distinct folders (admin, frontend, backend) of a large project, with a well-defined structure and relationships.
+- **[Autos - Car Dealership ](https://autos-exclusive.netlify.app)**    
+  A full‑stack monorepo application organized into admin, frontend, and backend folders, each with a clear separation of concerns and well‑defined relationships. The platform enables car dealerships to upload vehicles, manage inventory, and showcase listings and services to potential customers. Focused on scalability and maintainability, it provides a streamlined experience for both administrators and end‑users.
+  **Tech:** ReactJs, TailwindCSS, 
 
-- **[Bluevolt - ](https://bluevoltmarine.com/)**
+- **[O-Tickets - ](https://o-tickets.netlify.app/)**
+  A modern event‑ticketing platform designed to help users discover, share, sell, and book tickets for the best events nearby. It provides a seamless experience for both event organizers and attendees, combining social discovery with secure ticket transactions. Built with scalability and user engagement in mind, O‑Tickets makes finding and attending local events effortless.
+  **Tech:** ReactJs, TailwindCSS, Lucide-React, 
 
 
 ---
 
 ## Skills & Technologies
 
-- **Languages:** JavaScript · HTML5 · CSS3 · PHP · Python · SQL · Node.js
-- **Frameworks & Libraries:** React · Express.js · JQuery · TailwindCSS · Bootstrap · Sass · GSAP · Framer Motion
+- **Languages:** JavaScript · HTML5 · CSS3 · PHP · Python · SQL · NodeJs
+- **Frameworks & Libraries:** ReactJs · ExpressJs · JQuery · TailwindCSS · Bootstrap · SASS · GSAP · Framer Motion
 - **Database & ORMs:** MongoDB · MySQL ·
-- **AI & NLP:** OpenAI API (GPT-4) · Claude Ai · Microsoft Copilot  
+- **AI & NLP:** OpenAI API (GPT-4) · Claude AI · Microsoft Copilot  
 - **Cybersecurity:** Vulnerability Assessment · Network Security · Penetration Testing · Zero Trust Architecture · Data Encryption · Secure Authentication
 - **Networking:** TCP/IP · Routers · Switches · Access Points · Network Troubleshooting
-- **Tools & Platforms:** Git/GitHub · WordPress · Figma · Framer · RESTful APIs · Paystack API · Google Maps API · Node Package Manager · Postman · VSCode · Command Line Interface (CLI) · Stack Overflow, Slack · Kali Linux · Wireshark · Nmap · Splunk · Oracle VirtualBox
+- **Tools & Platforms:** Git/GitHub · WordPress · Figma · Framer · Webflow · RESTful APIs · Paystack API · Google Maps API · Node Package Manager · Postman · VSCode · Command Line Interface (CLI) · Stack Overflow, Slack · Kali Linux · Wireshark · Nmap · Splunk · Oracle VirtualBox
 - **Concepts:** JWT Authentication · Responsive Web Design · SPAs · PWAs · SEO Dominance · Performance Optimization · Debugging · Cross-Platform Compatibility · Version Control
 
 ---
