@@ -37,7 +37,7 @@
 
 # Nathan
 
-Hi, I’m **Chidera**, a Graduate Mechanical Engineer based in Ireland, passionate about CyberSecurity, AI-driven automation, cloud computing, and full-stack development. Welcome to my GitHub profile; here you’ll find a curated selection of projects that showcase my technical expertise and problem-solving focus.
+Hi, I’m **Chidera**, a Graduate Mechanical Engineer based in Ireland, passionate about CyberSecurity, AI-driven automation, Cloud Computing, Design and Full-stack Development. Welcome to my GitHub profile; here you’ll find a curated selection of projects that showcase my technical expertise and problem-solving focus.
 
 [Sponsor My Work](https://buymeacoffee.com/deraolisah)
 
@@ -61,9 +61,9 @@ Hi, I’m **Chidera**, a Graduate Mechanical Engineer based in Ireland, passiona
   A full‑stack monorepo application organized into admin, frontend, and backend folders, each with a clear separation of concerns and well‑defined relationships. The platform enables car dealerships to upload vehicles, manage inventory, and showcase listings and services to potential customers. Focused on scalability and maintainability, it provides a streamlined experience for both administrators and end‑users.
   **Tech:** ReactJs, TailwindCSS, 
 
-- **[O-Tickets - Online Ticketing Website](https://o-tickets.netlify.app/)**
+- **[O-Tickets - Online Ticketing Website](https://o-tickets.netlify.app)**
   A modern event‑ticketing platform designed to help users discover, share, sell, and book tickets for the best events nearby. It provides a seamless experience for both event organizers and attendees, combining social discovery with secure ticket transactions. Built with scalability and user engagement in mind, O‑Tickets makes finding and attending local events effortless.
-  **Tech:** ReactJs, TailwindCSS, Lucide-React, 
+  **Tech:** ReactJs, TailwindCSS, Lucide-React,  
 
 
 ---
