@@ -29,7 +29,7 @@ const About = () => {
 
                 <br/><br/>
                 
-                Which has enabled me to design, create and blend analytical thinking with artistic creativity, when building interfaces and logical systems that are both functional and emotionally engaging.               
+                Which has enabled me to design, create and blend analytical thinking with artistic creativity, when building interfaces and logical systems that are required to be both fully functional and emotionally engaging.               
               </p>
 
               <p>
