@@ -1,3 +1,5 @@
+import Olison01 from "../assets/Olison-01.png";
+
 import FoodByAma01 from "../assets/FoodByAma-01.png";
 import FoodByAma02 from "../assets/FoodByAma-02.png";
 import MecoClub01 from "../assets/MecoClub-01.png";
@@ -36,6 +38,7 @@ import Tilo02 from "../assets/Tilo-02.png";
 import Corporate01 from "../assets/Corporate-01.png";
 import Corporate02 from "../assets/Corporate-02.png";
 import Corporate03 from "../assets/Corporate-03.png";
+import Corporate04 from "../assets/Corporate-04.png";
 
 import Events01 from "../assets/Events-01.png";
 
@@ -46,6 +49,25 @@ import Social01 from "../assets/Social-01.png";
 export const projects = [
   { 
     id: 1, 
+    name: "Olison Stores", 
+    year: "2022", 
+    category: "Web", 
+    link: "https://olisonstores.netlify.app/",
+    media: [
+      { type: "img", url: Olison01 },
+      { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/1669747475194-CIY4LABRAD90U3T4U8TG/FOR+HER+%280-00-00-07%29.png?format=500w" },
+      // { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/1637238516875-RM5BHZ62RUAKHD9O60MG/Riccardo-Agostinelli---Neologia-v2.gif?format=500w" },
+      { type: "", url: "" },
+      { type: "", url: "" },
+      { type: "", url: "" },
+      { type: "", url: "" },
+      { type: "", url: "" },
+    ],
+    description: "A Catering Website for a food business based in Awka. \n\nThe site features various meals to Add To Cart, Checkout, Paystack Integration, Order Tracking, Account Creation, Admin Dashboard, WhatsApp Order fallback, and a Loyalty-Points System.",
+    stack: [ "React.js", "TailwindCSS", "GSAP", "Paystack" ],
+  },
+  { 
+    id: 2, 
     name: "FoodByAma", 
     year: "2026", 
     category: "Web", 
@@ -64,7 +86,7 @@ export const projects = [
     stack: [ "React.js", "TailwindCSS", "GSAP", "Paystack" ],
   },
   { 
-    id: 2, 
+    id: 3, 
     name: "Meco Club", 
     year: "2025", 
     category: "Web", 
@@ -83,7 +105,7 @@ export const projects = [
     stack: [ "React.js", "TailwindCSS", "GSAP" ],
   },
   { 
-    id: 3, 
+    id: 4, 
     name: "Urban Scope", 
     year: "2025", 
     category: "Web", 
@@ -102,7 +124,7 @@ export const projects = [
     stack: [ "React.js", "TailwindCSS", "GSAP", "Nodejs", "MongoDB"],
   },
   { 
-    id: 4, 
+    id: 5, 
     name: "Delight Weds Fredrick", 
     year: "2024", 
     category: "Web", 
@@ -121,7 +143,7 @@ export const projects = [
     stack: [ "HTML", "CSS", "JavaScript", "WhatsApp API" ],
   },
   { 
-    id: 5, 
+    id: 6, 
     name: "BlueVoltMarine", 
     year: "2026", 
     category: "Web", 
@@ -140,7 +162,7 @@ export const projects = [
     stack: [ "Figma", "ReactJs", "TailwindCSS" ],
   },
   { 
-    id: 6, 
+    id: 7, 
     name: "Chris Dubem Photography", 
     year: "2026", 
     category: "Web", 
@@ -161,7 +183,7 @@ export const projects = [
     stack: [ "ReactJs", "TailwindCSS", "GSAP", "Figma", "NodeJs", "ExpressJS", "MongoDB" ],
   },
   { 
-    id: 7, 
+    id: 8, 
     name: "Autos Exclusive", 
     year: "2024", 
     category: "Web",    
@@ -180,7 +202,7 @@ export const projects = [
     stack: [ "" ],
   },
   { 
-    id: 8, 
+    id: 9, 
     name: "Event Flyers", 
     year: "2024", 
     category: "Graphics", 
@@ -198,7 +220,7 @@ export const projects = [
     stack: [ "Photoshop", "Illustrator", "Corel Draw"],
   },
   { 
-    id: 9, 
+    id: 10, 
     name: "Corty Maxwell", 
     year: "2023", 
     category: "Experimental", 
@@ -264,7 +286,7 @@ export const projects = [
       { type: "img", url: Corporate03 },
       { type: "img", url: Corporate02 },
       { type: "img", url: Corporate01 },
-      { type: "img", url: "" },
+      { type: "img", url: Corporate04 },
       { type: "img", url: "" },
       { type: "img", url: "" },
       { type: "video", url: "" },
@@ -352,7 +374,7 @@ export const projects = [
     id: 17,
     name: "Tilo Store",
     year: "2026",
-    category: "Web",    
+    category: "Experimental",    
     link: "https://tilo-store.netlify.app/",
     media: [
       { type: "img", url: Tilo01 },
