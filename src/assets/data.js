@@ -23,6 +23,9 @@ import Corty02 from "../assets/Corty-02.png";
 import Chris01 from "../assets/Chris-01.png";
 import Chris02 from "../assets/Chris-02.png";
 // import Chris03 from "../assets/Chris-03.png";
+
+import Autos from "../assets/Autos.png";
+
 import Marvel from "../assets/Marvel.png";
 import Swizz01 from "../assets/Swizz-01.png";
 import Swizz02 from "../assets/Swizz-02.png";
@@ -35,6 +38,9 @@ import Corporate02 from "../assets/Corporate-02.png";
 import Corporate03 from "../assets/Corporate-03.png";
 
 import Events01 from "../assets/Events-01.png";
+
+
+import Social01 from "../assets/Social-01.png";
 
 
 export const projects = [
@@ -161,7 +167,7 @@ export const projects = [
     category: "Web",    
     link: "https://autos-exclusive.netlify.app/",
     media: [
-      { type: "img", url: "" },
+      { type: "img", url: Autos },
       { type: "", url: "" },
       { type: "", url: "" },
       { type: "", url: "" },
@@ -370,7 +376,7 @@ export const projects = [
     link: "",
     media: [
       { type: "", url: "" },
-      { type: "", url: "" },
+      { type: "img", url: Social01 },
       { type: "", url: "" },
       { type: "", url: "" },
       { type: "", url: "" },

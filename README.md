@@ -61,7 +61,7 @@ Hi, I’m **Chidera**, a Graduate Mechanical Engineer based in Ireland, passiona
   A full‑stack monorepo application organized into admin, frontend, and backend folders, each with a clear separation of concerns and well‑defined relationships. The platform enables car dealerships to upload vehicles, manage inventory, and showcase listings and services to potential customers. Focused on scalability and maintainability, it provides a streamlined experience for both administrators and end‑users.
   **Tech:** ExpressJs, NodeJs, Postman, MongoDB, ReactJs, TailwindCSS, 
 
-- **[O-Tickets - Online Ticketing Website:](https://o-tickets.netlify.app)**
+- **[O-Tickets - Online Ticketing Website:](https://o-tickets.com)**
    A modern event‑ticketing platform designed to help users discover, share, sell, and book tickets for the best events nearby. It provides a seamless experience for both event organizers and attendees, combining social discovery with secure ticket transactions. Built with accessibility and user engagement in mind, O‑Tickets makes finding and attending events in Nigeria effortless.
   **Tech:** NodeJs, MongoDB, ReactJs, TailwindCSS, Lucide-React,  
 
