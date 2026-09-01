@@ -31,7 +31,7 @@ const Navbar = () => {
             </NavLink>
           </li>
         ))}
-        <a href={resume}  className='hover:underline' target="_blank" rel="noopener noreferrer">
+        <a href={resume}  className='hidden md:flex hover:underline' target="_blank" rel="noopener noreferrer">
           Resume
         </a>
       </ul>

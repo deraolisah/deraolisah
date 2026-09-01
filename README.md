@@ -104,4 +104,4 @@ Hi, I’m **Chidera**, a Graduate Mechanical Engineer based in Ireland, passiona
 - 💼 LinkedIn: https://www.linkedin.com/in/chidera-olisah
 - ✉️ Email: deraolisah@gmail.com  
 
-Feel free to explore, star, or fork any project; feedback, and collaboration ideas are always welcome.  
+Feel free to explore, star, or fork any of my public repos; Feedback and collaboration ideas are always welcome.  
