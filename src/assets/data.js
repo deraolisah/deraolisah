@@ -105,7 +105,7 @@ export const projects = [
     stack: [ "React.js", "TailwindCSS", "GSAP", "Paystack" ],
   },
   { 
-    id: 3, 
+    id: 4, 
     name: "Meco Club", 
     year: "2025", 
     category: "Web", 
@@ -124,7 +124,7 @@ export const projects = [
     stack: [ "React.js", "TailwindCSS", "GSAP" ],
   },
   { 
-    id: 4, 
+    id: 5, 
     name: "Urban Scope", 
     year: "2025", 
     category: "Web", 
@@ -143,7 +143,7 @@ export const projects = [
     stack: [ "React.js", "TailwindCSS", "GSAP", "Nodejs", "MongoDB"],
   },
   { 
-    id: 5, 
+    id: 6, 
     name: "Delight Weds Fredrick", 
     year: "2024", 
     category: "Web", 
@@ -162,7 +162,7 @@ export const projects = [
     stack: [ "HTML", "CSS", "JavaScript", "WhatsApp API" ],
   },
   { 
-    id: 6, 
+    id: 7, 
     name: "BlueVoltMarine", 
     year: "2026", 
     category: "Web", 
@@ -181,7 +181,7 @@ export const projects = [
     stack: [ "Figma", "ReactJs", "TailwindCSS" ],
   },
   { 
-    id: 7, 
+    id: 8, 
     name: "Chris Dubem Photography", 
     year: "2026", 
     category: "Web", 
@@ -202,7 +202,7 @@ export const projects = [
     stack: [ "ReactJs", "TailwindCSS", "GSAP", "Figma", "NodeJs", "ExpressJS", "MongoDB" ],
   },
   { 
-    id: 8, 
+    id: 9, 
     name: "Autos Exclusive", 
     year: "2024", 
     category: "Web",    
@@ -221,7 +221,7 @@ export const projects = [
     stack: [ "" ],
   },
   { 
-    id: 9, 
+    id: 10, 
     name: "Event Flyers", 
     year: "2024", 
     category: "Graphics", 
@@ -239,7 +239,7 @@ export const projects = [
     stack: [ "Photoshop", "Illustrator", "Corel Draw"],
   },
   { 
-    id: 10, 
+    id: 11, 
     name: "Corty Maxwell", 
     year: "2023", 
     category: "Experimental", 
@@ -277,7 +277,7 @@ export const projects = [
   //   stack: [ "" ],
   // },
   { 
-    id: 11, 
+    id: 12, 
     name: "Swizz", 
     year: "2023", 
     category: "Experimental", 
@@ -296,7 +296,7 @@ export const projects = [
     stack: [ "HTML", "CSS", "JavaScript", "GSAP" ], 
   },
   { 
-    id: 12,
+    id: 13,
     name: "Corporate Campaigns", 
     year: "2024", 
     category: "Graphics", 
@@ -353,7 +353,7 @@ export const projects = [
   //   stack: [ "HTML", "CSS", "JavaScript", "Figma" ],
   // },
   { 
-    id: 15, 
+    id: 14, 
     name: "Adina Hotel & Spa", 
     year: "2025", 
     category: "Experimental", 
@@ -372,7 +372,7 @@ export const projects = [
     stack: [ "" ],
   },
   {
-    id: 16,
+    id: 15,
     name: "Niarobi Mats",
     year: "2025",
     category: "Graphics",
@@ -390,7 +390,7 @@ export const projects = [
     stack: [ "Photoshop", "Figma", "Corel Draw" ],
   },
   {
-    id: 17,
+    id: 16,
     name: "Tilo Store",
     year: "2026",
     category: "Experimental",    
@@ -410,7 +410,7 @@ export const projects = [
     stack: [ "ReactJs", "TailwindCSS", "OpenAI" ],
   },
   {
-    id: 18,
+    id: 17,
     name: "Social Media Ads  ",
     year: "2026",
     category: "Graphics",    
