@@ -85,7 +85,7 @@ const Hero = () => {
         <div className='flex items-center gap-0 bg-gray-100 rounded-sm border border-primary/80 overflow-hidden'> 
           <button 
             className={`p-1.5 flex items-center gap-1 text-xs cursor-pointer transition-colors duration-200 ${
-              activeLayout === "list" ? "bg-primary" : "bg-transparent hover:bg-gray-200"
+              activeLayout === "list" ? "bg-primary" : "bg-gray-300 hover:bg-gray-200"
             }`} 
             onClick={() => setActiveLayout("list")} 
             title='List view'
@@ -96,7 +96,7 @@ const Hero = () => {
           
           <button 
             className={`p-1.5 flex items-center gap-1 text-xs cursor-pointer transition-colors duration-200 ${
-              activeLayout === "grid" ? "bg-primary" : "bg-transparent hover:bg-gray-200"
+              activeLayout === "grid" ? "bg-primary" : "bg-gray-300 hover:bg-gray-200"
             }`} 
             onClick={() => setActiveLayout("grid")} 
             title='Grid view'

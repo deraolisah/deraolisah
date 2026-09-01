@@ -47,25 +47,25 @@ import Social01 from "../assets/Social-01.png";
 
 
 export const projects = [
-  { 
-    id: 1, 
-    name: "O-Tickets", 
-    year: "2026", 
-    category: "Web", 
-    link: "https://o-tickets.com/",
-    media: [
-      { type: "img", url: "" },
-      { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/1669747475194-CIY4LABRAD90U3T4U8TG/FOR+HER+%280-00-00-07%29.png?format=500w" },
-      // { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/1637238516875-RM5BHZ62RUAKHD9O60MG/Riccardo-Agostinelli---Neologia-v2.gif?format=500w" },
-      { type: "", url: "" },
-      { type: "", url: "" },
-      { type: "", url: "" },
-      { type: "", url: "" },
-      { type: "", url: "" },
-    ],
-    description: "An event ticketing platform that makes it easy for event organizers to create, manage, and sell tickets for their events. \n\n While giving attendees a simple and secure way to purchase tickets online.",
-    stack: [ "React.js", "TailwindCSS", "GSAP", "Paystack" ],
-  },
+  // { 
+  //   id: 1, 
+  //   name: "O-Tickets", 
+  //   year: "2026", 
+  //   category: "Web", 
+  //   link: "https://o-tickets.com/",
+  //   media: [
+  //     { type: "img", url: "" },
+  //     { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/1669747475194-CIY4LABRAD90U3T4U8TG/FOR+HER+%280-00-00-07%29.png?format=500w" },
+  //     // { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/1637238516875-RM5BHZ62RUAKHD9O60MG/Riccardo-Agostinelli---Neologia-v2.gif?format=500w" },
+  //     { type: "", url: "" },
+  //     { type: "", url: "" },
+  //     { type: "", url: "" },
+  //     { type: "", url: "" },
+  //     { type: "", url: "" },
+  //   ],
+  //   description: "An event ticketing platform that makes it easy for event organizers to create, manage, and sell tickets for their events. \n\n While giving attendees a simple and secure way to purchase tickets online.",
+  //   stack: [ "React.js", "TailwindCSS", "GSAP", "Paystack" ],
+  // },
   { 
     id: 2, 
     name: "Olison Stores", 
