@@ -93,7 +93,7 @@ const Contact = () => {
             your project together.
           </h1>
           <p>
-            Like most Gen-Z Techies in the wild, I can be easily spooked with phone calls, as they are strongly associated with one of our primal predators, the Telemarketerus Obnoscius.
+            Like most Gen-Z Techies in the wild, I can be easily spooked with phone calls, as they are strongly associated with one of our primal predators, the Telemarketerus Obnoxious.
           </p>
           
           <div className='mt-8 whitespace-normal'>

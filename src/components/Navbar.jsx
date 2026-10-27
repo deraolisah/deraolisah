@@ -20,7 +20,7 @@ const Navbar = () => {
       </Link>
 
 
-      <ul className='flex flex-wrap items-center gap-4 md:gap-6 font-normal'>
+      <ul className='flex flex-wrap items-center gap-3 sm:gap-4 md:gap-6 font-normal'>
         {navLinks.map((link, index) => (
           <li key={index}>
             <NavLink 
