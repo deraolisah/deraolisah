@@ -51,16 +51,16 @@ Hi, I’m **Chidera**, a Graduate Mechanical Engineer based in Ireland, passiona
 
 ## Featured Projects
 
-- **[O-Tickets - Online Ticketing Website:](https://o-tickets.com)**  
-   A modern event‑ticketing platform designed to help users discover, share, sell, and book tickets for the best events nearby. It provides a seamless experience for both event organizers and attendees, combining social discovery with secure ticket transactions. Built with accessibility and user engagement in mind, O‑Tickets makes finding and attending events in Nigeria effortless.  
+- **[O-Tickets - Online Ticketing Platform:](https://o-tickets.com)**  
+   An event‑ticketing and management platform designed to help Nigerians discover, share, sell, and book tickets for the best events nearby. It provides a seamless experience for both event organizers and attendees, combining social discovery with secure ticket transactions. Built with accessibility and user engagement in mind, O‑Tickets makes finding and attending events in Nigeria effortless.  
   **Tech:** NodeJs, ExpressJs, MongoDB, ReactJs, TailwindCSS, Context API, Lucide-React, React Native, Expo & Expo Router.
 
 - **[Abuja Messenger - Dispatch Company Website:](https://abuja-messenger.vercel.app)**  
   **Tech:** TypeScript, NodeJs, MongoDB, ReactJs, TailwindCSS, Lucide-React. 
 
 
-- **[Tilo Store - AI-Integrated Retail Platform for Smarter Shopping:](https://tilo-store.netlify.app)**  
-  A modern e-commerce solution powered with an AI Chatbot to deliver personalized shopping, seamless transactions, and smarter customer experiences.  
+- **[Tilo Store - AI Integrated Shopping Platform:](https://tilo-store.netlify.app)**  
+  A modern E-commerce solution, powered with an AI Chatbot to deliver personalized shopping, seamless transactions, and smarter customer experiences.  
   **Tech:** NextJs, TypeScript, Google AI & Claude kit, TailwindCSS, and Firebase for speed, scalability, and intelligence.
 
 - **[FoodByAma - Catering Website:](https://foodbyama.netlify.app)**  
