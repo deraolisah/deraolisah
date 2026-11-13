@@ -51,11 +51,11 @@ Hi, I’m **Chidera**, a Graduate Mechanical Engineer based in Ireland, passiona
 
 ## Featured Projects
 
-- **[O-Tickets - Online Ticketing Website:](https://o-tickets.com)**
+- **[O-Tickets - Online Ticketing Website:](https://o-tickets.com)**  
    A modern event‑ticketing platform designed to help users discover, share, sell, and book tickets for the best events nearby. It provides a seamless experience for both event organizers and attendees, combining social discovery with secure ticket transactions. Built with accessibility and user engagement in mind, O‑Tickets makes finding and attending events in Nigeria effortless.
   **Tech:** NodeJs, ExpressJs, MongoDB, ReactJs, TailwindCSS, Context API, Lucide-React, React Native, Expo & Expo Router.
 
-- **[Abuja Messenger - Dispatch Company Website:](https://abuja-messenger.vercel.app)**
+- **[Abuja Messenger - Dispatch Company Website:](https://abuja-messenger.vercel.app)**  
   **Tech:** TypeScript, NodeJs, MongoDB, ReactJs, TailwindCSS, Lucide-React. 
 
 
