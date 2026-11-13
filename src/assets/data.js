@@ -1,6 +1,7 @@
 import AbujaMessenger from "../assets/AbujaMessenger-01.png";
 
 import Olison01 from "../assets/Olison-01.png";
+import Olison02 from "../assets/Olison-02.png";
 
 import FoodByAma01 from "../assets/FoodByAma-01.png";
 import FoodByAma02 from "../assets/FoodByAma-02.png";
@@ -89,12 +90,13 @@ export const projects = [
   },
   { 
     id: 3, 
-    name: "Olison Stores", 
+    name: "Olison Super Stores", 
     year: "2022", 
     category: "Web", 
-    link: "https://olisonstores.netlify.app/",
+    link: "https://olison.vercel.app/",
     media: [
       { type: "img", url: Olison01 },
+      { type: "img", url: Olison02 },
       { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/1669747475194-CIY4LABRAD90U3T4U8TG/FOR+HER+%280-00-00-07%29.png?format=500w" },
       // { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/1637238516875-RM5BHZ62RUAKHD9O60MG/Riccardo-Agostinelli---Neologia-v2.gif?format=500w" },
       { type: "", url: "" },

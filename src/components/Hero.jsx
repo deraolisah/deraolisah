@@ -8,7 +8,7 @@ import { Grid2x2, List } from 'lucide-react';
 
 const Hero = () => {
   // Filter Projects
-  const [filter, setFilter] = useState("Web");
+  const [filter, setFilter] = useState("All");
   const filteredprojects = filter === "All" ? projects : projects.filter(project => project.category === filter);
   const [activeLayout, setActiveLayout] = useState("grid");
 
