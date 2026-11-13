@@ -52,7 +52,7 @@ Hi, I’m **Chidera**, a Graduate Mechanical Engineer based in Ireland, passiona
 ## Featured Projects
 
 - **[O-Tickets - Online Ticketing Website:](https://o-tickets.com)**  
-   A modern event‑ticketing platform designed to help users discover, share, sell, and book tickets for the best events nearby. It provides a seamless experience for both event organizers and attendees, combining social discovery with secure ticket transactions. Built with accessibility and user engagement in mind, O‑Tickets makes finding and attending events in Nigeria effortless.
+   A modern event‑ticketing platform designed to help users discover, share, sell, and book tickets for the best events nearby. It provides a seamless experience for both event organizers and attendees, combining social discovery with secure ticket transactions. Built with accessibility and user engagement in mind, O‑Tickets makes finding and attending events in Nigeria effortless.  
   **Tech:** NodeJs, ExpressJs, MongoDB, ReactJs, TailwindCSS, Context API, Lucide-React, React Native, Expo & Expo Router.
 
 - **[Abuja Messenger - Dispatch Company Website:](https://abuja-messenger.vercel.app)**  
@@ -60,19 +60,19 @@ Hi, I’m **Chidera**, a Graduate Mechanical Engineer based in Ireland, passiona
 
 
 - **[Tilo Store - AI-Integrated Retail Platform for Smarter Shopping:](https://tilo-store.netlify.app)**  
-  A modern e-commerce solution powered with an AI Chatbot to deliver personalized shopping, seamless transactions, and smarter customer experiences.
+  A modern e-commerce solution powered with an AI Chatbot to deliver personalized shopping, seamless transactions, and smarter customer experiences.  
   **Tech:** NextJs, TypeScript, Google AI & Claude kit, TailwindCSS, and Firebase for speed, scalability, and intelligence.
 
 - **[FoodByAma - Catering Website:](https://foodbyama.netlify.app)**  
-  A complete catering e-commerce solution for a food business in Awka, featuring cart management, Paystack payment integration, order tracking, user accounts, admin dashboard, WhatsApp order fallback, and a loyalty points system.
+  A complete catering e-commerce solution for a food business in Awka, featuring cart management, Paystack payment integration, order tracking, user accounts, admin dashboard, WhatsApp order fallback, and a loyalty points system.  
   **Tech:** ReactJs, NodeJs, TailwindCSS, MongoDB, and PayStack.
 
 - **[UrbanScope - Real Estate Website:](https://urbanscope.netlify.app)**  
-  A cutting-edge real estate platform designed to simplify property discovery and management. Whether you're searching for your dream home, investment property, or rental opportunity, UrbanScope provides a seamless experience with powerful filtering, intelligent search, and comprehensive property details.
+  A cutting-edge real estate platform designed to simplify property discovery and management. Whether you're searching for your dream home, investment property, or rental opportunity, UrbanScope provides a seamless experience with powerful filtering, intelligent search, and comprehensive property details.  
   **Tech:** NextJs, TypeScript, Google AI & Claude kit, TailwindCSS, and Firebase for speed, scalability, and intelligence.
 
 - **[Autos - Car Dealership Website:](https://autos-exclusive.netlify.app)**    
-  A full‑stack monorepo application organized into admin, frontend, and backend folders, each with a clear separation of concerns and well‑defined relationships. The platform enables car dealerships to upload vehicles, manage inventory, and showcase listings and services to potential customers. Focused on scalability and maintainability, it provides a streamlined experience for both administrators and end‑users.
+  A full‑stack monorepo application organized into admin, frontend, and backend folders, each with a clear separation of concerns and well‑defined relationships. The platform enables car dealerships to upload vehicles, manage inventory, and showcase listings and services to potential customers. Focused on scalability and maintainability, it provides a streamlined experience for both administrators and end‑users.  
   **Tech:** ExpressJs, NodeJs, Postman, MongoDB, ReactJs, TailwindCSS, 
 
 
