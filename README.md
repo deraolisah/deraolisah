@@ -51,6 +51,14 @@ Hi, I’m **Chidera**, a Graduate Mechanical Engineer based in Ireland, passiona
 
 ## Featured Projects
 
+- **[O-Tickets - Online Ticketing Website:](https://o-tickets.com)**
+   A modern event‑ticketing platform designed to help users discover, share, sell, and book tickets for the best events nearby. It provides a seamless experience for both event organizers and attendees, combining social discovery with secure ticket transactions. Built with accessibility and user engagement in mind, O‑Tickets makes finding and attending events in Nigeria effortless.
+  **Tech:** NodeJs, ExpressJs, MongoDB, ReactJs, TailwindCSS, Context API, Lucide-React, React Native, Expo & Expo Router.
+
+- **[Abuja Messenger - Dispatch Company Website:](https://abuja-messenger.vercel.app)**
+  **Tech:** TypeScript, NodeJs, MongoDB, ReactJs, TailwindCSS, Lucide-React. 
+
+
 - **[Tilo Store - AI-Integrated Retail Platform for Smarter Shopping:](https://tilo-store.netlify.app)**  
   A modern e-commerce solution powered with an AI Chatbot to deliver personalized shopping, seamless transactions, and smarter customer experiences.
   **Tech:** NextJs, TypeScript, Google AI & Claude kit, TailwindCSS, and Firebase for speed, scalability, and intelligence.
@@ -66,10 +74,6 @@ Hi, I’m **Chidera**, a Graduate Mechanical Engineer based in Ireland, passiona
 - **[Autos - Car Dealership Website:](https://autos-exclusive.netlify.app)**    
   A full‑stack monorepo application organized into admin, frontend, and backend folders, each with a clear separation of concerns and well‑defined relationships. The platform enables car dealerships to upload vehicles, manage inventory, and showcase listings and services to potential customers. Focused on scalability and maintainability, it provides a streamlined experience for both administrators and end‑users.
   **Tech:** ExpressJs, NodeJs, Postman, MongoDB, ReactJs, TailwindCSS, 
-
-- **[O-Tickets - Online Ticketing Website:](https://o-tickets.com)**
-   A modern event‑ticketing platform designed to help users discover, share, sell, and book tickets for the best events nearby. It provides a seamless experience for both event organizers and attendees, combining social discovery with secure ticket transactions. Built with accessibility and user engagement in mind, O‑Tickets makes finding and attending events in Nigeria effortless.
-  **Tech:** NodeJs, MongoDB, ReactJs, TailwindCSS, Lucide-React,  
 
 
 ---
