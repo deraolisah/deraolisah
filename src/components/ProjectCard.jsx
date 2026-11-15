@@ -84,7 +84,7 @@ const ProjectCard = ({ project, openModal }) => {
             }}
           />
         ) : (
-          <div className="relative w-full aspect-video md:aspect-3/2 bg-gray-200 border border-gray-300 overflow-hidden">
+          <div className="relative w-full aspect-video bg-gray-200 border border-gray-300 overflow-hidden">
             <motion.video 
               className="w-full h-full object-cover"
               // whileHover={{ scale: 1.05 }}

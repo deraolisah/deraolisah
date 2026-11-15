@@ -43,6 +43,9 @@ import Corporate02 from "../assets/Corporate-02.png";
 import Corporate03 from "../assets/Corporate-03.png";
 import Corporate04 from "../assets/Corporate-04.png";
 
+import Adina01 from "../assets/Adina-01.mp4";
+
+
 import Events01 from "../assets/Events-01.png";
 
 
@@ -153,11 +156,11 @@ export const projects = [
     category: "Web", 
     link: "https://urbanscope.netlify.app/",
     media: [
+      { type: "img", url: UrbanScope },
       { type: "img", url: UrbanScope01 },
       { type: "img", url: UrbanScope02 },
       { type: "img", url: UrbanScope03 },
       { type: "img", url: UrbanScope04 },
-      { type: "img", url: UrbanScope },
       { type: "img", url: UrbanScope05 },
       { type: "", url: "" },
       { type: "", url: "" },
@@ -382,7 +385,7 @@ export const projects = [
     category: "Experimental", 
     link: "https://adinahotel.netlify.app/",
     media: [
-      { type: "", url: "" },
+      { type: "video", url: Adina01 },
       { type: "img", url: "https://images.squarespace-cdn.com/content/v1/5de150a7f708ae5ab34c13ee/4ef35f32-e7ef-4f3c-b036-718e78de7422/69.png?format=500w" },
       { type: "", url: "" },
       { type: "", url: "" },
